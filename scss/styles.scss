@@ -3,6 +3,7 @@
 *******************************************/
 
 @import 'cssReset';
+//@import 'general';
 
 html {
    overflow: hidden;
@@ -16,8 +17,8 @@ $header-bg: rgb(117, 103, 50);
 *********************************************/
 
 header {
-   height: 200px;
-   #header-bg {
+   height: 200px;	
+   & #header-bg{
       overflow: hidden;
       & img {
          width: 100%;
@@ -46,7 +47,7 @@ header {
             padding: 18px 10px;
             color: black;
             font-size: 14px;
-            &:hover {
+            &:hover{
                text-decoration: none;
                background: rgb(172, 122, 0);
                color: white;
@@ -93,7 +94,7 @@ header {
 *********************************************/
 
 body {
-   background-image: url(../images/fashion-red-yellow-designer-5872.jpg);
+   background-image: url(../images/fabric-2446476_1920.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment: fixed; //   background-color: rgb(46, 23, 0);
