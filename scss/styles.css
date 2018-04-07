@@ -1,0 +1,132 @@
+/******************************************
+	CSS RESET & GLOBAL
+*******************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  overflow: hidden; }
+
+/********************************************
+	HEADER/FOOTER
+*********************************************/
+header {
+  height: 200px; }
+  header #header-bg {
+    overflow: hidden; }
+    header #header-bg img {
+      width: 100%;
+      height: 100%; }
+
+#main-nav {
+  height: 30px;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+  #main-nav ul {
+    display: flex;
+    justify-content: space-between; }
+  #main-nav > ul {
+    position: relative; }
+    #main-nav > ul > li {
+      width: 12.5%;
+      height: 50px; }
+      #main-nav > ul > li > a {
+        background: #ffde8c;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 18px 10px;
+        color: black;
+        font-size: 14px; }
+        #main-nav > ul > li > a:hover {
+          text-decoration: none;
+          background: #ac7a00;
+          color: white;
+          transition: 200ms; }
+      #main-nav > ul > li:nth-child(3) > a, #main-nav > ul > li:nth-child(8) li a {
+        padding-top: 11px; }
+      #main-nav > ul > li ul {
+        display: none;
+        position: absolute;
+        top: 50px; }
+        #main-nav > ul > li ul li {
+          height: 50px;
+          min-width: 100%;
+          padding-left: 0; }
+          #main-nav > ul > li ul li a {
+            background: #ffde8c;
+            display: block;
+            height: 100%;
+            padding: 18px 40px 18px 10px;
+            color: black;
+            font-size: 14px; }
+            #main-nav > ul > li ul li a:hover {
+              text-decoration: none;
+              background: #ac7a00;
+              color: white;
+              transition: 200ms; }
+
+/********************************************
+    CONTENT
+*********************************************/
+body {
+  background-image: url(../images/fashion-red-yellow-designer-5872.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  body #wrapper {
+    box-shadow: 0 0 20px black;
+    padding: 0;
+    min-height: none; }
+
+/********************************************
+    Overlay
+*********************************************/
+/********************************************
+    Media Queries
+*********************************************/
+
+/*# sourceMappingURL=styles.css.map */
