@@ -4,6 +4,5 @@
    $('nav li').hover(function(){
       $(this).find('ul').slideToggle('fast');
    })
-   
-   
+	
 })();
