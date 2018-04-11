@@ -49,7 +49,84 @@ table {
   border-spacing: 0; }
 
 html {
-  overflow: hidden; }
+  height: 100%; }
+
+body {
+  background-image: url(../images/fabric-2446476_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif; }
+  body #wrapper {
+    min-height: 100%;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    box-shadow: 0 0 20px black;
+    padding: 0;
+    position: relative;
+    background: #fffbd1; }
+
+#content {
+  padding: 20px 10px; }
+
+p {
+  padding: 0 0 12px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.1;
+  font-weight: 700; }
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 30px 0 12px; }
+
+h1,
+.h1 {
+  font-size: 34px;
+  background-color: #756732;
+  padding: 8px 16px;
+  color: white; }
+
+h2,
+.h2 {
+  font-size: 30px; }
+
+h3,
+.h3 {
+  font-size: 28px; }
+
+h4,
+.h4 {
+  font-size: 24px; }
+
+h5,
+.h5 {
+  font-size: 20px; }
+
+h6,
+.h6 {
+  font-size: 18px; }
 
 /********************************************
 	HEADER/FOOTER
@@ -62,8 +139,15 @@ header {
       width: 100%;
       height: 100%; }
 
+#sub-header {
+  height: 50px;
+  background-color: #ffde8c; }
+
+/********************************************
+    NAV BARS
+*********************************************/
 #desktop-nav {
-  height: 30px;
+  height: 50px;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
   #desktop-nav ul {
     display: flex;
@@ -109,21 +193,47 @@ header {
               color: white;
               transition: 200ms; }
 
-#side-nav {
-  display: none; }
+.wrap #sub-header .toggle {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
-/********************************************
-    CONTENT
-*********************************************/
-body {
-  background-image: url(../images/fabric-2446476_1920.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-  body #wrapper {
-    box-shadow: 0 0 20px black;
-    padding: 0;
-    min-height: none; }
+#side-nav {
+  display: none;
+  background-color: #34495e;
+  border-right: 1px solid #34495e;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px; }
+  #side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #side-nav ul a {
+      padding: 10px 20px;
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
+      #side-nav ul a:hover {
+        color: white;
+        font-weight: bold; }
+
+.nav-open {
+  right: 200px;
+  background: #34495e;
+  height: 50px;
+  border-bottom-left-radius: 5px; }
+  .nav-open #side-nav {
+    right: 0; }
+
+.wrap,
+#side-nav {
+  transition: right 200ms ease; }
 
 /********************************************
     Overlay
@@ -131,5 +241,8 @@ body {
 /********************************************
     Media Queries
 *********************************************/
+@media screen and (max-width: 992px) {
+  #side-nav {
+    display: block; } }
 
 /*# sourceMappingURL=styles.css.map */
