@@ -27,7 +27,7 @@ header {
    }
 }
 
-#main-nav {
+#desktop-nav {
    height: 30px;
    font-family: Verdana, Arial, Helvetica, sans-serif;
    & ul {
@@ -85,6 +85,10 @@ header {
          }
       }
    }
+}
+
+#side-nav{
+   display: none;
 }
 
 
