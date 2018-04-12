@@ -52,16 +52,16 @@ html {
   height: 100%; }
 
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#120901+0,000000+52,120901+100 */
-  background: #120901;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+52,000000+100 */
+  background: #000000;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #120901 0%, #000000 50%, #120901 100%);
+  background: -moz-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #120901 0%, #000000 50%, #120901 100%);
+  background: -webkit-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #120901 0%, #000000 50%, #120901 100%);
+  background: linear-gradient(135deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#120901', endColorstr='#120901',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   /* IE6-9 fallback on horizontal gradient */
   background-size: cover;
