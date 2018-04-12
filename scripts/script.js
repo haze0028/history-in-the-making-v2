@@ -1,31 +1,41 @@
 (function () {
 	console.log("Page loaded");
-	var wrapper, toggle, nav;
-	
-	// trigger nav menu dropdown effects
-	$('nav li').hover(function () {
-		$(this).find('ul').slideToggle('fast');
-	})
+	var wrapper, toggle, nav, overlay, body;
+
 
 	//side menu slide in effect
-	wrapper = $(".wrap");
-	toggle = $(".toggle");
-	nav = $(".side-nav");
+	toggle = $(".nav-toggle");
+	nav = $("#side-nav nav");
+	overlay = $('.overlay');
+	body = $('body');
+
+	$('.toggle-menu').on('click', function () {
+		$(this).toggleClass('flipped');
+		$(this).parent().find('ul').slideToggle();
+	})
+
 	
+	// trigger nav menu dropdown effects
+	$('#desktop-nav li').hover(function () {
+		$(this).find('ul').slideToggle();
+	});
+	
+	//Open the side-nav
 	toggle.on("click", function () {
-		wrapper.toggleClass("nav-open");
-		// Change the font-awesome icons on click.
-		toggle.toggleClass("fa-bars");
-		toggle.toggleClass("fa-times");
+//		nav.toggleClass("nav-closed");
+		overlay.css('display', 'block');
+		nav.animate({right: '0px'});
+		body.css('overflow', 'hidden');
 	});
-
-	$(window).on("click", function (e) {
-		if (wrapper.hasClass("nav-open") &&
-			!$(e.target).hasClass("toggle")) {
-			wrapper.removeClass("nav-open");
-			toggle.toggleClass("fa-bars");
-			toggle.toggleClass("fa-times");
-		}
-	});
-
+	
+	//Close the side-nav
+	$('.toggle-close').on('click', closeOverlay);	
+	$('.close-overlay').on('click', closeOverlay);
+	
+	function closeOverlay(){
+		nav.animate({right: '-300px'});
+		body.css('overflow', 'visible');
+		$(this).removeClass('nav-open');
+		overlay.delay('500ms').fadeToggle();
+	}
 })();
