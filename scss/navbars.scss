@@ -6,8 +6,8 @@
 		& .nav-toggle {
 			cursor: pointer;
 			position: absolute;
-			top: 5px;
-			right: 10px;
+			top: 8px;
+			right: 20px;
 			font-size: 38px;
 		}
 		& nav {
@@ -23,7 +23,7 @@
 					width: 12.5%;
 					height: 56px;
 					& > a {
-						position:relative;
+						position: relative;
 						background: $nav;
 						display: block;
 						width: 100%;
@@ -38,11 +38,11 @@
 							transition: 200ms;
 						}
 					}
-					&:nth-child(1){
-						width:8%;
+					&:nth-child(1) {
+						width: 8%;
 					}
-					&:nth-child(2){
-						width:17%;
+					&:nth-child(2) {
+						width: 17%;
 					}
 					&:nth-child(3) > a,
 					&:nth-child(8) li a {
@@ -90,28 +90,23 @@
 		width: 250px;
 		height: 100%;
 		padding: 10px;
-		border-left: 3px solid #c3ac00; //		transition: 300ms ease;
+		border-left: 3px solid $nav; //		transition: 300ms ease;
 		right: -300px;
 		& .nav-closed {
 			//			transition: 300ms ease;
 		}
 		& .toggle-close {
+			display:block;
+			margin-left: auto;
 			width: 50px;
 			height: 50px;
 			background-color: #242424;
-			transform: translate(-60px, -10px);
 			padding: 15px;
-			font-size: 20px;
-			border-bottom-left-radius: 5px;
-			border-left: 3px solid #c3ac00;
-			border-bottom: 3px solid #c3ac00;
-			float: left;
+			font-size: 26px;
 			cursor: pointer;
-			> svg {
-				&:hover {
-					cursor: pointer;
-					color: rgb(255, 240, 125);
-				}
+			&:hover {
+				color: rgb(255, 240, 125);
+				transition: 300ms;
 			}
 		}
 		& ul {

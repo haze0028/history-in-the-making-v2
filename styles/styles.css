@@ -156,13 +156,13 @@ header {
 *********************************************/
 #desktop-nav .sub-header {
   height: 56px;
-  background-color: #ffde8c;
+  background-color: #ffdc67;
   position: relative; }
   #desktop-nav .sub-header .nav-toggle {
     cursor: pointer;
     position: absolute;
-    top: 5px;
-    right: 10px;
+    top: 8px;
+    right: 20px;
     font-size: 38px; }
   #desktop-nav .sub-header nav {
     height: 56px;
@@ -177,7 +177,7 @@ header {
         height: 56px; }
         #desktop-nav .sub-header nav > ul > li > a {
           position: relative;
-          background: #ffde8c;
+          background: #ffdc67;
           display: block;
           width: 100%;
           height: 100%;
@@ -204,7 +204,7 @@ header {
             min-width: 100%;
             padding-left: 0; }
             #desktop-nav .sub-header nav > ul > li ul li a {
-              background: #ffde8c;
+              background: #ffdc67;
               display: block;
               height: 100%;
               padding: 18px 40px 18px 10px;
@@ -228,23 +228,20 @@ header {
     width: 250px;
     height: 100%;
     padding: 10px;
-    border-left: 3px solid #c3ac00;
+    border-left: 3px solid #ffdc67;
     right: -300px; }
     #side-nav nav .toggle-close {
+      display: block;
+      margin-left: auto;
       width: 50px;
       height: 50px;
       background-color: #242424;
-      transform: translate(-60px, -10px);
       padding: 15px;
-      font-size: 20px;
-      border-bottom-left-radius: 5px;
-      border-left: 3px solid #c3ac00;
-      border-bottom: 3px solid #c3ac00;
-      float: left;
+      font-size: 26px;
       cursor: pointer; }
-      #side-nav nav .toggle-close > svg:hover {
-        cursor: pointer;
-        color: #fff07d; }
+      #side-nav nav .toggle-close:hover {
+        color: #fff07d;
+        transition: 300ms; }
     #side-nav nav ul {
       list-style: none;
       margin: 0;
