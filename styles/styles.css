@@ -130,7 +130,8 @@ h1,
   font-size: 34px;
   background-color: #432d10;
   padding: 8px 16px;
-  color: white; }
+  color: white;
+  box-shadow: 0 2px 10px 2px black; }
 
 h2,
 .h2 {
