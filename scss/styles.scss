@@ -1,9 +1,10 @@
 /******************************************
-	CSS RESET & GLOBAL
+	CSS RESET & GENERAL
 *******************************************/
 
 $nav: rgb(255, 220, 103);
 $header-bg: rgb(117, 103, 50);
+//$header-bg: #3e2a0f; //alt
 
 
 @import 'cssReset';
@@ -11,27 +12,17 @@ $header-bg: rgb(117, 103, 50);
 
 
 /********************************************
-	HEADER/FOOTER
-*********************************************/
-
-header {
-	z-index: 10;
-	height: 200px;
-	overflow: hidden;
-	& #header-bg {
-		& img {
-			min-width: 100%;
-			height: 100%;
-		}
-	}
-}
-
-
-/********************************************
     NAV BARS
 *********************************************/
 
 @import 'navbars';
+
+
+/********************************************
+    HOME
+*********************************************/
+@import 'index';
+
 
 /********************************************
     Overlay
@@ -56,9 +47,16 @@ header {
 
 
 /********************************************
-    Media Queries
+    Media Queries 
+Extra small <576px	Small Phone
+Small 		≥576px	Large Phone
+Medium		≥768px	Tablet
+Large			≥992px	Medium Desktop
+Extra large	≥1200px	Large Desktop
 *********************************************/
 
+// Smaller medium desktop
 @media screen and (max-width:992px) {}
 
-@media screen and (max-width:640px) {}
+// Smaller than tablet
+@media screen and (max-width:768px) {}
