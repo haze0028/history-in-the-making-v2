@@ -1,0 +1,32 @@
+.home-content{
+	& .frame{
+		width:30%;
+		margin:0 20px 0 0;
+		float:left;
+	}
+}
+
+
+
+
+/********************************************
+    Media Queries 
+Extra small <576px	Small Phone
+Small 		≥576px	Large Phone
+Medium		≥768px	Tablet
+Large			≥992px	Medium Desktop
+Extra large	≥1200px	Large Desktop
+*********************************************/
+
+// Smaller medium desktop
+@media screen and (max-width:992px) {
+}
+
+// Smaller than tablet
+@media screen and (max-width:576px) {
+	.home-content{
+	& .frame{
+		width:100%;
+		}
+	}
+}
