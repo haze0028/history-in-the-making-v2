@@ -85,7 +85,7 @@ h6,
 .h6 {
 	margin: 30px 0 14px;
 	padding-bottom: 10px;
-	border-bottom: none;
+	border-bottom: 1px solid rgba(108, 99, 0, 0.33);
 }
 
 h1,
@@ -101,7 +101,6 @@ h2,
 .h2 {
 	font-size: 30px;
 	margin-bottom: 22px;
-	border-bottom: 1px solid rgba(108, 99, 0, 0.33);
 }
 
 h3,
@@ -151,7 +150,6 @@ a {
 		width: 100%;
 		max-height: 100%;
 		box-shadow: 0 2px 10px black;
-
 	}
 }
 
