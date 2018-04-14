@@ -97,6 +97,7 @@
 	}
 }
 
+
 #side-nav {
 	display: none;
 	z-index: 30;
@@ -188,11 +189,11 @@ Extra large	≥1200px	Large Desktop
 	#desktop-nav {
 		& .sub-header {
 			height: 40px;
-			
-		& .nav-toggle {
-			font-size: 32px;
-			top:4px
-		}
+
+			& .nav-toggle {
+				font-size: 32px;
+				top: 4px
+			}
 			& nav {
 				display: none;
 				& ul {

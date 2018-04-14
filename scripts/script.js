@@ -2,6 +2,8 @@
 	console.log("Page loaded");
 	var wrapper, toggle, nav, overlay, keys;
 
+//	//Load the navs into the page
+//	$('#test').load('../includes/navs.html');
 
 	//side menu slide in effect
 	toggle = $(".nav-toggle");
