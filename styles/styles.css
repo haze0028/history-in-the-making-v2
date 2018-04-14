@@ -94,7 +94,7 @@ body {
     background: #fffbd1; }
 
 #content {
-  padding: 20px 40px; }
+  padding: 20px 40px 60px; }
 
 h1,
 h2,
@@ -122,8 +122,7 @@ h6,
 .h5,
 .h6 {
   margin: 30px 0 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(108, 99, 0, 0.33); }
+  padding-bottom: 10px; }
 
 h1,
 .h1 {
@@ -136,15 +135,16 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  border-bottom: 1px solid rgba(108, 99, 0, 0.33); }
 
 h3,
 .h3 {
-  font-size: 28px; }
+  font-size: 24px; }
 
 h4,
 .h4 {
-  font-size: 24px; }
+  font-size: 22px; }
 
 h5,
 .h5 {
@@ -161,6 +161,9 @@ p {
 small {
   font-size: .8rem; }
 
+strong {
+  font-weight: bold; }
+
 a {
   font-weight: 700;
   color: #7c4800;
@@ -171,10 +174,18 @@ a {
   max-height: 100%;
   box-shadow: 0 0 6px -4px black; }
   .frame img {
-    z-index: -10;
     width: 100%;
     max-height: 100%;
     box-shadow: 0 2px 10px black; }
+
+img {
+  width: 100%; }
+
+ul {
+  list-style: disc;
+  line-height: 1.4; }
+  ul li {
+    margin-left: 20px; }
 
 /********************************************
     Media Queries 
@@ -211,7 +222,10 @@ Extra large	≥1200px	Large Desktop
     font-family: Verdana, Arial, Helvetica, sans-serif; }
     #desktop-nav .sub-header nav ul {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      list-style: none; }
+      #desktop-nav .sub-header nav ul li {
+        margin-left: 0; }
     #desktop-nav .sub-header nav > ul {
       position: relative; }
       #desktop-nav .sub-header nav > ul > li {
@@ -249,7 +263,7 @@ Extra large	≥1200px	Large Desktop
         #desktop-nav .sub-header nav > ul > li:nth-child(8) {
           width: 15%; }
         #desktop-nav .sub-header nav > ul > li:nth-child(3) > a, #desktop-nav .sub-header nav > ul > li:nth-child(8) li a {
-          padding-top: 11px; }
+          padding-top: 9px; }
         #desktop-nav .sub-header nav > ul > li ul {
           display: none;
           position: absolute;
@@ -262,7 +276,7 @@ Extra large	≥1200px	Large Desktop
               background: #ffdc67;
               display: block;
               height: 100%;
-              padding: 18px 42px 18px 10px;
+              padding: 18px 38px 18px 10px;
               color: black;
               font-size: 14px; }
               #desktop-nav .sub-header nav > ul > li ul li a:hover {
@@ -374,6 +388,22 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width: 576px) {
   .home-content .frame {
     width: 100%; } }
+/********************************************
+    ORDERING INFO
+*********************************************/
+.ordering-content #ordering-nav {
+  background-color: #fff7a5;
+  display: block;
+  margin: 30px;
+  padding: 10px 10px;
+  border: 1px solid rgba(147, 108, 0, 0.28);
+  border-radius: 5px; }
+  .ordering-content #ordering-nav ul {
+    list-style: none; }
+    .ordering-content #ordering-nav ul li {
+      margin-left: 0px;
+      border-bottom: 1px solid rgba(255, 247, 165, 0.27); }
+
 /********************************************
     Overlay
 *********************************************/

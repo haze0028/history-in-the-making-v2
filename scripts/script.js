@@ -2,8 +2,8 @@
 	console.log("Page loaded");
 	var wrapper, toggle, nav, overlay, keys;
 
-//	//Load the navs into the page
-//	$('#test').load('../includes/navs.html');
+	//	//Load the navs into the page
+	//	$('#test').load('../includes/navs.html');
 
 	//side menu slide in effect
 	toggle = $(".nav-toggle");
@@ -18,7 +18,7 @@
 
 	// trigger nav menu dropdown effects
 	$('#desktop-nav li').hover(function () {
-		$(this).find('ul').slideToggle();
+		$(this).find('ul').slideToggle('fast');
 	});
 
 	//Open the side-nav
