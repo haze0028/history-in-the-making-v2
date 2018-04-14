@@ -203,7 +203,10 @@ Extra large	≥1200px	Large Desktop
     height: 100px; }
 
   #content {
-    padding: 20px 10px 40px; } }
+    padding: 20px 10px 40px; }
+
+  p, li, a {
+    line-height: 1.25em; } }
 /********************************************
     NAV BARS
 *********************************************/
@@ -392,6 +395,7 @@ Extra large	≥1200px	Large Desktop
     ORDERING INFO
 *********************************************/
 .ordering-content #ordering-nav {
+  float: right;
   background-color: #fff7a5;
   display: block;
   margin: 30px;
@@ -401,8 +405,11 @@ Extra large	≥1200px	Large Desktop
   .ordering-content #ordering-nav ul {
     list-style: none; }
     .ordering-content #ordering-nav ul li {
-      margin-left: 0px;
-      border-bottom: 1px solid rgba(255, 247, 165, 0.27); }
+      margin-left: 0px; }
+.ordering-content #a1 {
+  float: left; }
+.ordering-content ul {
+  clear: left; }
 
 /********************************************
     Overlay
@@ -429,5 +436,13 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 768px) {
+  .ordering-content #ordering-nav {
+    float: none;
+    width: 100%;
+    margin: 0px; }
+  .ordering-content #a1 {
+    float: left;
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
