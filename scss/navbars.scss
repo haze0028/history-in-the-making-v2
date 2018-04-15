@@ -16,6 +16,10 @@
 			& ul {
 				display: flex;
 				justify-content: space-between;
+				list-style: none;
+				& li {
+					margin-left: 0;
+				}
 			}
 			& > ul {
 				position: relative;
@@ -65,7 +69,7 @@
 					}
 					&:nth-child(3) > a,
 					&:nth-child(8) li a {
-						padding-top: 11px;
+						padding-top: 9px;
 					}
 					& ul {
 						display: none;
@@ -79,7 +83,7 @@
 								background: $nav;
 								display: block;
 								height: 100%;
-								padding: 18px 42px 18px 10px;
+								padding: 18px 38px 18px 10px;
 								color: black;
 								font-size: 14px;
 								&:hover {
@@ -96,6 +100,7 @@
 		}
 	}
 }
+
 
 #side-nav {
 	display: none;
@@ -188,11 +193,11 @@ Extra large	≥1200px	Large Desktop
 	#desktop-nav {
 		& .sub-header {
 			height: 40px;
-			
-		& .nav-toggle {
-			font-size: 32px;
-			top:4px
-		}
+
+			& .nav-toggle {
+				font-size: 32px;
+				top: 4px
+			}
 			& nav {
 				display: none;
 				& ul {

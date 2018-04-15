@@ -5,8 +5,6 @@
 $nav: rgb(255, 220, 103);
 //$header-bg: rgb(117, 103, 50);
 $header-bg: #432d10; //alt
-
-
 @import 'cssReset';
 @import 'general';
 
@@ -14,14 +12,43 @@ $header-bg: #432d10; //alt
 /********************************************
     NAV BARS
 *********************************************/
-@import 'navbars';
 
+@import 'navbars';
 
 /********************************************
     HOME
 *********************************************/
+
 @import 'index';
 
+/********************************************
+    ORDERING INFO
+*********************************************/
+
+.ordering-content {
+	& #ordering-nav {
+		float: right;
+		background-color: #fff7a5;
+		display: block;
+		margin: 30px;
+		padding: 10px 10px;
+		border: 1px solid rgba(147, 108, 0, 0.28);
+		border-radius: 5px;
+		& ul {
+			list-style: none;
+			li {
+				margin-left: 0px;
+			}
+		}
+	}
+	& #a1 {
+		float: left;
+
+	}
+	& ul {
+		clear: left;
+	}
+}
 
 /********************************************
     Overlay
@@ -58,4 +85,16 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width:992px) {}
 
 // Smaller than tablet
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+	.ordering-content {
+		& #ordering-nav {
+			float: none;
+			width: 100%;
+			margin: 0px;
+		}
+		& #a1 {
+			float: left;
+			width: 100%;
+		}
+	}
+}

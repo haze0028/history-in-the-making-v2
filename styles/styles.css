@@ -94,7 +94,7 @@ body {
     background: #fffbd1; }
 
 #content {
-  padding: 20px 40px; }
+  padding: 20px 40px 60px; }
 
 h1,
 h2,
@@ -123,7 +123,8 @@ h6,
 .h6 {
   margin: 30px 0 14px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(108, 99, 0, 0.33); }
+  border-bottom: 1px solid rgba(108, 99, 0, 0.33); 
+}
 
 h1,
 .h1 {
@@ -140,11 +141,11 @@ h2,
 
 h3,
 .h3 {
-  font-size: 28px; }
+  font-size: 24px; }
 
 h4,
 .h4 {
-  font-size: 24px; }
+  font-size: 22px; }
 
 h5,
 .h5 {
@@ -161,6 +162,9 @@ p {
 small {
   font-size: .8rem; }
 
+strong {
+  font-weight: bold; }
+
 a {
   font-weight: 700;
   color: #7c4800;
@@ -171,16 +175,39 @@ a {
   max-height: 100%;
   box-shadow: 0 0 6px -4px black; }
   .frame img {
-    z-index: -10;
     width: 100%;
     max-height: 100%;
     box-shadow: 0 2px 10px black; }
 
+img {
+  width: 100%; }
+
 ul {
   list-style: disc;
-  line-height: 1.2; }
+  line-height: 1.4; }
   ul li {
     margin-left: 20px; }
+
+#top-btn {
+  height: 50px;
+  width: 50px;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  color: brown;
+  border-radius: 25px; }
+  #top-btn a:hover {
+    text-decoration: none;
+    color: brown; }
+  #top-btn a i {
+    font-size: 50px;
+    background-color: #74efff;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px; }
 
 /********************************************
     Media Queries 
@@ -198,7 +225,12 @@ Extra large	≥1200px	Large Desktop
     height: 100px; }
 
   #content {
-    padding: 20px 10px 40px; } }
+    padding: 20px 10px 40px; }
+
+  p,
+  li,
+  a {
+    line-height: 1.25em; } }
 /********************************************
     NAV BARS
 *********************************************/
@@ -217,7 +249,10 @@ Extra large	≥1200px	Large Desktop
     font-family: Verdana, Arial, Helvetica, sans-serif; }
     #desktop-nav .sub-header nav ul {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      list-style: none; }
+      #desktop-nav .sub-header nav ul li {
+        margin-left: 0; }
     #desktop-nav .sub-header nav > ul {
       position: relative; }
       #desktop-nav .sub-header nav > ul > li {
@@ -255,7 +290,7 @@ Extra large	≥1200px	Large Desktop
         #desktop-nav .sub-header nav > ul > li:nth-child(8) {
           width: 15%; }
         #desktop-nav .sub-header nav > ul > li:nth-child(3) > a, #desktop-nav .sub-header nav > ul > li:nth-child(8) li a {
-          padding-top: 11px; }
+          padding-top: 9px; }
         #desktop-nav .sub-header nav > ul > li ul {
           display: none;
           position: absolute;
@@ -268,7 +303,7 @@ Extra large	≥1200px	Large Desktop
               background: #ffdc67;
               display: block;
               height: 100%;
-              padding: 18px 42px 18px 10px;
+              padding: 18px 38px 18px 10px;
               color: black;
               font-size: 14px; }
               #desktop-nav .sub-header nav > ul > li ul li a:hover {
@@ -381,6 +416,26 @@ Extra large	≥1200px	Large Desktop
   .home-content .frame {
     width: 100%; } }
 /********************************************
+    ORDERING INFO
+*********************************************/
+.ordering-content #ordering-nav {
+  float: right;
+  background-color: #fff7a5;
+  display: block;
+  margin: 30px;
+  padding: 10px 10px;
+  border: 1px solid rgba(147, 108, 0, 0.28);
+  border-radius: 5px; }
+  .ordering-content #ordering-nav ul {
+    list-style: none; }
+    .ordering-content #ordering-nav ul li {
+      margin-left: 0px; }
+.ordering-content #a1 {
+  float: left; }
+.ordering-content ul {
+  clear: left; }
+
+/********************************************
     Overlay
 *********************************************/
 .overlay {
@@ -405,5 +460,13 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 768px) {
+  .ordering-content #ordering-nav {
+    float: none;
+    width: 100%;
+    margin: 0px; }
+  .ordering-content #a1 {
+    float: left;
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
