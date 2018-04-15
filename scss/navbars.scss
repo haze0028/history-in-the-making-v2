@@ -135,11 +135,12 @@
 		}
 		& ul {
 			list-style: none;
+			line-height: 1;
 			& li {
 				clear: both;
 				padding-top: 5px;
 				cursor: pointer;
-				margin-bottom: 20px;
+				margin:0 0 20px 0;
 				& ul {
 					display: none;
 					clear: both;

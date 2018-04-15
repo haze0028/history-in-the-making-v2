@@ -94,5 +94,22 @@
 	}
 
 
+	//"To top" Button
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('.top-btn').addClass('slide-in');
+		} else {
+			$('.top-btn').removeClass('slide-in');
+		}
+	});
+
+	$('.top-btn').on('click', function (e) {
+		e.preventDefault();
+		$(this).trigger('blur');
+		$('html, body').animate({
+			scrollTop: 0
+		}, 800);
+	});
+
 
 })();

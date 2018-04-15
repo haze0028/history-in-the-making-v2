@@ -137,7 +137,7 @@ strong {
 }
 
 a {
-	font-weight: 700;
+	font-weight: bold;
 	color: #7c4800;
 	text-decoration: none;
 	&:hover {
@@ -168,32 +168,36 @@ ul {
 	}
 }
 
-#top-btn {
-	height: 50px;
-	width: 50px;
+.top-btn {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 	display: block;
 	padding: 0px;
-	margin: 0px;
-	position: fixed;
-	bottom: 50px;
-	right: 20px;
-	color: brown;
-	border-radius: 25px;
-	& a {
-		&:hover {
-			text-decoration: none;
-			color: brown;
-		}
-		& i {
-			font-size: 50px;
-			background-color: #74efff;
-			width: 50px;
-			height: 50px;
-			border-radius: 30px;
-		}
+	color: #7c4800;
+	background: transparent;
+	font-size: 50px;
+	margin-right: -20px;
+	opacity: 0;
+	transition: 300ms;
+	cursor: pointer;
+	border: none;
+	outline:none;
+	&:hover {
+		color: $nav;
+		transition: 200ms;
+	}
+	&:active {
+		color: #b009ed;
+		border: none;
 	}
 }
 
+
+.slide-in {
+	opacity: 1;
+	margin: 0;
+}
 
 /********************************************
     Media Queries 
@@ -218,7 +222,7 @@ Extra large	≥1200px	Large Desktop
 	}
 
 	#content {
-		padding: 20px 10px 40px;
+		padding: 20px 20px 40px;
 	}
 
 	p,
