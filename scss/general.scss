@@ -169,26 +169,30 @@ ul {
 }
 
 .top-btn {
+	background: #dedede;
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
 	display: block;
 	padding: 0px;
 	color: #7c4800;
-	background: transparent;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 	font-size: 50px;
 	margin-right: -20px;
 	opacity: 0;
 	transition: 300ms;
 	cursor: pointer;
 	border: none;
-	outline:none;
+	outline: none;
 	&:hover {
-		color: $nav;
+		color: #a35f00;
 		transition: 200ms;
 	}
-	&:active {
-		color: #b009ed;
+	&:active,
+	&:focus {
+		color: #7c4800;
 		border: none;
 	}
 }
@@ -199,24 +203,116 @@ ul {
 	margin: 0;
 }
 
+//Trigger Jquery resizing functions	
+//#responsive {
+//	top: 5;
+//	display:none;
+//}
+// OVERIDE BOOTSTRAP - Postion:relation
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9 {
+	position: inherit;
+}
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
 Small 		≥576px	Large Phone
 Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
-Extra large	≥1200px	Large Desktop
+Extra large	≥1200px	Large Desktop	- Default
 *********************************************/
 
-// Smaller medium desktop
+// Smaller than medium desktop
+@media screen and (max-width:1200px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 4;
+	//	}
+}
+
+
+// Smaller than tablet
 @media screen and (max-width:992px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 3;
+	//	}
 	header {
 		height: 150px;
 	}
 }
 
-// Smaller than tablet
+
+// Smaller than large phone
 @media screen and (max-width:768px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 2;
+	//	}
 	header {
 		height: 100px;
 	}
@@ -231,4 +327,13 @@ Extra large	≥1200px	Large Desktop
 		line-height: 1.25em;
 	}
 
+}
+
+
+// Smaller than small phone
+@media screen and (max-width:576px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 1;
+	//	}
 }
