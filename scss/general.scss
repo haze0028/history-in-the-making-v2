@@ -107,21 +107,25 @@ h2,
 h3,
 .h3 {
 	font-size: 24px;
+	border-bottom: none;
 }
 
 h4,
 .h4 {
 	font-size: 22px;
+	border-bottom: none;
 }
 
 h5,
 .h5 {
 	font-size: 20px;
+	border-bottom: none;
 }
 
 h6,
 .h6 {
 	font-size: 18px;
+	border-bottom: none;
 }
 
 blockquote.blockquote,
@@ -137,6 +141,10 @@ small {
 
 strong {
 	font-weight: bold;
+}
+
+sup{
+	font-size: 0.7rem;
 }
 
 .blockquote{

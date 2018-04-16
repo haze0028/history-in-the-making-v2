@@ -142,19 +142,23 @@ h2,
 
 h3,
 .h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  border-bottom: none; }
 
 h4,
 .h4 {
-  font-size: 22px; }
+  font-size: 22px;
+  border-bottom: none; }
 
 h5,
 .h5 {
-  font-size: 20px; }
+  font-size: 20px;
+  border-bottom: none; }
 
 h6,
 .h6 {
-  font-size: 18px; }
+  font-size: 18px;
+  border-bottom: none; }
 
 blockquote.blockquote,
 p {
@@ -167,6 +171,9 @@ small {
 
 strong {
   font-weight: bold; }
+
+sup {
+  font-size: 0.7rem; }
 
 .blockquote {
   border-left-color: #d3d3d3; }
@@ -322,6 +329,23 @@ Extra large	≥1200px	Large Desktop	- Default
   li,
   a {
     line-height: 1.25em; } }
+.mini-nav {
+  float: right;
+  background-color: #fff7a5;
+  display: block;
+  margin: 30px;
+  padding: 10px 10px;
+  border: 1px solid rgba(147, 108, 0, 0.28);
+  border-radius: 5px; }
+  .mini-nav ul {
+    list-style: none; }
+    .mini-nav ul li {
+      margin-left: 0px;
+      line-height: 1.5; }
+  .mini-nav .h5 {
+    margin: 0;
+    padding: 5px 0; }
+
 /********************************************
     NAV BARS
 *********************************************/
@@ -511,18 +535,6 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     ORDERING INFO
 *********************************************/
-.ordering-content #ordering-nav {
-  float: right;
-  background-color: #fff7a5;
-  display: block;
-  margin: 30px;
-  padding: 10px 10px;
-  border: 1px solid rgba(147, 108, 0, 0.28);
-  border-radius: 5px; }
-  .ordering-content #ordering-nav ul {
-    list-style: none; }
-    .ordering-content #ordering-nav ul li {
-      margin-left: 0px; }
 .ordering-content #a1 {
   float: left; }
 .ordering-content ul {
@@ -554,7 +566,7 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 768px) {
-  .ordering-content #ordering-nav {
+  .ordering-content .mini-nav {
     float: none;
     width: 100%;
     margin: 0px; }

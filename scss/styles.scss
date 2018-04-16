@@ -11,6 +11,27 @@ $header-bg: #432d10; //alt
 @import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
 
 
+.mini-nav {
+	float: right;
+	background-color: #fff7a5;
+	display: block;
+	margin: 30px;
+	padding: 10px 10px;
+	border: 1px solid rgba(147, 108, 0, 0.28);
+	border-radius: 5px;
+	& ul {
+		list-style: none;
+		li {
+			margin-left: 0px;
+			line-height: 1.5;
+		}
+	}
+	& .h5{
+		margin:0;
+		padding:5px 0;
+	}
+	
+}
 
 
 /********************************************
@@ -54,21 +75,6 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .ordering-content {
-	& #ordering-nav {
-		float: right;
-		background-color: #fff7a5;
-		display: block;
-		margin: 30px;
-		padding: 10px 10px;
-		border: 1px solid rgba(147, 108, 0, 0.28);
-		border-radius: 5px;
-		& ul {
-			list-style: none;
-			li {
-				margin-left: 0px;
-			}
-		}
-	}
 	& #a1 {
 		float: left;
 
@@ -115,7 +121,7 @@ Extra large	≥1200px	Large Desktop
 // Smaller than tablet
 @media screen and (max-width:768px) {
 	.ordering-content {
-		& #ordering-nav {
+		& .mini-nav {
 			float: none;
 			width: 100%;
 			margin: 0px;
