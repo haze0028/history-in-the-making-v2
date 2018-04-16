@@ -84,7 +84,7 @@ body {
   background-attachment: fixed;
   height: 100%;
   font-size: 16px;
-  font-family: 'Lato',Helvetica, Arial, sans-serif; }
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
   body #wrapper {
     min-height: 100%;
     font-size: 16px;
@@ -94,7 +94,7 @@ body {
     background: #fffbd1; }
 
 #content {
-  padding: 20px 40px 60px; }
+  padding: 50px 40px 60px; }
 
 h1,
 h2,
@@ -156,21 +156,26 @@ h6,
 .h6 {
   font-size: 18px; }
 
+blockquote.blockquote,
 p {
+  font-size: 18px;
   line-height: 1.4;
-  padding: 0 0 12px; }
+  padding: 0 10px 12px; }
 
 small {
-  font-size: .8rem; }
+  font-size: .7rem; }
 
 strong {
   font-weight: bold; }
+
+.blockquote {
+  border-left-color: #d3d3d3; }
 
 a {
   font-weight: bold;
   color: #7c4800;
   text-decoration: none;
-  font-family: 'Lato',Helvetica, Arial, sans-serif; }
+  font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
 .frame {
   width: 100%;
@@ -286,6 +291,11 @@ ul {
 .col-xl-9 {
   position: inherit; }
 
+hr {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  clear: both; }
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -296,7 +306,11 @@ Extra large	≥1200px	Large Desktop	- Default
 *********************************************/
 @media screen and (max-width: 992px) {
   header {
-    height: 150px; } }
+    height: 150px; }
+
+  blockquote.blockquote,
+  p {
+    font-size: 16px; } }
 @media screen and (max-width: 768px) {
   header {
     height: 100px; }
@@ -372,7 +386,8 @@ Extra large	≥1200px	Large Desktop	- Default
       #desktop-nav .sub-header nav > ul > li ul {
         display: none;
         position: absolute;
-        top: 56px; }
+        top: 56px;
+        box-shadow: 0 5px 50px -10px black; }
         #desktop-nav .sub-header nav > ul > li ul li {
           height: 56px;
           min-width: 100%;
@@ -483,16 +498,16 @@ Extra large	≥1200px	Large Desktop
   float: left; }
 
 /********************************************
-    Media Queries 
-Extra small <576px	Small Phone
-Small 		≥576px	Large Phone
-Medium		≥768px	Tablet
-Large			≥992px	Medium Desktop
-Extra large	≥1200px	Large Desktop
+    PERIOD WEDDINGS CONTENT
 *********************************************/
-@media screen and (max-width: 576px) {
-  .home-content .frame {
-    width: 100%; } }
+.period-weddings-content .frame {
+  width: 20%;
+  margin: 0 20px 0 0;
+  float: left; }
+.period-weddings-content .frame-right {
+  float: right;
+  margin: 0 0 0 20px; }
+
 /********************************************
     ORDERING INFO
 *********************************************/
@@ -546,5 +561,13 @@ Extra large	≥1200px	Large Desktop
   .ordering-content #a1 {
     float: left;
     width: 100%; } }
+@media screen and (max-width: 576px) {
+  .home-content .frame {
+    width: 90%;
+    margin: 0 auto;
+    float: none; }
+
+  .period-weddings-content .frame {
+    width: 45%; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -23,7 +23,31 @@ $header-bg: #432d10; //alt
     HOME
 *********************************************/
 
-@import 'index';
+.home-content {
+	& .frame {
+		width: 30%;
+		margin: 0 20px 0 0;
+		float: left;
+	}
+}
+
+
+/********************************************
+    PERIOD WEDDINGS CONTENT
+*********************************************/
+
+.period-weddings-content {
+	& .frame {
+		width: 20%;
+		margin: 0 20px 0 0;
+		float: left;
+	}
+	& .frame-right {
+		float: right;
+		margin: 0 0 0 20px;
+	}
+}
+
 
 /********************************************
     ORDERING INFO
@@ -99,6 +123,22 @@ Extra large	≥1200px	Large Desktop
 		& #a1 {
 			float: left;
 			width: 100%;
+		}
+	}
+}
+
+// Smaller than small phone
+@media screen and (max-width:576px) {
+	.home-content {
+		& .frame {
+			width: 90%;
+			margin: 0 auto;
+			float: none;
+		}
+	}
+	.period-weddings-content {
+		& .frame {
+			width: 45%;
 		}
 	}
 }

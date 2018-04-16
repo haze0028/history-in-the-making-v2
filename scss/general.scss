@@ -41,7 +41,7 @@ body {
 	background-attachment: fixed; //   background-color: rgb(46, 23, 0);
 	height: 100%;
 	font-size: 16px;
-	font-family: 'Lato',Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	& #wrapper {
 		min-height: 100%;
 		font-size: 16px;
@@ -53,7 +53,7 @@ body {
 }
 
 #content {
-	padding: 20px 40px 60px;
+	padding: 50px 40px 60px;
 }
 
 h1,
@@ -124,24 +124,30 @@ h6,
 	font-size: 18px;
 }
 
+blockquote.blockquote,
 p {
+	font-size: 18px;
 	line-height: 1.4;
-	padding: 0 0 12px;
+	padding: 0 10px 12px;
 }
 
 small {
-	font-size: .8rem;
+	font-size: .7rem;
 }
 
 strong {
 	font-weight: bold;
 }
 
+.blockquote{
+	border-left-color: #d3d3d3;	
+}
+
 a {
 	font-weight: bold;
 	color: #7c4800;
 	text-decoration: none;
-	font-family: 'Lato',Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	&:hover {
 		//		text-decoration: none;
 	}
@@ -279,6 +285,12 @@ ul {
 	position: inherit;
 }
 
+hr {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	clear:both;
+}
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -306,6 +318,11 @@ Extra large	≥1200px	Large Desktop	- Default
 	header {
 		height: 150px;
 	}
+	blockquote.blockquote,
+	p {
+		font-size: 16px;
+	}
+
 }
 
 
