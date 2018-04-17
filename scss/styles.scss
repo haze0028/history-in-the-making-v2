@@ -5,23 +5,107 @@
 $nav: rgb(255, 220, 103);
 //$header-bg: rgb(117, 103, 50);
 $header-bg: #432d10; //alt
-
-
 @import 'cssReset';
 @import 'general';
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+
+
+.mini-nav {
+	float: right;
+	width: 30%;
+	background-color: #fff7a5;
+	display: block;
+	margin: 0 0 30px 30px;
+	padding: 5px 5px;
+	border: 1px solid rgba(147, 108, 0, 0.28);
+	border-radius: 5px;
+	& ul {
+		border: 1px solid rgba(67, 45, 16, 0.21);
+		list-style: none;
+		padding: 5px;
+		li {
+			margin-left: 0px;
+			line-height: 1.5;
+		}
+		& .h5 {
+			margin: 0;
+			display: block;
+			width: 100%;
+			padding: 5px;
+			background: rgba(67, 45, 16, 0.82);
+			border-radius: 2px;
+			color: white;
+		}
+	}
+
+}
 
 
 /********************************************
     NAV BARS
 *********************************************/
-@import 'navbars';
 
+@import 'navbars';
 
 /********************************************
     HOME
 *********************************************/
-@import 'index';
 
+.home-content {
+	& .frame {
+		width: 30%;
+		margin: 0 20px 0 0;
+		float: left;
+	}
+}
+
+/********************************************
+    REPRODUCTIONS - MILITARY
+*********************************************/
+
+.military-content {
+	& .mini-nav {
+		float: left;
+		margin: 0 30px 30px 0;
+	}
+	.frame {
+		width: 40%;
+		float: right;
+	}
+}
+
+
+/********************************************
+    PERIOD WEDDINGS
+*********************************************/
+
+.period-weddings-content {
+	& .frame {
+		width: 20%;
+		margin: 0 20px 0 0;
+		float: left;
+	}
+	& .frame-right {
+		float: right;
+		margin: 0 0 0 20px;
+	}
+}
+
+
+/********************************************
+    ORDERING INFO
+*********************************************/
+
+.ordering-content {
+	& #a1 {
+		float: left;
+
+	}
+	& ul {
+		clear: left;
+	}
+}
 
 /********************************************
     Overlay
@@ -58,4 +142,38 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width:992px) {}
 
 // Smaller than tablet
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+	.mini-nav {
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+	#a1 {
+		float: left;
+		width: 100%;
+	}
+
+}
+
+// Smaller than small phone
+@media screen and (max-width:576px) {
+	.home-content {
+		& .frame {
+			width: 90%;
+			margin: 0 auto;
+			float: none;
+		}
+	}
+	.period-weddings-content {
+		& .frame {
+			width: 45%;
+		}
+	}
+	.military-content {
+		.frame{
+			width:90%;
+			float: none;
+			margin:0 auto;
+		}	
+	}
+}

@@ -13,15 +13,20 @@
 		& nav {
 			height: 56px;
 			font-family: Verdana, Arial, Helvetica, sans-serif;
+			background: $nav;
 			& ul {
 				display: flex;
 				justify-content: space-between;
+				list-style: none;
+				& li {
+					margin-left: 0;
+				}
 			}
 			& > ul {
-				position: relative;
 				& > li {
 					width: 12.5%;
 					height: 56px;
+					line-height: 1;
 					& > a {
 						position: relative;
 						background: $nav;
@@ -65,12 +70,14 @@
 					}
 					&:nth-child(3) > a,
 					&:nth-child(8) li a {
-						padding-top: 11px;
+						padding-top: 8px;
+						line-height: 1.2;
 					}
 					& ul {
 						display: none;
 						position: absolute;
 						top: 56px; // height of main nav
+						box-shadow: 0 5px 50px -10px black;
 						& li {
 							height: 56px;
 							min-width: 100%;
@@ -79,9 +86,9 @@
 								background: $nav;
 								display: block;
 								height: 100%;
-								padding: 18px 42px 18px 10px;
+								padding: 18px 38px 18px 10px;
 								color: black;
-								font-size: 14px;
+								font-weight: 100;
 								&:hover {
 									text-decoration: none;
 									background: rgb(172, 122, 0);
@@ -97,9 +104,9 @@
 	}
 }
 
+
 #side-nav {
 	display: none;
-	z-index: 30;
 	& nav {
 		background-color: #242424;
 		border-right: 1px solid #34495e;
@@ -130,11 +137,12 @@
 		}
 		& ul {
 			list-style: none;
+			line-height: 1;
 			& li {
 				clear: both;
 				padding-top: 5px;
 				cursor: pointer;
-				margin-bottom: 20px;
+				margin: 0 0 20px 0;
 				& ul {
 					display: none;
 					clear: both;
@@ -188,11 +196,11 @@ Extra large	≥1200px	Large Desktop
 	#desktop-nav {
 		& .sub-header {
 			height: 40px;
-			
-		& .nav-toggle {
-			font-size: 32px;
-			top:4px
-		}
+
+			& .nav-toggle {
+				font-size: 32px;
+				top: 4px
+			}
 			& nav {
 				display: none;
 				& ul {
