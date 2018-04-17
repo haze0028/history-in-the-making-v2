@@ -173,7 +173,7 @@ strong {
   font-weight: bold; }
 
 sup {
-  font-size: 0.7rem; }
+  font-size: 0.7em; }
 
 .blockquote {
   border-left-color: #d3d3d3; }
@@ -184,18 +184,22 @@ a {
   text-decoration: none;
   font-family: 'Lato', Helvetica, Arial, sans-serif; }
 
-.frame, .frame-left {
+.frame {
   width: 100%;
   max-height: 100%;
-  box-shadow: 0 0 6px -4px black;
-  float: left; }
-  .frame img, .frame-left img {
+  box-shadow: 0 0 6px -4px black; }
+  .frame img {
     width: 100%;
     max-height: 100%;
     box-shadow: 0 2px 10px black; }
 
+.frame-left {
+  float: left;
+  margin: 0 30px 30px 0; }
+
 .frame-right {
-  float: right; }
+  float: right;
+  margin: 0 0 30px 30px; }
 
 img {
   width: 100%; }
@@ -530,29 +534,27 @@ Extra large	≥1200px	Large Desktop
 *********************************************/
 .home-content .frame-left {
   width: 30%;
-  margin: 0 20px 0 0;
   float: left; }
 
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
 .military-content .mini-nav {
-  float: left;
+  float: right;
   margin: 0 30px 30px 0; }
+.military-content .frame {
+  width: 30%; }
 .military-content .frame-left {
-  width: 40%;
-  float: right; }
+  width: 30%; }
 
 /********************************************
     PERIOD WEDDINGS
 *********************************************/
 .period-weddings-content .frame-left {
   width: 20%;
-  margin: 0 20px 0 0;
   float: left; }
 .period-weddings-content .frame-right {
   float: right;
-  margin: 0 0 0 20px;
   width: 30%; }
 
 /********************************************
