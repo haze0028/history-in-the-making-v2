@@ -94,7 +94,7 @@ body {
     background: #fffbd1; }
 
 #content {
-  padding: 50px 40px 60px; }
+  padding: 40px 50px 60px; }
 
 h1,
 h2,
@@ -323,7 +323,7 @@ Extra large	≥1200px	Large Desktop	- Default
     height: 100px; }
 
   #content {
-    padding: 20px 20px 40px; }
+    padding: 30px 20px 40px; }
 
   p,
   li,
@@ -331,9 +331,10 @@ Extra large	≥1200px	Large Desktop	- Default
     line-height: 1.25em; } }
 .mini-nav {
   float: right;
+  width: 30%;
   background-color: #fff7a5;
   display: block;
-  margin: 30px;
+  margin: 0 0 30px 30px;
   padding: 5px 5px;
   border: 1px solid rgba(147, 108, 0, 0.28);
   border-radius: 5px; }
@@ -344,12 +345,14 @@ Extra large	≥1200px	Large Desktop	- Default
     .mini-nav ul li {
       margin-left: 0px;
       line-height: 1.5; }
-  .mini-nav .h5 {
-    margin: 0;
-    padding: 5px;
-    background: #432d10;
-    border-radius: 2px;
-    color: white; }
+    .mini-nav ul .h5 {
+      margin: 0;
+      display: block;
+      width: 100%;
+      padding: 5px;
+      background: rgba(67, 45, 16, 0.82);
+      border-radius: 2px;
+      color: white; }
 
 /********************************************
     NAV BARS
@@ -527,7 +530,17 @@ Extra large	≥1200px	Large Desktop
   float: left; }
 
 /********************************************
-    PERIOD WEDDINGS CONTENT
+    REPRODUCTIONS - MILITARY
+*********************************************/
+.military-content .mini-nav {
+  float: left;
+  margin: 0 30px 30px 0; }
+.military-content .frame {
+  width: 40%;
+  float: right; }
+
+/********************************************
+    PERIOD WEDDINGS
 *********************************************/
 .period-weddings-content .frame {
   width: 20%;
@@ -571,11 +584,12 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 768px) {
-  .ordering-content .mini-nav {
+  .mini-nav {
     float: none;
     width: 100%;
     margin: 0px; }
-  .ordering-content #a1 {
+
+  #a1 {
     float: left;
     width: 100%; } }
 @media screen and (max-width: 576px) {
@@ -585,6 +599,11 @@ Extra large	≥1200px	Large Desktop
     float: none; }
 
   .period-weddings-content .frame {
-    width: 45%; } }
+    width: 45%; }
+
+  .military-content .frame {
+    width: 90%;
+    float: none;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=styles.css.map */
