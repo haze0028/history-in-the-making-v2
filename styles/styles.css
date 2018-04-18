@@ -187,7 +187,7 @@ a {
 .frame {
   width: 100%;
   max-height: 100%;
-  box-shadow: 0 0 6px -4px black; }
+  margin-bottom: 20px; }
   .frame img {
     width: 100%;
     max-height: 100%;
@@ -380,6 +380,7 @@ Extra large	≥1200px	Large Desktop	- Default
     font-family: Verdana, Arial, Helvetica, sans-serif;
     background: #ffdc67; }
     #desktop-nav .sub-header nav ul {
+      z-index: 5;
       display: flex;
       justify-content: space-between;
       list-style: none; }
@@ -540,10 +541,14 @@ Extra large	≥1200px	Large Desktop
     REPRODUCTIONS - MILITARY
 *********************************************/
 .military-content .mini-nav {
-  float: right;
+  float: left;
+  width: 60%;
   margin: 0 30px 30px 0; }
-.military-content .frame {
-  width: 30%; }
+.military-content #naval-hat {
+  margin-top: 20px;
+  width: 20%; }
+  .military-content #naval-hat p {
+    padding: 0; }
 .military-content .frame-left {
   width: 30%; }
 
@@ -602,15 +607,17 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width: 576px) {
   .home-content .frame-left {
     width: 90%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     float: none; }
 
   .period-weddings-content .frame {
     width: 45%; }
 
-  .military-content .frame {
+  .military-content .frame, .military-content #naval-hat {
     width: 90%;
     float: none;
-    margin: 0 auto; } }
+    margin-left: auto;
+    margin-right: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
