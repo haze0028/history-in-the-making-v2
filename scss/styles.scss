@@ -53,9 +53,8 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .home-content {
-	& .frame {
+	& .frame-left {
 		width: 30%;
-		margin: 0 20px 0 0;
 		float: left;
 	}
 }
@@ -67,11 +66,19 @@ $header-bg: #432d10; //alt
 .military-content {
 	& .mini-nav {
 		float: left;
+		width:60%;
 		margin: 0 30px 30px 0;
 	}
-	.frame {
-		width: 40%;
-		float: right;
+	& #naval-hat{
+		margin-top:20px;
+		width:20%;
+		& p{
+			padding: 0;
+		}
+	}
+	
+	.frame-left {
+		width: 30%;
 	}
 }
 
@@ -81,14 +88,13 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .period-weddings-content {
-	& .frame {
+	& .frame-left {
 		width: 20%;
-		margin: 0 20px 0 0;
 		float: left;
 	}
 	& .frame-right {
 		float: right;
-		margin: 0 0 0 20px;
+		width:30%;
 	}
 }
 
@@ -127,7 +133,10 @@ $header-bg: #432d10; //alt
 	}
 }
 
-
+/*****************************************
+     Contact Page
+******************************************/
+@import 'contact-page';
 
 /********************************************
     Media Queries 
@@ -158,9 +167,10 @@ Extra large	≥1200px	Large Desktop
 // Smaller than small phone
 @media screen and (max-width:576px) {
 	.home-content {
-		& .frame {
+		& .frame-left {
 			width: 90%;
-			margin: 0 auto;
+			margin-left:auto;
+			margin-right:auto;
 			float: none;
 		}
 	}
@@ -170,10 +180,11 @@ Extra large	≥1200px	Large Desktop
 		}
 	}
 	.military-content {
-		.frame{
+		& .frame, #naval-hat{
 			width:90%;
 			float: none;
-			margin:0 auto;
+			margin-left:auto;
+			margin-right:auto;
 		}	
 	}
 }
