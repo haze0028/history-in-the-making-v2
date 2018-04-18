@@ -593,6 +593,9 @@ Extra large	≥1200px	Large Desktop
 /*****************************************
      Contact Page
 ******************************************/
+.contact-content ul li {
+  list-style: none; }
+
 .contact-info {
   padding-top: 10px;
   margin-left: 5%;
