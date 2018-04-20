@@ -1,6 +1,0 @@
-{
-"version": 3,
-"sources": ["../scss/styles.scss","../scss/cssReset.scss","../scss/general.scss","../scss/navbars.scss","../scss/contact-page.scss"],
-"names": [],
-"file": "styles.css"
-}
