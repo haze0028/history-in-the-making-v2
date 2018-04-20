@@ -4,9 +4,11 @@
 		background-color: $nav;
 		position: relative;
 		& .nav-toggle {
+			background: transparent;
+			border:none;
 			cursor: pointer;
 			position: absolute;
-			top: 8px;
+			top: 6px;
 			right: 20px;
 			font-size: 38px;
 		}
@@ -127,7 +129,8 @@
 			margin-left: auto;
 			width: 50px;
 			height: 50px;
-			background-color: #242424;
+			background: transparent;
+			border:none;
 			padding: 15px;
 			font-size: 30px;
 			cursor: pointer;
