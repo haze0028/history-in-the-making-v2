@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* line 2, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content ul li {
+  list-style: none; }
+
+/* line 5, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content .contact-info {
+  padding-top: 10px;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 12, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content .address-wrapper {
+  margin-top: 10px;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.8; }
+
+/* line 19, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content .contact-address {
+  float: left; }
+
+/* line 23, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content .map {
+  margin-left: 20px;
+  width: 400px;
+  height: 400px; }
+
+/* line 30, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-content .contact-header {
+  margin: 15px 5px 0px 15px;
+  font-size: 1.7em; }
+
+/******************************
+.contact-info a:hover{
+    color:#B56900;   
+    text-decoration: none;
+}
+
+.contact-info a:visited{
+    color:#B56900;  
+    text-decoration:none;
+}
+
+******************************/
+/********************************************
+    Media Queries 
+Extra small <576px	Small Phone
+Small 		≥576px	Large Phone
+Medium		≥768px	Tablet
+Large			≥992px	Medium Desktop
+Extra large	≥1200px	Large Desktop
+*********************************************/
+@media screen and (max-width: 768px) {
+  /* line 63, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  .contact-content .contact-map {
+    float: none; }
+  /* line 66, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  .contact-content .map {
+    width: 250px;
+    height: 250px; }
+  /* line 70, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  .contact-content .contact-address {
+    float: none; } }
+
+/*# sourceMappingURL=contact-page.css.map */
