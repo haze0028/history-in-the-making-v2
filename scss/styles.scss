@@ -138,6 +138,16 @@ $header-bg: #432d10; //alt
 ******************************************/
 @import 'contact-page';
 
+/****************************************
+    Links
+****************************************/
+.links{
+    padding-bottom: 25px; 
+    & .link-description{
+
+    }
+}
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
