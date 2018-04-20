@@ -70,11 +70,11 @@ body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+52,000000+100 */
   background: #000000;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+  background: -moz-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+  background: -webkit-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+  background: linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 70%, #000000 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -563,7 +563,7 @@ Extra large	≥1200px	Large Desktop
   float: left; }
 .period-weddings-content .frame-right {
   float: right;
-  width: 30%; }
+  width: 20%; }
 
 /********************************************
     ORDERING INFO
@@ -589,6 +589,31 @@ Extra large	≥1200px	Large Desktop
     height: 100%;
     top: 0px;
     left: 0px; }
+
+/*****************************************
+     Contact Page
+******************************************/
+.contact-content ul li {
+  list-style: none; }
+
+.contact-info {
+  padding-top: 10px;
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5; }
+
+.contact-info a:hover {
+  color: #B56900;
+  text-decoration: none; }
+
+.contact-info a:visited {
+  color: #B56900;
+  text-decoration: none; }
+
+.contact-header {
+  margin: 15px 5px 0px 15px;
+  font-size: 1.7em; }
 
 /********************************************
     Media Queries 
