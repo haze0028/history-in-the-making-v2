@@ -615,6 +615,12 @@ Extra large	≥1200px	Large Desktop
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
 
+/****************************************
+    Links
+****************************************/
+.links {
+  padding-bottom: 25px; }
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
