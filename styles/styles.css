@@ -184,7 +184,7 @@ a {
   text-decoration: none;
   font-family: 'Lato', Helvetica, Arial, sans-serif; }
   a:hover {
-    color: #985b08; }
+    color: #B56900; }
 
 .frame {
   width: 100%;
@@ -619,18 +619,9 @@ Extra large	≥1200px	Large Desktop
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
 
-/******************************
-.contact-info a:hover{
-    color:#B56900;   
-    text-decoration: none;
-}
+.contact-info a:hover {
+  color: #B56900; }
 
-.contact-info a:visited{
-    color:#B56900;  
-    text-decoration:none;
-}
-
-******************************/
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -651,7 +642,12 @@ Extra large	≥1200px	Large Desktop
     Links
 ****************************************/
 .links {
-  padding-bottom: 25px; }
+  padding-bottom: 20px; }
+  .links .link-description p {
+    margin-top: 10px;
+    padding-bottom: 0; }
+  .links .link a:hover {
+    color: #B56900; }
 
 /********************************************
     Media Queries 
@@ -680,7 +676,8 @@ Extra large	≥1200px	Large Desktop
   .period-weddings-content .frame {
     width: 45%; }
 
-  .military-content .frame, .military-content #naval-hat {
+  .military-content .frame,
+  .military-content #naval-hat {
     width: 90%;
     float: none;
     margin-left: auto;

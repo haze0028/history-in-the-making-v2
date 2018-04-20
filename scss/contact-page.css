@@ -34,18 +34,10 @@
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
 
-/******************************
-.contact-info a:hover{
-    color:#B56900;   
-    text-decoration: none;
-}
+/* line 38, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+.contact-info a:hover {
+  color: #B56900; }
 
-.contact-info a:visited{
-    color:#B56900;  
-    text-decoration:none;
-}
-
-******************************/
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -55,14 +47,14 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 768px) {
-  /* line 63, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  /* line 60, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
   .contact-content .contact-map {
     float: none; }
-  /* line 66, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  /* line 63, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
   .contact-content .map {
     width: 250px;
     height: 250px; }
-  /* line 70, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
+  /* line 67, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/contact-page.scss */
   .contact-content .contact-address {
     float: none; } }
 
