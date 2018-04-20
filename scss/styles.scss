@@ -7,6 +7,39 @@ $nav: rgb(255, 220, 103);
 $header-bg: #432d10; //alt
 @import 'cssReset';
 @import 'general';
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+
+
+.mini-nav {
+	float: right;
+	width: 30%;
+	background-color: #fff7a5;
+	display: block;
+	margin: 0 0 30px 30px;
+	padding: 5px 5px;
+	border: 1px solid rgba(147, 108, 0, 0.28);
+	border-radius: 5px;
+	& ul {
+		border: 1px solid rgba(67, 45, 16, 0.21);
+		list-style: none;
+		padding: 5px;
+		li {
+			margin-left: 0px;
+			line-height: 1.5;
+		}
+		& .h5 {
+			margin: 0;
+			display: block;
+			width: 100%;
+			padding: 5px;
+			background: rgba(67, 45, 16, 0.82);
+			border-radius: 2px;
+			color: white;
+		}
+	}
+
+}
 
 
 /********************************************
@@ -19,28 +52,58 @@ $header-bg: #432d10; //alt
     HOME
 *********************************************/
 
-@import 'index';
+.home-content {
+	& .frame-left {
+		width: 30%;
+		float: left;
+	}
+}
+
+/********************************************
+    REPRODUCTIONS - MILITARY
+*********************************************/
+
+.military-content {
+	& .mini-nav {
+		float: left;
+		width:60%;
+		margin: 0 30px 30px 0;
+	}
+	& #naval-hat{
+		margin-top:20px;
+		width:20%;
+		& p{
+			padding: 0;
+		}
+	}
+	
+	.frame-left {
+		width: 30%;
+	}
+}
+
+
+/********************************************
+    PERIOD WEDDINGS
+*********************************************/
+
+.period-weddings-content {
+	& .frame-left {
+		width: 20%;
+		float: left;
+	}
+	& .frame-right {
+		float: right;
+		width:20%;
+	}
+}
+
 
 /********************************************
     ORDERING INFO
 *********************************************/
 
 .ordering-content {
-	& #ordering-nav {
-		float: right;
-		background-color: #fff7a5;
-		display: block;
-		margin: 30px;
-		padding: 10px 10px;
-		border: 1px solid rgba(147, 108, 0, 0.28);
-		border-radius: 5px;
-		& ul {
-			list-style: none;
-			li {
-				margin-left: 0px;
-			}
-		}
-	}
 	& #a1 {
 		float: left;
 
@@ -70,7 +133,10 @@ $header-bg: #432d10; //alt
 	}
 }
 
-
+/*****************************************
+     Contact Page
+******************************************/
+@import 'contact-page';
 
 /********************************************
     Media Queries 
@@ -86,15 +152,39 @@ Extra large	≥1200px	Large Desktop
 
 // Smaller than tablet
 @media screen and (max-width:768px) {
-	.ordering-content {
-		& #ordering-nav {
+	.mini-nav {
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+	#a1 {
+		float: left;
+		width: 100%;
+	}
+
+}
+
+// Smaller than small phone
+@media screen and (max-width:576px) {
+	.home-content {
+		& .frame-left {
+			width: 90%;
+			margin-left:auto;
+			margin-right:auto;
 			float: none;
-			width: 100%;
-			margin: 0px;
 		}
-		& #a1 {
-			float: left;
-			width: 100%;
+	}
+	.period-weddings-content {
+		& .frame {
+			width: 45%;
 		}
+	}
+	.military-content {
+		& .frame, #naval-hat{
+			width:90%;
+			float: none;
+			margin-left:auto;
+			margin-right:auto;
+		}	
 	}
 }

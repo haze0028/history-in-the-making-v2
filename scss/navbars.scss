@@ -13,7 +13,9 @@
 		& nav {
 			height: 56px;
 			font-family: Verdana, Arial, Helvetica, sans-serif;
+			background: $nav;
 			& ul {
+				z-index: 5;
 				display: flex;
 				justify-content: space-between;
 				list-style: none;
@@ -22,10 +24,10 @@
 				}
 			}
 			& > ul {
-				position: relative;
 				& > li {
 					width: 12.5%;
 					height: 56px;
+					line-height: 1;
 					& > a {
 						position: relative;
 						background: $nav;
@@ -69,12 +71,14 @@
 					}
 					&:nth-child(3) > a,
 					&:nth-child(8) li a {
-						padding-top: 9px;
+						padding-top: 8px;
+						line-height: 1.2;
 					}
 					& ul {
 						display: none;
 						position: absolute;
 						top: 56px; // height of main nav
+						box-shadow: 0 5px 50px -10px black;
 						& li {
 							height: 56px;
 							min-width: 100%;
@@ -85,7 +89,7 @@
 								height: 100%;
 								padding: 18px 38px 18px 10px;
 								color: black;
-								font-size: 14px;
+								font-weight: 100;
 								&:hover {
 									text-decoration: none;
 									background: rgb(172, 122, 0);
@@ -104,7 +108,6 @@
 
 #side-nav {
 	display: none;
-	z-index: 30;
 	& nav {
 		background-color: #242424;
 		border-right: 1px solid #34495e;
@@ -135,11 +138,12 @@
 		}
 		& ul {
 			list-style: none;
+			line-height: 1;
 			& li {
 				clear: both;
 				padding-top: 5px;
 				cursor: pointer;
-				margin-bottom: 20px;
+				margin: 0 0 20px 0;
 				& ul {
 					display: none;
 					clear: both;

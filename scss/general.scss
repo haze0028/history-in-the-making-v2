@@ -26,11 +26,11 @@ body {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+52,000000+100 */
 	background: #000000;
 	/* Old browsers */
-	background: -moz-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+	background: -moz-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+	background: -webkit-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #1d0f02 0%, #000000 50%, #1d0f02 100%);
+	background: linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 70%, #000000 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
@@ -41,11 +41,10 @@ body {
 	background-attachment: fixed; //   background-color: rgb(46, 23, 0);
 	height: 100%;
 	font-size: 16px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	& #wrapper {
 		min-height: 100%;
 		font-size: 16px;
-		font-family: Helvetica, Arial, sans-serif;
 		box-shadow: 0 0 20px 10px black;
 		padding: 0;
 		position: relative;
@@ -54,7 +53,7 @@ body {
 }
 
 #content {
-	padding: 20px 40px 60px;
+	padding: 40px 50px 60px;
 }
 
 h1,
@@ -94,6 +93,8 @@ h1,
 	padding: 8px 16px;
 	color: white;
 	box-shadow: 0 2px 10px 2px black;
+	font-family: 'Lobster';
+	font-weight: 100;
 }
 
 h2,
@@ -106,40 +107,55 @@ h2,
 h3,
 .h3 {
 	font-size: 24px;
+	border-bottom: none;
 }
 
 h4,
 .h4 {
 	font-size: 22px;
+	border-bottom: none;
 }
 
 h5,
 .h5 {
 	font-size: 20px;
+	border-bottom: none;
 }
 
 h6,
 .h6 {
 	font-size: 18px;
+	border-bottom: none;
 }
 
+blockquote.blockquote,
 p {
+	font-size: 18px;
 	line-height: 1.4;
-	padding: 0 0 12px;
+	padding: 0 10px 12px;
 }
 
 small {
-	font-size: .8rem;
+	font-size: .7rem;
 }
 
 strong {
 	font-weight: bold;
 }
 
+sup{
+	font-size: 0.7em;
+}
+
+.blockquote{
+	border-left-color: #d3d3d3;	
+}
+
 a {
-	font-weight: 700;
+	font-weight: bold;
 	color: #7c4800;
 	text-decoration: none;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	&:hover {
 		//		text-decoration: none;
 	}
@@ -148,12 +164,21 @@ a {
 .frame {
 	width: 100%;
 	max-height: 100%;
-	box-shadow: 0 0 6px -4px black;
+	margin-bottom:20px;
 	& img {
 		width: 100%;
 		max-height: 100%;
 		box-shadow: 0 2px 10px black;
 	}
+}
+.frame-left{
+	float:left;
+	margin: 0 30px 30px 0;
+}
+
+.frame-right{
+	float:right;
+		margin: 0 0 30px 30px;
 }
 
 img {
@@ -168,32 +193,120 @@ ul {
 	}
 }
 
-#top-btn {
-	height: 50px;
-	width: 50px;
+.top-btn {
+	background: #dedede;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 	display: block;
 	padding: 0px;
-	margin: 0px;
-	position: fixed;
-	bottom: 50px;
-	right: 20px;
-	color: brown;
-	border-radius: 25px;
-	& a {
-		&:hover {
-			text-decoration: none;
-			color: brown;
-		}
-		& i {
-			font-size: 50px;
-			background-color: #74efff;
-			width: 50px;
-			height: 50px;
-			border-radius: 30px;
-		}
+	color: #7c4800;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	font-size: 50px;
+	margin-right: -20px;
+	opacity: 0;
+	transition: 300ms;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	&:hover {
+		color: #a35f00;
+		transition: 200ms;
+	}
+	&:active,
+	&:focus {
+		color: #7c4800;
+		border: none;
 	}
 }
 
+
+.slide-in {
+	opacity: 1;
+	margin: 0;
+}
+
+//Trigger Jquery resizing functions	
+//#responsive {
+//	top: 5;
+//	display:none;
+//}
+// OVERIDE BOOTSTRAP - Postion:relation
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9 {
+	position: inherit;
+}
+
+hr {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	clear:both;
+}
 
 /********************************************
     Media Queries 
@@ -201,24 +314,52 @@ Extra small <576px	Small Phone
 Small 		≥576px	Large Phone
 Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
-Extra large	≥1200px	Large Desktop
+Extra large	≥1200px	Large Desktop	- Default
 *********************************************/
 
-// Smaller medium desktop
+// Smaller than medium desktop
+@media screen and (max-width:1200px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 4;
+	//	}
+}
+
+
+// Smaller than tablet
 @media screen and (max-width:992px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 3;
+	//	}
 	header {
 		height: 150px;
 	}
+	blockquote.blockquote,
+	p {
+		font-size: 16px;
+	}
+
 }
 
-// Smaller than tablet
+
+// Smaller than large phone
 @media screen and (max-width:768px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 2;
+	//	}
+	
+	h1, .h1{
+		font-size: 24px;
+	}
+	
 	header {
 		height: 100px;
 	}
 
 	#content {
-		padding: 20px 10px 40px;
+		padding: 30px 20px 40px;
 	}
 
 	p,
@@ -227,4 +368,13 @@ Extra large	≥1200px	Large Desktop
 		line-height: 1.25em;
 	}
 
+}
+
+
+// Smaller than small phone
+@media screen and (max-width:576px) {
+	//	//Trigger Jquery resizing functions	
+	//	#responsive {
+	//		z-index: 1;
+	//	}
 }
