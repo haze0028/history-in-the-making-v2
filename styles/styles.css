@@ -208,7 +208,8 @@ img {
 
 ul {
   list-style: disc;
-  line-height: 1.4; }
+  line-height: 1.4;
+  padding-left: 20px; }
   ul li {
     margin-left: 20px; }
 
@@ -341,7 +342,7 @@ Extra large	≥1200px	Large Desktop	- Default
   p,
   li,
   a {
-    line-height: 1.25em; } }
+    line-height: 1.5em; } }
 .mini-nav {
   float: right;
   width: 30%;
