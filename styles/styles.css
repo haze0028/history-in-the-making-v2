@@ -95,6 +95,8 @@ body {
 
 #content {
   padding: 40px 50px 60px; }
+  #content h2:nth-child(1) {
+    margin-top: 0; }
 
 h1,
 h2,
@@ -204,6 +206,12 @@ a {
 .frame-right {
   float: right;
   margin: 0 0 30px 30px; }
+
+.img-30 {
+  width: 30%; }
+
+.img-40 {
+  width: 40%; }
 
 img {
   width: 100%; }
@@ -332,7 +340,8 @@ Extra large	≥1200px	Large Desktop	- Default
   p {
     font-size: 16px; } }
 @media screen and (max-width: 768px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 24px; }
 
   header {
@@ -344,7 +353,19 @@ Extra large	≥1200px	Large Desktop	- Default
   p,
   li,
   a {
-    line-height: 1.5em; } }
+    line-height: 1.5em; }
+
+  .img-30 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+
+  .img-40 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; } }
 .mini-nav {
   float: right;
   width: 300px;
@@ -486,13 +507,12 @@ Extra large	≥1200px	Large Desktop	- Default
     #side-nav nav .toggle-close {
       display: block;
       margin-left: auto;
-      width: 50px;
-      height: 50px;
       background: transparent;
       border: none;
-      padding: 15px;
+      padding: 0;
       font-size: 30px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: white; }
       #side-nav nav .toggle-close:hover {
         color: #fff07d;
         transition: 300ms; }
@@ -520,7 +540,15 @@ Extra large	≥1200px	Large Desktop	- Default
             text-decoration: none; }
         #side-nav nav ul li .toggle-menu {
           font-size: 24px;
-          transition: 300ms; }
+          transition: 300ms;
+          background: transparent;
+          color: white;
+          border: none;
+          padding: 0;
+          margin: 0;
+          line-height: 1;
+          transform: translateY(3px);
+          cursor: pointer; }
           #side-nav nav ul li .toggle-menu:hover {
             color: #fff07d; }
 
@@ -530,7 +558,8 @@ Extra large	≥1200px	Large Desktop	- Default
 
 .flipped {
   transform: rotate(180deg);
-  margin-top: 10px; }
+  margin-top: 10px;
+  color: blue; }
 
 /********************************************
     Media Queries 
@@ -558,16 +587,9 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     HOME
 *********************************************/
-.home-content .frame-left {
-  width: 30%;
-  float: left; }
-
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
-.content-civilian .frame {
-  width: 40%; }
-
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
@@ -580,31 +602,24 @@ Extra large	≥1200px	Large Desktop
   width: 20%; }
   .military-content #naval-hat p {
     padding: 0; }
-.military-content .frame-left {
-  width: 30%; }
 
 /********************************************
     REPRODUCTIONS - MUSEUMS
 *********************************************/
-.content-museums .frame {
-  width: 30%;
-  float: left; }
 .content-museums .row .frame {
   width: 100%; }
 
 /********************************************
     REPRODUCTIONS - PERIOD WEDDINGS
 *********************************************/
-.period-weddings-content .frame-left {
-  width: 20%;
-  float: left; }
-.period-weddings-content .frame-right {
-  float: right;
+.period-weddings-content .frame {
   width: 20%; }
 
 /********************************************
     ORDERING INFO
 *********************************************/
+.ordering-content .mini-nav {
+  width: 250px; }
 .ordering-content #a1 {
   float: left; }
 .ordering-content ul {
@@ -706,17 +721,16 @@ Extra large	≥1200px	Large Desktop
     float: left;
     width: 100%; }
 
-  .content-civilian .frame {
+  .civilian-content .frame {
     width: 90%;
     margin: 20px auto;
-    float: none; } }
-@media screen and (max-width: 576px) {
-  .home-content .frame-left {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     float: none; }
 
+  .ordering-content .mini-nav {
+    float: none;
+    width: 100%;
+    margin: 0px; } }
+@media screen and (max-width: 576px) {
   .period-weddings-content .frame {
     width: 45%; }
 

@@ -54,6 +54,9 @@ body {
 
 #content {
 	padding: 40px 50px 60px;
+	& h2:nth-child(1){
+		margin-top:0;
+	}
 }
 
 h1,
@@ -143,12 +146,12 @@ strong {
 	font-weight: bold;
 }
 
-sup{
+sup {
 	font-size: 0.7em;
 }
 
-.blockquote{
-	border-left-color: #d3d3d3;	
+.blockquote {
+	border-left-color: #d3d3d3;
 }
 
 a {
@@ -164,24 +167,33 @@ a {
 .frame {
 	width: 100%;
 	max-height: 100%;
-	margin-bottom:20px;
+	margin-bottom: 20px;
 	& img {
 		width: 100%;
 		max-height: 100%;
 		box-shadow: 0 2px 10px black;
 	}
-	& p{
+	& p {
 		line-height: 1.2;
 	}
 }
-.frame-left{
-	float:left;
+
+.frame-left {
+	float: left;
 	margin: 0 30px 30px 0;
 }
 
-.frame-right{
-	float:right;
-		margin: 0 0 30px 30px;
+.frame-right {
+	float: right;
+	margin: 0 0 30px 30px;
+}
+
+.img-30 {
+	width: 30%;
+}
+
+.img-40 {
+	width: 40%;
 }
 
 img {
@@ -191,7 +203,7 @@ img {
 ul {
 	list-style: disc;
 	line-height: 1.4;
-	padding-left:20px;
+	padding-left: 20px;
 	& li {
 		margin-left: 20px;
 	}
@@ -309,7 +321,7 @@ ul {
 hr {
 	margin-top: 35px;
 	margin-bottom: 35px;
-	clear:both;
+	clear: both;
 }
 
 /********************************************
@@ -353,11 +365,11 @@ Extra large	≥1200px	Large Desktop	- Default
 	//	#responsive {
 	//		z-index: 2;
 	//	}
-	
-	h1, .h1{
+	h1,
+	.h1 {
 		font-size: 24px;
 	}
-	
+
 	header {
 		height: 100px;
 	}
@@ -372,6 +384,19 @@ Extra large	≥1200px	Large Desktop	- Default
 		line-height: 1.5em;
 	}
 
+	.img-30 {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+
+	.img-40 {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
 }
 
 

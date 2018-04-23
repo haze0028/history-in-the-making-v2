@@ -69,21 +69,11 @@ $header-bg: #432d10; //alt
     HOME
 *********************************************/
 
-.home-content {
-	& .frame-left {
-		width: 30%;
-		float: left;
-	}
-}
-
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
-
-.content-civilian {
-	& .frame {
-		width: 40%;
-	}
+.civilian-content {
+	
 }
 
 /********************************************
@@ -103,10 +93,6 @@ $header-bg: #432d10; //alt
 			padding: 0;
 		}
 	}
-
-	.frame-left {
-		width: 30%;
-	}
 }
 
 
@@ -115,10 +101,6 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .content-museums {
-	& .frame {
-		width: 30%;
-		float: left;
-	}
 	& .row {
 		& .frame {
 			width: 100%;
@@ -131,12 +113,7 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .period-weddings-content {
-	& .frame-left {
-		width: 20%;
-		float: left;
-	}
-	& .frame-right {
-		float: right;
+	& .frame {
 		width: 20%;
 	}
 }
@@ -147,6 +124,9 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .ordering-content {
+	& .mini-nav {
+		width: 250px;
+	}
 	& #a1 {
 		float: left;
 
@@ -214,11 +194,19 @@ Extra large	≥1200px	Large Desktop
 		float: left;
 		width: 100%;
 	}
-	.content-civilian {
+	.civilian-content {
 		& .frame {
 			width: 90%;
-			margin:20px auto;
+			margin: 20px auto;
 			float: none;
+		}
+	}
+
+	.ordering-content {
+		& .mini-nav {
+			float: none;
+			width: 100%;
+			margin: 0px;
 		}
 	}
 
@@ -226,14 +214,6 @@ Extra large	≥1200px	Large Desktop
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
-	.home-content {
-		& .frame-left {
-			width: 90%;
-			margin-left: auto;
-			margin-right: auto;
-			float: none;
-		}
-	}
 	.period-weddings-content {
 		& .frame {
 			width: 45%;
