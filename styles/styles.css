@@ -414,7 +414,8 @@ Extra large	≥1200px	Large Desktop	- Default
       z-index: 5;
       display: flex;
       justify-content: space-between;
-      list-style: none; }
+      list-style: none;
+      padding-left: 0px; }
       #desktop-nav .sub-header nav ul li {
         margin-left: 0; }
     #desktop-nav .sub-header nav > ul > li {
