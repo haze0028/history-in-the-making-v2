@@ -22,29 +22,44 @@ $header-bg: #432d10; //alt
     HOME
 *********************************************/
 
-.home-content {
-    & .frame-left {
-        width: 30%;
-        float: left;
-    }
-}
+.home-content {}
 
+
+/********************************************
+    REPRODUCTIONS - CIVILIAN
+*********************************************/
+
+.reproductions-content {
+	& #catalogue {
+		& h2 {
+			background: $nav;
+			font-size: 16px;
+		}
+		& .frame {
+			height: 350px;
+			& img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+}
 
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
 
 .military-content {
-    & #naval-hat {
-        margin-top: 20px;
-        width: 20%;
-        & p {
-            padding: 0;
-        }
-    }
-    .frame-left {
-        width: 30%;
-    }
+	& #naval-hat {
+		margin-top: 20px;
+		width: 20%;
+		& p {
+			padding: 0;
+		}
+	}
+	.frame-left {
+		width: 30%;
+	}
 }
 
 
@@ -53,14 +68,14 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .period-weddings-content {
-    & .frame-left {
-        width: 20%;
-        float: left;
-    }
-    & .frame-right {
-        float: right;
-        width: 20%;
-    }
+	& .frame-left {
+		width: 20%;
+		float: left;
+	}
+	& .frame-right {
+		float: right;
+		width: 20%;
+	}
 }
 
 
@@ -69,12 +84,12 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .ordering-content {
-    & #a1 {
-        float: left;
-    }
-    & ul {
-        clear: left;
-    }
+	& #a1 {
+		float: left;
+	}
+	& ul {
+		clear: left;
+	}
 }
 
 
@@ -83,19 +98,19 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    & .close-overlay {
-        display: block;
-        background: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-    }
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	& .close-overlay {
+		display: block;
+		background: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+	}
 }
 
 
@@ -110,23 +125,22 @@ $header-bg: #432d10; //alt
 ****************************************/
 
 .links {
-    padding-bottom: 20px;
-    & .link-description {
-        & p {
-            margin-top: 10px;
-            padding-bottom: 0;
-        }
-    }
-    .link a:hover {
-        color: #B56900;
-    }
+	padding-bottom: 20px;
+	& .link-description {
+		& p {
+			margin-top: 10px;
+			padding-bottom: 0;
+		}
+	}
+	.link a:hover {
+		color: #B56900;
+	}
 }
 
 
 /****************************************
             Testimonials 
 *****************************************/
- 
 
 /********************************************
     Media Queries 
@@ -142,34 +156,34 @@ Extra large	≥1200px	Large Desktop
 
 // Smaller than tablet
 @media screen and (max-width:768px) {
-    #a1 {
-        float: left;
-        width: 100%;
-    }
+	#a1 {
+		float: left;
+		width: 100%;
+	}
 }
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
-    .home-content {
-        & .frame-left {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            float: none;
-        }
-    }
-    .period-weddings-content {
-        & .frame {
-            width: 45%;
-        }
-    }
-    .military-content {
-        & .frame,
-        #naval-hat {
-            width: 90%;
-            float: none;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+	.home-content {
+		& .frame-left {
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+		}
+	}
+	.period-weddings-content {
+		& .frame {
+			width: 45%;
+		}
+	}
+	.military-content {
+		& .frame,
+		#naval-hat {
+			width: 90%;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
