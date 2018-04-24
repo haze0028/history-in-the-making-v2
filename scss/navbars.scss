@@ -196,6 +196,48 @@
 	transform: rotate(180deg) translateY(-12px);
 }
 
+
+.mini-nav {
+    float: right;
+    width: 30%;
+    background-color: #fff7a5;
+    display: block;
+    margin: 0 0 30px 30px;
+    padding: 5px 5px;
+    border: 1px solid rgba(147, 108, 0, 0.28);
+    border-radius: 5px;
+	& ul {
+        list-style: none;
+        padding: 5px;
+        li {
+            margin-left: 0px;
+            line-height: 1.5;
+        }
+        & .h5 {
+            margin: 0;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background: rgba(67, 45, 16, 0.82);
+            border-radius: 2px;
+            color: white;
+        }
+    }
+	& h2{
+		margin:0;
+		padding:5px;
+		font-size: 20px;
+		background:$header-bg;
+		color:white;		
+	}
+	& h3{
+		margin:0;
+		padding:5px;
+		font-size: 18px;
+		background:#fffbd1;
+	}
+}
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -205,6 +247,15 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 
+
+@media screen and (max-width:768) {
+    .mini-nav {
+        float: none;
+        width: 100%;
+        margin: 0px;
+    }
+}
+	
 @media screen and (max-width:992px) {
 	#desktop-nav {
 		& .sub-header {
