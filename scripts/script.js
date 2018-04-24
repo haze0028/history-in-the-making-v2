@@ -11,13 +11,13 @@
 	overlay = $('.overlay');
 
 	$('.toggle-menu').on('click', function () {
-		$(this).addClass('flipped');
+		$(this).toggleClass('flipped-down').toggleClass('flipped');
 		$(this).parent().find('ul').slideToggle();
 	})
 	
 	$('.toggle-menu').on('blur', function(){
-		$(this).toggleClass('flipped');
-		$(this).parent().find('ul').slideToggle();		
+		$(this).toggleClass('flipped').toggleClass('flipped-down');
+		$(this).parent().find('ul').slideUp();		
 	})
 
 	// trigger nav menu dropdown effects

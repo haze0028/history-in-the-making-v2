@@ -164,20 +164,22 @@
 						text-decoration: none;
 					}
 				}
-				& .toggle-menu {
+				& .toggle-menu {				
+					color:white;
 					font-size: 24px;
 					transition: 300ms;
 					background: transparent;
-					color:white;
 					border:none;
 					padding:0;
 					margin:0;
 					line-height: 1;
-					transform: translateY(3px);
 					cursor: pointer;
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
+				}
+				& .flipped-down{	
+					transform: translateY(3px);
 				}
 			}
 		}
@@ -190,9 +192,7 @@
 }
 
 .flipped {
-	transform: rotate(180deg);
-	margin-top: 10px;
-	color:blue;
+	transform: rotate(180deg) translateY(-12px);
 }
 
 /********************************************
