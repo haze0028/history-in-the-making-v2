@@ -186,7 +186,7 @@ a {
   text-decoration: none;
   font-family: 'Lato', Helvetica, Arial, sans-serif; }
   a:hover {
-    color: #985b08; }
+    color: #B56900; }
 
 .frame {
   width: 100%;
@@ -368,31 +368,17 @@ Extra large	≥1200px	Large Desktop	- Default
     float: none; } }
 .mini-nav {
   float: right;
-  width: 300px;
+  width: 30%;
   background-color: #fff7a5;
   display: block;
   margin: 0 0 30px 30px;
   padding: 5px 5px;
   border: 1px solid rgba(147, 108, 0, 0.28);
   border-radius: 5px; }
-  .mini-nav > div {
-    border: 1px solid rgba(67, 45, 16, 0.21);
-    padding: 5px; }
-  .mini-nav h2 {
-    background: #432d10;
-    color: white;
-    font-size: 20px;
-    margin: 0;
-    padding: 5px; }
-  .mini-nav h3 {
-    margin: 0;
-    padding: 5px;
-    background: #fffbd1;
-    font-size: 18px; }
   .mini-nav ul {
+    border: 1px solid rgba(67, 45, 16, 0.21);
     list-style: none;
-    padding-left: 5px;
-    margin-bottom: 10px; }
+    padding: 5px; }
     .mini-nav ul li {
       margin-left: 0px;
       line-height: 1.5; }
@@ -587,9 +573,10 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     HOME
 *********************************************/
-/********************************************
-    REPRODUCTIONS - CIVILIAN
-*********************************************/
+.home-content .frame-left {
+  width: 30%;
+  float: left; }
+
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
@@ -602,24 +589,22 @@ Extra large	≥1200px	Large Desktop
   width: 20%; }
   .military-content #naval-hat p {
     padding: 0; }
+.military-content .frame-left {
+  width: 30%; }
 
 /********************************************
-    REPRODUCTIONS - MUSEUMS
+    PERIOD WEDDINGS
 *********************************************/
-.content-museums .row .frame {
-  width: 100%; }
-
-/********************************************
-    REPRODUCTIONS - PERIOD WEDDINGS
-*********************************************/
-.period-weddings-content .frame {
+.period-weddings-content .frame-left {
+  width: 20%;
+  float: left; }
+.period-weddings-content .frame-right {
+  float: right;
   width: 20%; }
 
 /********************************************
     ORDERING INFO
 *********************************************/
-.ordering-content .mini-nav {
-  width: 250px; }
 .ordering-content #a1 {
   float: left; }
 .ordering-content ul {
@@ -669,18 +654,9 @@ Extra large	≥1200px	Large Desktop
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
 
-/******************************
-.contact-info a:hover{
-    color:#B56900;   
-    text-decoration: none;
-}
+.contact-info a:hover {
+  color: #B56900; }
 
-.contact-info a:visited{
-    color:#B56900;  
-    text-decoration:none;
-}
-
-******************************/
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -701,8 +677,16 @@ Extra large	≥1200px	Large Desktop
     Links
 ****************************************/
 .links {
-  padding-bottom: 25px; }
+  padding-bottom: 20px; }
+  .links .link-description p {
+    margin-top: 10px;
+    padding-bottom: 0; }
+  .links .link a:hover {
+    color: #B56900; }
 
+/****************************************
+            Testimonials 
+*****************************************/
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -719,18 +703,14 @@ Extra large	≥1200px	Large Desktop
 
   #a1 {
     float: left;
-    width: 100%; }
-
-  .civilian-content .frame {
+    width: 100%; } }
+@media screen and (max-width: 576px) {
+  .home-content .frame-left {
     width: 90%;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     float: none; }
 
-  .ordering-content .mini-nav {
-    float: none;
-    width: 100%;
-    margin: 0px; } }
-@media screen and (max-width: 576px) {
   .period-weddings-content .frame {
     width: 45%; }
 
