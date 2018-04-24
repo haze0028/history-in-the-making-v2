@@ -207,6 +207,9 @@ a {
   float: right;
   margin: 0 0 30px 30px; }
 
+.img-20 {
+  width: 20%; }
+
 .img-30 {
   width: 30%; }
 
@@ -355,42 +358,11 @@ Extra large	≥1200px	Large Desktop	- Default
   a {
     line-height: 1.5em; }
 
-  .img-30 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none; }
-
-  .img-40 {
+  .img-20, .img-30, .img-40 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     float: none; } }
-.mini-nav {
-  float: right;
-  width: 30%;
-  background-color: #fff7a5;
-  display: block;
-  margin: 0 0 30px 30px;
-  padding: 5px 5px;
-  border: 1px solid rgba(147, 108, 0, 0.28);
-  border-radius: 5px; }
-  .mini-nav ul {
-    border: 1px solid rgba(67, 45, 16, 0.21);
-    list-style: none;
-    padding: 5px; }
-    .mini-nav ul li {
-      margin-left: 0px;
-      line-height: 1.5; }
-    .mini-nav ul .h5 {
-      margin: 0;
-      display: block;
-      width: 100%;
-      padding: 5px;
-      background: rgba(67, 45, 16, 0.82);
-      border-radius: 2px;
-      color: white; }
-
 /********************************************
     NAV BARS
 *********************************************/
@@ -547,6 +519,41 @@ Extra large	≥1200px	Large Desktop	- Default
 .flipped {
   transform: rotate(180deg) translateY(-12px); }
 
+.mini-nav {
+  float: right;
+  width: 30%;
+  background-color: #fff7a5;
+  display: block;
+  margin: 0 0 30px 30px;
+  padding: 5px 5px;
+  border: 1px solid rgba(147, 108, 0, 0.28);
+  border-radius: 5px; }
+  .mini-nav ul {
+    list-style: none;
+    padding: 5px; }
+    .mini-nav ul li {
+      margin-left: 0px;
+      line-height: 1.5; }
+    .mini-nav ul .h5 {
+      margin: 0;
+      display: block;
+      width: 100%;
+      padding: 5px;
+      background: rgba(67, 45, 16, 0.82);
+      border-radius: 2px;
+      color: white; }
+  .mini-nav h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    background: #432d10;
+    color: white; }
+  .mini-nav h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    background: #fffbd1; }
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -555,6 +562,11 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 768) {
+  .mini-nav {
+    float: none;
+    width: 100%;
+    margin: 0px; } }
 @media screen and (max-width: 992px) {
   #desktop-nav .sub-header {
     height: 40px; }
@@ -580,10 +592,6 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
-.military-content .mini-nav {
-  float: left;
-  width: 60%;
-  margin: 0 30px 30px 0; }
 .military-content #naval-hat {
   margin-top: 20px;
   width: 20%; }
@@ -696,11 +704,6 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 768px) {
-  .mini-nav {
-    float: none;
-    width: 100%;
-    margin: 0px; }
-
   #a1 {
     float: left;
     width: 100%; } }
