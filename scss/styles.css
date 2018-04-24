@@ -242,27 +242,31 @@ a {
   margin: 0 0 30px 30px; }
 
 /* line 191, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+.img-20 {
+  width: 20%; }
+
+/* line 195, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 .img-30 {
   width: 30%; }
 
-/* line 195, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 199, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 .img-40 {
   width: 40%; }
 
-/* line 199, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 203, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 img {
   width: 100%; }
 
-/* line 203, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 207, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 ul {
   list-style: disc;
   line-height: 1.4;
   padding-left: 20px; }
-  /* line 207, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 211, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   ul li {
     margin-left: 20px; }
 
-/* line 212, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 216, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 .top-btn {
   background: #dedede;
   position: fixed;
@@ -281,21 +285,21 @@ ul {
   cursor: pointer;
   border: none;
   outline: none; }
-  /* line 230, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 234, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   .top-btn:hover {
     color: #a35f00;
     transition: 200ms; }
-  /* line 234, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 238, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   .top-btn:active, .top-btn:focus {
     color: #7c4800;
     border: none; }
 
-/* line 242, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 246, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 .slide-in {
   opacity: 1;
   margin: 0; }
 
-/* line 253, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 257, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 .col,
 .col-1,
 .col-10,
@@ -363,7 +367,7 @@ ul {
 .col-xl-9 {
   position: inherit; }
 
-/* line 321, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+/* line 325, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
 hr {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -378,71 +382,36 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop	- Default
 *********************************************/
 @media screen and (max-width: 992px) {
-  /* line 351, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 355, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   header {
     height: 150px; }
-  /* line 354, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 358, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   blockquote.blockquote,
   p {
     font-size: 16px; } }
 
 @media screen and (max-width: 768px) {
-  /* line 368, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 372, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   h1,
   .h1 {
     font-size: 24px; }
-  /* line 373, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 377, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   header {
     height: 100px; }
-  /* line 377, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 381, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   #content {
     padding: 30px 20px 40px; }
-  /* line 381, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  /* line 385, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
   p,
   li,
   a {
     line-height: 1.5em; }
-  /* line 387, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
-  .img-30 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none; }
-  /* line 394, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
-  .img-40 {
+  /* line 391, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/general.scss */
+  .img-20, .img-30, .img-40 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     float: none; } }
-
-/* line 12, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-.mini-nav {
-  float: right;
-  width: 30%;
-  background-color: #fff7a5;
-  display: block;
-  margin: 0 0 30px 30px;
-  padding: 5px 5px;
-  border: 1px solid rgba(147, 108, 0, 0.28);
-  border-radius: 5px; }
-  /* line 21, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-  .mini-nav ul {
-    border: 1px solid rgba(67, 45, 16, 0.21);
-    list-style: none;
-    padding: 5px; }
-    /* line 25, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-    .mini-nav ul li {
-      margin-left: 0px;
-      line-height: 1.5; }
-    /* line 29, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-    .mini-nav ul .h5 {
-      margin: 0;
-      display: block;
-      width: 100%;
-      padding: 5px;
-      background: rgba(67, 45, 16, 0.82);
-      border-radius: 2px;
-      color: white; }
 
 /********************************************
     NAV BARS
@@ -637,6 +606,47 @@ Extra large	≥1200px	Large Desktop	- Default
 .flipped {
   transform: rotate(180deg) translateY(-12px); }
 
+/* line 200, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+.mini-nav {
+  float: right;
+  width: 30%;
+  background-color: #fff7a5;
+  display: block;
+  margin: 0 0 30px 30px;
+  padding: 5px 5px;
+  border: 1px solid rgba(147, 108, 0, 0.28);
+  border-radius: 5px; }
+  /* line 209, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  .mini-nav ul {
+    list-style: none;
+    padding: 5px; }
+    /* line 212, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+    .mini-nav ul li {
+      margin-left: 0px;
+      line-height: 1.5; }
+    /* line 216, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+    .mini-nav ul .h5 {
+      margin: 0;
+      display: block;
+      width: 100%;
+      padding: 5px;
+      background: rgba(67, 45, 16, 0.82);
+      border-radius: 2px;
+      color: white; }
+  /* line 226, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  .mini-nav h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    background: #432d10;
+    color: white; }
+  /* line 233, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  .mini-nav h3 {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+    background: #fffbd1; }
+
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
@@ -645,30 +655,37 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 768) {
+  /* line 252, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  .mini-nav {
+    float: none;
+    width: 100%;
+    margin: 0px; } }
+
 @media screen and (max-width: 992px) {
-  /* line 210, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  /* line 261, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
   #desktop-nav .sub-header {
     height: 40px; }
-    /* line 213, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+    /* line 264, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
     #desktop-nav .sub-header .nav-toggle {
       font-size: 32px;
       top: 4px; }
-    /* line 217, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+    /* line 268, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
     #desktop-nav .sub-header nav {
       display: none; }
-      /* line 221, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+      /* line 272, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
       #desktop-nav .sub-header nav ul li a {
         font-size: 10px;
         padding-left: 5px;
         padding-right: 5px; }
-  /* line 232, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
+  /* line 283, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/navbars.scss */
   #side-nav {
     display: block; } }
 
 /********************************************
     HOME
 *********************************************/
-/* line 53, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 26, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .home-content .frame-left {
   width: 30%;
   float: left; }
@@ -676,33 +693,27 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - MILITARY
 *********************************************/
-/* line 65, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-.military-content .mini-nav {
-  float: left;
-  width: 60%;
-  margin: 0 30px 30px 0; }
-
-/* line 70, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 38, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .military-content #naval-hat {
   margin-top: 20px;
   width: 20%; }
-  /* line 73, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 41, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .military-content #naval-hat p {
     padding: 0; }
 
-/* line 77, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 45, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .military-content .frame-left {
   width: 30%; }
 
 /********************************************
     PERIOD WEDDINGS
 *********************************************/
-/* line 88, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 56, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .period-weddings-content .frame-left {
   width: 20%;
   float: left; }
 
-/* line 92, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 60, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .period-weddings-content .frame-right {
   float: right;
   width: 20%; }
@@ -710,24 +721,24 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     ORDERING INFO
 *********************************************/
-/* line 104, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 72, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .ordering-content #a1 {
   float: left; }
 
-/* line 107, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 75, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .ordering-content ul {
   clear: left; }
 
 /********************************************
     Overlay
 *********************************************/
-/* line 117, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 85, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .overlay {
   display: none;
   position: fixed;
   top: 0;
   left: 0; }
-  /* line 122, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 90, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .overlay .close-overlay {
     display: block;
     background: rgba(0, 0, 0, 0.6);
@@ -802,14 +813,14 @@ Extra large	≥1200px	Large Desktop
 /****************************************
     Links
 ****************************************/
-/* line 144, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+/* line 112, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
 .links {
   padding-bottom: 20px; }
-  /* line 147, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 115, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .links .link-description p {
     margin-top: 10px;
     padding-bottom: 0; }
-  /* line 152, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 120, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .links .link a:hover {
     color: #B56900; }
 
@@ -825,27 +836,22 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 768px) {
-  /* line 177, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
-  .mini-nav {
-    float: none;
-    width: 100%;
-    margin: 0px; }
-  /* line 182, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 145, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   #a1 {
     float: left;
     width: 100%; } }
 
 @media screen and (max-width: 576px) {
-  /* line 191, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 154, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .home-content .frame-left {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     float: none; }
-  /* line 199, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 162, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .period-weddings-content .frame {
     width: 45%; }
-  /* line 204, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
+  /* line 167, C:/Users/Colds/Desktop/Web Work/history-in-the-making-v2/scss/styles.scss */
   .military-content .frame,
   .military-content #naval-hat {
     width: 90%;
