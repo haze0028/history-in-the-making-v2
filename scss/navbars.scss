@@ -127,13 +127,12 @@
 		& .toggle-close {
 			display: block;
 			margin-left: auto;
-			width: 50px;
-			height: 50px;
 			background: transparent;
 			border:none;
-			padding: 15px;
+			padding: 0;
 			font-size: 30px;
 			cursor: pointer;
+			color:white;
 			&:hover {
 				color: rgb(255, 240, 125);
 				transition: 300ms;
@@ -165,12 +164,22 @@
 						text-decoration: none;
 					}
 				}
-				& .toggle-menu {
+				& .toggle-menu {				
+					color:white;
 					font-size: 24px;
 					transition: 300ms;
+					background: transparent;
+					border:none;
+					padding:0;
+					margin:0;
+					line-height: 1;
+					cursor: pointer;
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
+				}
+				& .flipped-down{	
+					transform: translateY(3px);
 				}
 			}
 		}
@@ -183,8 +192,7 @@
 }
 
 .flipped {
-	transform: rotate(180deg);
-	margin-top: 10px;
+	transform: rotate(180deg) translateY(-12px);
 }
 
 /********************************************

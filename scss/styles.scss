@@ -13,17 +13,34 @@ $header-bg: #432d10; //alt
 
 .mini-nav {
 	float: right;
-	width: 30%;
+	width: 300px;
 	background-color: #fff7a5;
 	display: block;
 	margin: 0 0 30px 30px;
 	padding: 5px 5px;
 	border: 1px solid rgba(147, 108, 0, 0.28);
 	border-radius: 5px;
-	& ul {
+	& > div {
 		border: 1px solid rgba(67, 45, 16, 0.21);
-		list-style: none;
 		padding: 5px;
+	}
+	& h2 {
+		background: $header-bg;
+		color: white;
+		font-size: 20px;
+		margin: 0;
+		padding: 5px;
+	}
+	& h3 {
+		margin: 0;
+		padding: 5px;
+		background: #fffbd1;
+		font-size: 18px;
+	}
+	& ul {
+		list-style: none;
+		padding-left: 5px;
+		margin-bottom: 10px;
 		li {
 			margin-left: 0px;
 			line-height: 1.5;
@@ -52,11 +69,11 @@ $header-bg: #432d10; //alt
     HOME
 *********************************************/
 
-.home-content {
-	& .frame-left {
-		width: 30%;
-		float: left;
-	}
+/********************************************
+    REPRODUCTIONS - CIVILIAN
+*********************************************/
+.civilian-content {
+	
 }
 
 /********************************************
@@ -76,10 +93,6 @@ $header-bg: #432d10; //alt
 			padding: 0;
 		}
 	}
-
-	.frame-left {
-		width: 30%;
-	}
 }
 
 
@@ -88,10 +101,6 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .content-museums {
-	& .frame {
-		width: 30%;
-		float: left;
-	}
 	& .row {
 		& .frame {
 			width: 100%;
@@ -104,12 +113,7 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .period-weddings-content {
-	& .frame-left {
-		width: 20%;
-		float: left;
-	}
-	& .frame-right {
-		float: right;
+	& .frame {
 		width: 20%;
 	}
 }
@@ -120,6 +124,9 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .ordering-content {
+	& .mini-nav {
+		width: 250px;
+	}
 	& #a1 {
 		float: left;
 
@@ -187,19 +194,26 @@ Extra large	≥1200px	Large Desktop
 		float: left;
 		width: 100%;
 	}
+	.civilian-content {
+		& .frame {
+			width: 90%;
+			margin: 20px auto;
+			float: none;
+		}
+	}
+
+	.ordering-content {
+		& .mini-nav {
+			float: none;
+			width: 100%;
+			margin: 0px;
+		}
+	}
 
 }
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
-	.home-content {
-		& .frame-left {
-			width: 90%;
-			margin-left: auto;
-			margin-right: auto;
-			float: none;
-		}
-	}
 	.period-weddings-content {
 		& .frame {
 			width: 45%;
