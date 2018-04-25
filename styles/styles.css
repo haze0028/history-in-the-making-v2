@@ -243,7 +243,8 @@ ul {
   transition: 300ms;
   cursor: pointer;
   border: none;
-  outline: none; }
+  outline: none;
+  z-index: 50; }
   .top-btn:hover {
     color: #a35f00;
     transition: 200ms; }
@@ -588,14 +589,44 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
-.reproductions-content #catalogue h2 {
-  background: #ffdc67;
-  font-size: 16px; }
-.reproductions-content #catalogue .frame {
-  height: 350px; }
-  .reproductions-content #catalogue .frame img {
-    height: auto;
+.reproductions-content #catalogue .clothing-items {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.19);
+  padding: 0;
+  z-index: 5; }
+  .reproductions-content #catalogue .clothing-items h2 {
+    height: 60px;
+    background: #ffdc67;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 5px; }
+  .reproductions-content #catalogue .clothing-items .frame {
+    height: 320px;
+    background: white;
+    margin: 0; }
+    .reproductions-content #catalogue .clothing-items .frame img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto auto;
+      box-shadow: none;
+      cursor: pointer; }
+      .reproductions-content #catalogue .clothing-items .frame img.alt-img {
+        display: none; }
+  .reproductions-content #catalogue .clothing-items .item-description {
+    padding: 6px 10px 130px; }
+  .reproductions-content #catalogue .clothing-items .item-price {
+    position: absolute;
+    bottom: 20px;
     width: 100%; }
+    .reproductions-content #catalogue .clothing-items .item-price.row {
+      margin-left: 0;
+      margin-right: 0; }
+    .reproductions-content #catalogue .clothing-items .item-price p {
+      padding-bottom: 5px;
+      position: relative; }
 
 /********************************************
     REPRODUCTIONS - MILITARY
@@ -633,7 +664,8 @@ Extra large	≥1200px	Large Desktop
   display: none;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 10; }
   .overlay .close-overlay {
     display: block;
     background: rgba(0, 0, 0, 0.6);
@@ -714,7 +746,17 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width: 768px) {
   #a1 {
     float: left;
-    width: 100%; } }
+    width: 100%; }
+
+  .reproductions-content #catalogue .clothing-items h2 {
+    height: 68px;
+    float: none; }
+  .reproductions-content #catalogue .clothing-items .frame {
+    height: 250px; }
+    .reproductions-content #catalogue .clothing-items .frame img {
+      max-height: 100%; }
+  .reproductions-content #catalogue .clothing-items .item-description {
+    padding-bottom: 50px; } }
 @media screen and (max-width: 576px) {
   .home-content .frame-left {
     width: 90%;
@@ -730,6 +772,11 @@ Extra large	≥1200px	Large Desktop
     width: 90%;
     float: none;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+
+  .reproductions-content #catalogue .clothing-items .item-description {
+    padding-bottom: 50px; }
+  .reproductions-content #catalogue .clothing-items .item-price {
+    position: static; } }
 
 /*# sourceMappingURL=styles.css.map */

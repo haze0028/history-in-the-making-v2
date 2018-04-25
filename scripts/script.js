@@ -117,7 +117,13 @@
 		}, 800);
 	});
 
-
+	/////////////
+	//Flip images
+	////////////
+	$('.clothing-items img').on('click', function(){
+		$(this).fadeOut('fast');
+		$(this).find($('.alt-img')).fadeIn('fast');
+	})
 
 	/////////////
 	//Jquey media queries

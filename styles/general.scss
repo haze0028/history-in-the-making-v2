@@ -231,6 +231,7 @@ ul {
 	cursor: pointer;
 	border: none;
 	outline: none;
+	z-index: 50;
 	&:hover {
 		color: #a35f00;
 		transition: 200ms;
