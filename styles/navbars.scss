@@ -8,9 +8,9 @@
 			border: none;
 			cursor: pointer;
 			position: absolute;
-			top: 6px;
+			top:2px;
 			right: 20px;
-			font-size: 38px;
+			font-size: 34px;
 		}
 		& nav {
 			height: 56px;
@@ -126,6 +126,9 @@
 			//			transition: 300ms ease;
 		}
 		& .toggle-close {
+			position: absolute;
+			top:20px;
+			right:20px;
 			display: block;
 			margin-left: auto;
 			background: transparent;
@@ -142,6 +145,7 @@
 		& ul {
 			list-style: none;
 			line-height: 1;
+			padding-left: 0;
 			& li {
 				clear: both;
 				padding-top: 5px;
@@ -251,11 +255,6 @@ Extra large	≥1200px	Large Desktop
 	#desktop-nav {
 		& .sub-header {
 			height: 40px;
-
-			& .nav-toggle {
-				font-size: 32px;
-				top: 4px
-			}
 			& nav {
 				display: none;
 				& ul {

@@ -373,9 +373,9 @@ Extra large	≥1200px	Large Desktop	- Default
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 6px;
+    top: 2px;
     right: 20px;
-    font-size: 38px; }
+    font-size: 34px; }
   #desktop-nav .sub-header nav {
     height: 56px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -462,6 +462,9 @@ Extra large	≥1200px	Large Desktop	- Default
     border-left: 3px solid #ffdc67;
     right: -300px; }
     #side-nav nav .toggle-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       display: block;
       margin-left: auto;
       background: transparent;
@@ -475,7 +478,8 @@ Extra large	≥1200px	Large Desktop	- Default
         transition: 300ms; }
     #side-nav nav ul {
       list-style: none;
-      line-height: 1; }
+      line-height: 1;
+      padding-left: 0; }
       #side-nav nav ul li {
         clear: both;
         padding-top: 5px;
@@ -563,9 +567,6 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width: 992px) {
   #desktop-nav .sub-header {
     height: 40px; }
-    #desktop-nav .sub-header .nav-toggle {
-      font-size: 32px;
-      top: 4px; }
     #desktop-nav .sub-header nav {
       display: none; }
       #desktop-nav .sub-header nav ul li a {
