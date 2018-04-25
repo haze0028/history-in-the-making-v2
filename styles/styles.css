@@ -360,10 +360,7 @@ Extra large	≥1200px	Large Desktop	- Default
     line-height: 1.5em; }
 
   .img-20, .img-30, .img-40 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none; } }
+    width: 40%; } }
 /********************************************
     NAV BARS
 *********************************************/
@@ -589,6 +586,8 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
+.reproductions-content .mini-nav {
+  width: 35%; }
 .reproductions-content #catalogue .clothing-items {
   position: relative;
   border: 1px solid rgba(128, 128, 128, 0.19);
@@ -612,9 +611,14 @@ Extra large	≥1200px	Large Desktop
       max-height: 100%;
       margin: auto auto;
       box-shadow: none;
-      cursor: pointer; }
-      .reproductions-content #catalogue .clothing-items .frame img.alt-img {
-        display: none; }
+      cursor: pointer;
+      transition: 300ms; }
+      .reproductions-content #catalogue .clothing-items .frame img.hide-img {
+        display: none;
+        transition: 300ms; }
+      .reproductions-content #catalogue .clothing-items .frame img.show-img {
+        display: block;
+        transition: 300ms; }
   .reproductions-content #catalogue .clothing-items .item-description {
     padding: 6px 10px 130px; }
   .reproductions-content #catalogue .clothing-items .item-price {
@@ -636,19 +640,10 @@ Extra large	≥1200px	Large Desktop
   width: 20%; }
   .military-content #naval-hat p {
     padding: 0; }
-.military-content .frame-left {
-  width: 30%; }
 
 /********************************************
     PERIOD WEDDINGS
 *********************************************/
-.period-weddings-content .frame-left {
-  width: 20%;
-  float: left; }
-.period-weddings-content .frame-right {
-  float: right;
-  width: 20%; }
-
 /********************************************
     ORDERING INFO
 *********************************************/
@@ -748,6 +743,8 @@ Extra large	≥1200px	Large Desktop
     float: left;
     width: 100%; }
 
+  .reproductions-content .mini-nav {
+    width: 100%; }
   .reproductions-content #catalogue .clothing-items h2 {
     height: 68px;
     float: none; }
@@ -756,24 +753,16 @@ Extra large	≥1200px	Large Desktop
     .reproductions-content #catalogue .clothing-items .frame img {
       max-height: 100%; }
   .reproductions-content #catalogue .clothing-items .item-description {
-    padding-bottom: 50px; } }
+    padding-bottom: 160px; } }
 @media screen and (max-width: 576px) {
-  .home-content .frame-left {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none; }
-
-  .period-weddings-content .frame {
-    width: 45%; }
-
-  .military-content .frame,
   .military-content #naval-hat {
     width: 90%;
     float: none;
     margin-left: auto;
     margin-right: auto; }
 
+  .reproductions-content #catalogue .clothing-items h2 {
+    font-size: 24px; }
   .reproductions-content #catalogue .clothing-items .item-description {
     padding-bottom: 50px; }
   .reproductions-content #catalogue .clothing-items .item-price {

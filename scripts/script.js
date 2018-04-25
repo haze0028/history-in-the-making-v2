@@ -120,10 +120,15 @@
 	/////////////
 	//Flip images
 	////////////
-	$('.clothing-items img').on('click', function(){
-		$(this).fadeOut('fast');
-		$(this).find($('.alt-img')).fadeIn('fast');
+	$('.clothing-items .main-img').on('click', function(){
+		$(this).toggleClass('show-img').toggleClass('hide-img');
+		$(this).parent().find($('.alt-img')).toggleClass('hide-img').toggleClass('show-img');
 	})
+	$('.clothing-items .alt-img').on('click', function(){
+		$(this).toggleClass('show-img').toggleClass('hide-img');
+		$(this).parent().find($('.main-img')).toggleClass('hide-img').toggleClass('show-img');
+	})
+	
 
 	/////////////
 	//Jquey media queries

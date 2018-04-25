@@ -30,6 +30,9 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .reproductions-content {
+	& .mini-nav {
+		width: 35%;
+	}
 	& #catalogue {
 		& .clothing-items {
 			position: relative;
@@ -56,8 +59,14 @@ $header-bg: #432d10; //alt
 					margin: auto auto;
 					box-shadow: none;
 					cursor: pointer;
-					&.alt-img{
-						display:none;
+					transition: 300ms;
+					&.hide-img {
+						display: none;
+						transition: 300ms;
+					}
+					&.show-img {
+						display: block;
+						transition: 300ms;
 					}
 				}
 			}
@@ -94,9 +103,6 @@ $header-bg: #432d10; //alt
 			padding: 0;
 		}
 	}
-	.frame-left {
-		width: 30%;
-	}
 }
 
 
@@ -105,14 +111,6 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .period-weddings-content {
-	& .frame-left {
-		width: 20%;
-		float: left;
-	}
-	& .frame-right {
-		float: right;
-		width: 20%;
-	}
 }
 
 
@@ -199,6 +197,9 @@ Extra large	≥1200px	Large Desktop
 		width: 100%;
 	}
 	.reproductions-content {
+	& .mini-nav {
+		width: 100%;
+	}
 		& #catalogue {
 			& .clothing-items {
 				& h2 {
@@ -210,9 +211,9 @@ Extra large	≥1200px	Large Desktop
 					& img {
 						max-height: 100%;
 					}
-				}				
+				}
 				& .item-description {
-					padding-bottom: 50px;
+					padding-bottom: 160px;
 				}
 			}
 		}
@@ -222,22 +223,8 @@ Extra large	≥1200px	Large Desktop
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
-	.home-content {
-		& .frame-left {
-			width: 90%;
-			margin-left: auto;
-			margin-right: auto;
-			float: none;
-		}
-	}
-	.period-weddings-content {
-		& .frame {
-			width: 45%;
-		}
-	}
 	.military-content {
-		& .frame,
-		#naval-hat {
+		& #naval-hat {
 			width: 90%;
 			float: none;
 			margin-left: auto;
@@ -247,6 +234,9 @@ Extra large	≥1200px	Large Desktop
 	.reproductions-content {
 		& #catalogue {
 			& .clothing-items {
+				& h2 {
+					font-size: 24px;
+				}
 				& .item-description {
 					padding-bottom: 50px;
 				}
