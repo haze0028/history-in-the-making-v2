@@ -132,7 +132,6 @@ h1,
   background-color: #432d10;
   padding: 8px 16px;
   color: white;
-  box-shadow: 0 2px 10px 2px black;
   font-family: 'Lobster';
   font-weight: 100; }
 
@@ -201,11 +200,14 @@ a {
 
 .frame-left {
   float: left;
-  margin: 0 30px 30px 0; }
+  margin: 0 20px 20px 0; }
 
 .frame-right {
   float: right;
-  margin: 0 0 30px 30px; }
+  margin: 0 0 20px 20px; }
+
+.img-10 {
+  width: 10%; }
 
 .img-20 {
   width: 20%; }
@@ -227,17 +229,17 @@ ul {
     margin-left: 20px; }
 
 .top-btn {
-  background: #dedede;
+  background: white;
   position: fixed;
   bottom: 30px;
   right: 30px;
   display: block;
-  padding: 0px;
+  padding: 4px;
   color: #7c4800;
-  height: 50px;
-  width: 50px;
+  height: 54px;
+  width: 54px;
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 46px;
   margin-right: -20px;
   opacity: 0;
   transition: 300ms;
@@ -359,7 +361,7 @@ Extra large	≥1200px	Large Desktop	- Default
   a {
     line-height: 1.5em; }
 
-  .img-20, .img-30, .img-40 {
+  .img-10, .img-20, .img-30, .img-40 {
     width: 40%; } }
 /********************************************
     NAV BARS
@@ -532,7 +534,7 @@ Extra large	≥1200px	Large Desktop	- Default
   border-radius: 5px; }
   .mini-nav ul {
     list-style: none;
-    padding: 5px; }
+    padding: 5px 5px 5px 10px; }
     .mini-nav ul li {
       margin-left: 0px;
       line-height: 1.5; }
@@ -555,6 +557,67 @@ Extra large	≥1200px	Large Desktop	- Default
     padding: 5px;
     font-size: 18px;
     background: #fffbd1; }
+
+#reproductions-nav {
+  height: 40px;
+  background-color: #ffdc67;
+  position: relative; }
+  #reproductions-nav nav {
+    height: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif; }
+    #reproductions-nav nav > ul {
+      z-index: 5;
+      justify-content: space-between;
+      display: flex;
+      list-style: none;
+      padding-left: 0px;
+      height: 100%;
+      border-bottom: 1px solid #ac7a00;
+      text-align: center; }
+      #reproductions-nav nav > ul > li {
+        position: relative;
+        margin-left: 0;
+        height: 100%;
+        width: 100%;
+        line-height: 1;
+        padding-top: 10px;
+        text-indent: 5px;
+        font-weight: bold; }
+        #reproductions-nav nav > ul > li:hover {
+          background: #ac7a00;
+          color: white;
+          transition: 200ms; }
+        #reproductions-nav nav > ul > li:hover h2 {
+          color: black; }
+        #reproductions-nav nav > ul > li ul {
+          background-color: #ffdc67;
+          display: none;
+          position: absolute;
+          top: 40px;
+          box-shadow: 0px 6px 30px -10px black;
+          padding-left: 0;
+          width: 100%; }
+          #reproductions-nav nav > ul > li ul li {
+            list-style: none;
+            margin-left: 0; }
+            #reproductions-nav nav > ul > li ul li h2 {
+              height: 100%;
+              margin: 0;
+              padding: 5px;
+              font-size: 16px;
+              background: #fffbd1;
+              border: none; }
+            #reproductions-nav nav > ul > li ul li a {
+              display: block;
+              height: 100%;
+              padding: 5px;
+              color: black;
+              font-weight: 100; }
+              #reproductions-nav nav > ul > li ul li a:hover {
+                text-decoration: none;
+                background: #ac7a00;
+                color: white;
+                transition: 200ms; }
 
 /********************************************
     Media Queries 
@@ -594,7 +657,7 @@ Extra large	≥1200px	Large Desktop
   border: 1px solid rgba(128, 128, 128, 0.19);
   padding: 0;
   z-index: 5; }
-  .reproductions-content #catalogue .clothing-items h2 {
+  .reproductions-content #catalogue .clothing-items .h5 {
     height: 60px;
     background: #ffdc67;
     font-size: 16px;
@@ -621,17 +684,19 @@ Extra large	≥1200px	Large Desktop
         display: block;
         transition: 300ms; }
   .reproductions-content #catalogue .clothing-items .item-description {
-    padding: 6px 10px 130px; }
+    padding: 6px 10px 150px; }
   .reproductions-content #catalogue .clothing-items .item-price {
     position: absolute;
-    bottom: 20px;
-    width: 100%; }
+    bottom: 10px;
+    width: 100%;
+    font-weight: bold; }
     .reproductions-content #catalogue .clothing-items .item-price.row {
       margin-left: 0;
       margin-right: 0; }
     .reproductions-content #catalogue .clothing-items .item-price p {
       padding-bottom: 5px;
-      position: relative; }
+      position: relative;
+      line-height: 1.2; }
 
 /********************************************
     REPRODUCTIONS - MILITARY
@@ -746,7 +811,7 @@ Extra large	≥1200px	Large Desktop
 
   .reproductions-content .mini-nav {
     width: 100%; }
-  .reproductions-content #catalogue .clothing-items h2 {
+  .reproductions-content #catalogue .clothing-items .h5 {
     height: 68px;
     float: none; }
   .reproductions-content #catalogue .clothing-items .frame {
@@ -754,7 +819,10 @@ Extra large	≥1200px	Large Desktop
     .reproductions-content #catalogue .clothing-items .frame img {
       max-height: 100%; }
   .reproductions-content #catalogue .clothing-items .item-description {
-    padding-bottom: 160px; } }
+    padding-bottom: 170px; }
+  .reproductions-content #catalogue .clothing-items .item-price .col-sm-8, .reproductions-content #catalogue .clothing-items .item-price .col-sm-6, .reproductions-content #catalogue .clothing-items .item-price .col-sm-4, .reproductions-content #catalogue .clothing-items .item-price p {
+    padding-left: 5px;
+    padding-right: 5px; } }
 @media screen and (max-width: 576px) {
   .military-content #naval-hat {
     width: 90%;
@@ -762,7 +830,7 @@ Extra large	≥1200px	Large Desktop
     margin-left: auto;
     margin-right: auto; }
 
-  .reproductions-content #catalogue .clothing-items h2 {
+  .reproductions-content #catalogue .clothing-items .h5 {
     font-size: 24px; }
   .reproductions-content #catalogue .clothing-items .item-description {
     padding-bottom: 50px; }

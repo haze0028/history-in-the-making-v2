@@ -8,7 +8,7 @@
 			border: none;
 			cursor: pointer;
 			position: absolute;
-			top:2px;
+			top: 2px;
 			right: 20px;
 			font-size: 34px;
 		}
@@ -127,8 +127,8 @@
 		}
 		& .toggle-close {
 			position: absolute;
-			top:20px;
-			right:20px;
+			top: 20px;
+			right: 20px;
 			display: block;
 			margin-left: auto;
 			background: transparent;
@@ -212,7 +212,7 @@
 	border-radius: 5px;
 	& ul {
 		list-style: none;
-		padding: 5px;
+		padding: 5px 5px 5px 10px;
 		li {
 			margin-left: 0px;
 			line-height: 1.5;
@@ -239,6 +239,81 @@
 		padding: 5px;
 		font-size: 18px;
 		background: #fffbd1;
+	}
+}
+
+#reproductions-nav {
+	height: 40px;
+//	background-color: #fffb9c;
+	background-color: $nav;
+	position: relative;
+	& nav {
+		height: 100%;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		& > ul {
+			z-index: 5;
+			justify-content: space-between;
+			display: flex;
+			list-style: none;
+			padding-left: 0px;
+			height: 100%;
+			border-bottom: 1px solid rgb(172, 122, 0);
+			text-align: center;
+			& > li {
+				position:relative;
+				margin-left: 0;
+				height: 100%;
+				width: 100%;
+				line-height: 1;
+				padding-top: 10px;
+				text-indent: 5px;
+				font-weight: bold;
+				&:hover {
+					background: rgb(172, 122, 0);
+					color: white;
+					transition: 200ms;
+				}
+				&:hover h2{
+					color:black;
+				}
+				& ul {
+//					background-color: #fffb9c;
+					background-color: $nav;
+					display: none;
+//					display: block;
+					position: absolute;
+					top: 40px; // height of main nav
+					box-shadow: 0px 6px 30px -10px black;
+					padding-left: 0;
+					width: 100%;
+					& li {
+						list-style: none;
+						margin-left: 0;
+						& h2 {
+							height: 100%;
+							margin: 0;
+							padding: 5px;
+							font-size: 16px;
+							background: #fffbd1;
+							border: none;
+						}
+						& a {
+							display: block;
+							height: 100%;
+							padding: 5px;
+							color: black;
+							font-weight: 100;
+							&:hover {
+								text-decoration: none;
+								background: rgb(172, 122, 0);
+								color: white;
+								transition: 200ms;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -280,6 +355,6 @@ Extra large	≥1200px	Large Desktop
 	.mini-nav {
 		float: none;
 		width: 100%;
-		margin:0 0 30px 0;
+		margin: 0 0 30px 0;
 	}
 }

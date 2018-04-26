@@ -39,7 +39,7 @@ $header-bg: #432d10; //alt
 			border: 1px solid rgba(128, 128, 128, 0.19);
 			padding: 0;
 			z-index: 5;
-			& h2 {
+			& .h5 {
 				height: 60px;
 				background: $nav;
 				font-size: 16px;
@@ -71,12 +71,13 @@ $header-bg: #432d10; //alt
 				}
 			}
 			& .item-description {
-				padding: 6px 10px 130px;
+				padding: 6px 10px 150px;
 			}
 			& .item-price {
 				position: absolute;
-				bottom: 20px;
+				bottom: 10px;
 				width: 100%;
+				font-weight: bold;
 				&.row {
 					margin-left: 0;
 					margin-right: 0;
@@ -84,6 +85,7 @@ $header-bg: #432d10; //alt
 				& p {
 					padding-bottom: 5px;
 					position: relative;
+					line-height: 1.2;
 
 				}
 			}
@@ -202,7 +204,7 @@ Extra large	≥1200px	Large Desktop
 	}
 		& #catalogue {
 			& .clothing-items {
-				& h2 {
+				& .h5 {
 					height: 68px;
 					float: none;
 				}
@@ -213,7 +215,13 @@ Extra large	≥1200px	Large Desktop
 					}
 				}
 				& .item-description {
-					padding-bottom: 160px;
+					padding-bottom: 170px;
+				}
+				& .item-price{					
+					& .col-sm-8, & .col-sm-6, & .col-sm-4, & p{
+						padding-left:5px;
+						padding-right: 5px;
+					}
 				}
 			}
 		}
@@ -234,7 +242,7 @@ Extra large	≥1200px	Large Desktop
 	.reproductions-content {
 		& #catalogue {
 			& .clothing-items {
-				& h2 {
+				& .h5 {
 					font-size: 24px;
 				}
 				& .item-description {
