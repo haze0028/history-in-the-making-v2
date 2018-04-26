@@ -6,7 +6,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Lato|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Lato|Lobster|Berkshire+Swash|Cinzel|Cinzel+Decorative");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -132,7 +132,7 @@ h1,
   background-color: #432d10;
   padding: 8px 16px;
   color: white;
-  font-family: 'Lobster';
+  font-family: 'Cinzel', Helvetica, Arial, sans-serif;
   font-weight: 100; }
 
 h2,
