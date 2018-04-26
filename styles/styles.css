@@ -383,7 +383,7 @@ Extra large	≥1200px	Large Desktop	- Default
     font-family: Verdana, Arial, Helvetica, sans-serif;
     background: #ffdc67; }
     #desktop-nav .sub-header nav ul {
-      z-index: 5;
+      z-index: 6;
       display: flex;
       justify-content: space-between;
       list-style: none;
@@ -561,7 +561,8 @@ Extra large	≥1200px	Large Desktop	- Default
 #reproductions-nav {
   height: 40px;
   background-color: #ffdc67;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   #reproductions-nav nav {
     height: 100%;
     font-family: Verdana, Arial, Helvetica, sans-serif; }
@@ -610,7 +611,7 @@ Extra large	≥1200px	Large Desktop	- Default
             #reproductions-nav nav > ul > li ul li a {
               display: block;
               height: 100%;
-              padding: 5px;
+              padding: 8px;
               color: black;
               font-weight: 100; }
               #reproductions-nav nav > ul > li ul li a:hover {
