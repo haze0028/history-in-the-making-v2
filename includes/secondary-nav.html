@@ -41,10 +41,66 @@
 	</nav>
 </div>
 
+<div id="mini-rep-nav">
+	<button class="rep-nav-toggle"><p>All Reproductions | </p><p class="toggle-close flipped-down"><i class="fa fa-sort-down"></i></p></button>
+	<nav>
+		<h2>Men</h2>
+		<h3>Civilian</h3>
+		<ul>
+			<li><a href="18th-century.html">18<sup>th</sup> Century</a></li>
+			<li><a href="1800-1840.html">1800 - 1840 Costumes</a></li>
+			<li><a href="1835-1855.html">1835 - 1855 Costumes</a></li>
+			<li><a href="1855-1875.html">1855 - 1875 Costumes</a></li>
+			<li><a href="1885-1910.html">1885 - 1910 Costumes</a></li>
+			<li><a href="mens-civilian-hats.html">Hats</a></li>
+		</ul>
+		<h3>Military</h3>
+		<ul>
+			<li><a href="military.html">Costumes</a></li>
+			<li><a href="mens-military-hats.html">Hats</a></li>
+		</ul>
+		<h3>Accessories</h3>
+		<ul>
+			<li><a href="mens-neckwear.html">Neckwear</a></li>
+			<li><a href="mens-collars.html">Collars</a></li>
+			<li><a href="mens-spats.html">Spats</a></li>
+			<li><a href="mens-suspenders.html">Suspenders</a></li>
+		</ul>
+		<h2>Women</h2>
+		<ul>
+			<li><a href="womens-costumes.html">Costumes</a></li>
+			<li><a href="womens-hats.html">Hats and Bonnets</a></li>
+		</ul>
+		<h2>Children</h2>
+		<ul>
+			<li><a href="childrens-costumes.html">Costumes</a></li>
+		</ul>
+		<button class="rep-nav-toggle"><i class="fa fa-sort-down"></i></button>
+	</nav>
+</div>
+
 
 <script>
+	var miniNav = $('#mini-rep-nav');
 	// trigger reproductions nav menu dropdown effects
-	$('#reproductions-nav li').hover(function () {
+	$('#reproductions-nav li').hover(function() {
 		$(this).find('ul').slideToggle();
 	});
+
+	// trigger the tablet sized menu dropdown
+	$('.rep-nav-toggle').on('click', toggleMenu);
+
+	// 
+	function toggleMenu() {
+		miniNav.find($('.toggle-close')).toggleClass('flipped-down').toggleClass('flipped-up');
+		miniNav.find('nav').slideToggle();
+	};
+	
+	$(window).resize(function(){
+		if($('.toggle-close').hasClass('flipped-up')){
+			toggleMenu();
+		}
+	})
+
+
 </script>
