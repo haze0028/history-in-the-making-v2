@@ -728,8 +728,12 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
+.reproductions-content > h2 {
+  margin-top: 0px; }
 .reproductions-content .mini-nav {
   width: 35%; }
+.reproductions-content #catalogue h2 {
+  margin-top: 50px; }
 .reproductions-content #catalogue .clothing-items {
   position: relative;
   border: 1px solid rgba(128, 128, 128, 0.19);
@@ -749,6 +753,7 @@ Extra large	≥1200px	Large Desktop
     .reproductions-content #catalogue .clothing-items .frame img {
       display: block;
       width: auto;
+      height: 100%;
       max-width: 100%;
       max-height: 100%;
       margin: auto auto;
