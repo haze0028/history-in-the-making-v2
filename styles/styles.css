@@ -550,7 +550,7 @@ Extra large	≥1200px	Large Desktop	- Default
   background-color: #fff7a5;
   display: block;
   margin: 0 0 30px 30px;
-  padding: 5px 5px;
+  padding: 5px;
   border: 1px solid rgba(147, 108, 0, 0.28);
   border-radius: 5px; }
   .mini-nav ul {
@@ -587,11 +587,6 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
-@media screen and (max-width: 768) {
-  .mini-nav {
-    float: none;
-    width: 100%;
-    margin: 0px; } }
 @media screen and (max-width: 992px) {
   #desktop-nav .sub-header {
     height: 40px; }
@@ -607,6 +602,11 @@ Extra large	≥1200px	Large Desktop
 
   #side-nav {
     display: block; } }
+@media screen and (max-width: 768px) {
+  .mini-nav {
+    float: none;
+    width: 100%;
+    margin: 0 0 30px 0; } }
 /********************************************
     HOME
 *********************************************/

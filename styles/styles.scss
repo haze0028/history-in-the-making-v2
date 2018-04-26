@@ -42,18 +42,41 @@ $header-bg: #432d10; //alt
 /********************************************
     NAV BARS
 *********************************************/
-
 @import 'navbars';
 
 /********************************************
     HOME
 *********************************************/
+<<<<<<< HEAD
 
 .home-content {
     & .frame-left {
         width: 30%;
         float: left;
     }
+=======
+.home-content {}
+
+
+/********************************************
+    REPRODUCTIONS - CIVILIAN
+*********************************************/
+
+.reproductions-content {
+	& #catalogue {
+		& h2 {
+			background: $nav;
+			font-size: 16px;
+		}
+		& .frame {
+			height: 350px;
+			& img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+>>>>>>> refs/remotes/origin/master
 }
 
 
