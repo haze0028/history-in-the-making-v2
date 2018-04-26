@@ -7,6 +7,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Lato|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Berkshire+Swash|Cinzel|Vidaloka");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -133,7 +134,7 @@ h1,
   padding: 8px 16px;
   color: white;
   box-shadow: 0 2px 10px 2px black;
-  font-family: 'Lobster';
+  font-family: 'Berkshire';
   font-weight: 100; }
 
 h2,
@@ -610,155 +611,156 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     HOME
 *********************************************/
-.home-content .frame-left {
-  width: 30%;
-  float: left; }
-
-/********************************************
-    REPRODUCTIONS - MILITARY
-*********************************************/
-.military-content .mini-nav {
-  float: left;
-  width: 60%;
-  margin: 0 30px 30px 0; }
-.military-content #naval-hat {
-  margin-top: 20px;
-  width: 20%; }
-  .military-content #naval-hat p {
-    padding: 0; }
-.military-content .frame-left {
-  width: 30%; }
-
-/********************************************
-    PERIOD WEDDINGS
-*********************************************/
-.period-weddings-content .frame-left {
-  width: 20%;
-  float: left; }
-.period-weddings-content .frame-right {
-  float: right;
-  width: 20%; }
-
-/********************************************
-    ORDERING INFO
-*********************************************/
-.ordering-content #a1 {
-  float: left; }
-.ordering-content ul {
-  clear: left; }
-
-/********************************************
-    Overlay
-*********************************************/
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0; }
-  .overlay .close-overlay {
-    display: block;
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px; }
-
-/*****************************************
-     Contact Page
-******************************************/
-.contact-content ul li {
-  list-style: none; }
-.contact-content .contact-info {
-  padding-top: 10px;
-  margin-left: 5%;
-  font-weight: bold;
-  font-size: 1em;
-  line-height: 1.5; }
-.contact-content .address-wrapper {
-  margin-top: 10px;
-  margin-left: 5%;
-  font-weight: bold;
-  font-size: 1em;
-  line-height: 1.8; }
-.contact-content .contact-address {
-  float: left; }
-.contact-content .map {
-  margin-left: 20px;
-  width: 400px;
-  height: 400px; }
-.contact-content .contact-header {
-  margin: 15px 5px 0px 15px;
-  font-size: 1.7em; }
-
-.contact-info a:hover {
-  color: #B56900; }
-
-/********************************************
-    Media Queries 
-Extra small <576px	Small Phone
-Small 		≥576px	Large Phone
-Medium		≥768px	Tablet
-Large			≥992px	Medium Desktop
-Extra large	≥1200px	Large Desktop
-*********************************************/
-@media screen and (max-width: 768px) {
-  .contact-content .contact-map {
-    float: none; }
-  .contact-content .map {
-    width: 250px;
-    height: 250px; }
-  .contact-content .contact-address {
-    float: none; } }
-/****************************************
-    Links
-****************************************/
-.links {
-  padding-bottom: 20px; }
-  .links .link-description p {
-    margin-top: 10px;
-    padding-bottom: 0; }
-  .links .link a:hover {
-    color: #B56900; }
-
-/****************************************
-            Testimonials 
-*****************************************/
-/******************************************
-            Theatre Production
-******************************************/
-/********************************************
-    Media Queries 
-Extra small <576px	Small Phone
-Small 		≥576px	Large Phone
-Medium		≥768px	Tablet
-Large			≥992px	Medium Desktop
-Extra large	≥1200px	Large Desktop
-*********************************************/
-@media screen and (max-width: 768px) {
-  .mini-nav {
-    float: none;
-    width: 100%;
-    margin: 0px; }
-
-  #a1 {
-    float: left;
-    width: 100%; } }
-@media screen and (max-width: 576px) {
+.home-content {
+  /********************************************
+      REPRODUCTIONS - CIVILIAN
+  *********************************************/
+  /********************************************
+      REPRODUCTIONS - MILITARY
+  *********************************************/
+  /********************************************
+      PERIOD WEDDINGS
+  *********************************************/
+  /********************************************
+      ORDERING INFO
+  *********************************************/
+  /********************************************
+      Overlay
+  *********************************************/
+  /*****************************************
+       Contact Page
+  ******************************************/
+  /********************************************
+      Media Queries 
+  Extra small <576px	Small Phone
+  Small 		≥576px	Large Phone
+  Medium		≥768px	Tablet
+  Large			≥992px	Medium Desktop
+  Extra large	≥1200px	Large Desktop
+  *********************************************/
+  /****************************************
+      Links
+  ****************************************/
+  /****************************************
+              Testimonials 
+  *****************************************/
+  /******************************************
+              Theatre Production
+  ******************************************/
+  /********************************************
+      Media Queries 
+  Extra small <576px	Small Phone
+  Small 		≥576px	Large Phone
+  Medium		≥768px	Tablet
+  Large			≥992px	Medium Desktop
+  Extra large	≥1200px	Large Desktop
+  *********************************************/ }
   .home-content .frame-left {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    float: none; }
-
-  .period-weddings-content .frame {
-    width: 45%; }
-
-  .military-content .frame,
-  .military-content #naval-hat {
-    width: 90%;
-    float: none;
-    margin-left: auto;
-    margin-right: auto; } }
+    width: 30%;
+    float: left; }
+  .home-content .reproductions-content #catalogue h2 {
+    background: #ffdc67;
+    font-size: 16px; }
+  .home-content .reproductions-content #catalogue .frame {
+    height: 350px; }
+    .home-content .reproductions-content #catalogue .frame img {
+      height: auto;
+      width: 100%; }
+  .home-content .military-content .mini-nav {
+    float: left;
+    width: 60%;
+    margin: 0 30px 30px 0; }
+  .home-content .military-content #naval-hat {
+    margin-top: 20px;
+    width: 20%; }
+    .home-content .military-content #naval-hat p {
+      padding: 0; }
+  .home-content .military-content .frame-left {
+    width: 30%; }
+  .home-content .period-weddings-content .frame-left {
+    width: 20%;
+    float: left; }
+  .home-content .period-weddings-content .frame-right {
+    float: right;
+    width: 20%; }
+  .home-content .ordering-content #a1 {
+    float: left; }
+  .home-content .ordering-content ul {
+    clear: left; }
+  .home-content .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0; }
+    .home-content .overlay .close-overlay {
+      display: block;
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px; }
+  .home-content .contact-content ul li {
+    list-style: none; }
+  .home-content .contact-content .contact-info {
+    padding-top: 10px;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.5; }
+  .home-content .contact-content .address-wrapper {
+    margin-top: 10px;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.8; }
+  .home-content .contact-content .contact-address {
+    float: left; }
+  .home-content .contact-content .map {
+    margin-left: 20px;
+    width: 400px;
+    height: 400px; }
+  .home-content .contact-content .contact-header {
+    margin: 15px 5px 0px 15px;
+    font-size: 1.7em; }
+  .home-content .contact-info a:hover {
+    color: #B56900; }
+  @media screen and (max-width: 768px) {
+    .home-content .contact-content .contact-map {
+      float: none; }
+    .home-content .contact-content .map {
+      width: 250px;
+      height: 250px; }
+    .home-content .contact-content .contact-address {
+      float: none; } }
+  .home-content .links {
+    padding-bottom: 20px; }
+    .home-content .links .link-description p {
+      margin-top: 10px;
+      padding-bottom: 0; }
+    .home-content .links .link a:hover {
+      color: #B56900; }
+  @media screen and (max-width: 768px) {
+    .home-content .mini-nav {
+      float: none;
+      width: 100%;
+      margin: 0px; }
+    .home-content #a1 {
+      float: left;
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .home-content .home-content .frame-left {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; }
+    .home-content .period-weddings-content .frame {
+      width: 45%; }
+    .home-content .military-content .frame,
+    .home-content .military-content #naval-hat {
+      width: 90%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
