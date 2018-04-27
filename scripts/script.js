@@ -35,7 +35,39 @@
 		$(this).parent().find($('.main-img')).toggleClass('hide-img').toggleClass('show-img');
 	})
 
-
+	/////////////
+	//Gallery images
+	////////////
+	
+	function galleryOverlay(){
+		var overlay, img, closeBtn, closeBg, overlayImg , src, altText;
+		overlay = $('.gallery-overlay');
+		img = $('.gallery-item');
+		closeBg = $('.close-overlay-bg');
+		closeBtn = $('.close-overlay-btn');
+		overlayImg = $('.gallery-overlay img');
+		
+		img.click(function(){
+			overlay.fadeIn('fast');
+			src = $(this).find('img').attr('src');
+			alt= $(this).find('img').attr('alt');
+			console.log(src);
+			overlayImg.attr('src', src);
+			overlayImg.attr('alt', alt);
+		})
+				
+		closeBg.click(closeOverlay);
+		closeBtn.click(closeOverlay);
+		
+		function closeOverlay(){
+			overlay.fadeOut();			
+		}
+	};
+	
+	galleryOverlay();
+	
+	
+	
 	/////////////
 	//Jquey media queries
 	////////////

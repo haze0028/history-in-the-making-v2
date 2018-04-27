@@ -360,8 +360,9 @@
 	& nav {
 		position: absolute;
 		display: none;
-		//		display: block;
+//		display: block;
 		width: 100%;
+		z-index: 20;
 		& .rep-nav-toggle{
 			background: $nav;
 			text-align: center;
