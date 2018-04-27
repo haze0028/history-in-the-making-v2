@@ -70,15 +70,15 @@
 					text-align: center;
 					padding: 5px;
 					&:hover {
-						background: rgb(255, 230, 90);
+						background: #ffe65a;
 						color: black;
 						text-decoration: none;
 						transition: 300ms;
 					}
 					&.active {
-						background: rgb(172, 122, 0);
+						background: #ac7a00;
 						color: white;
-						box-shadow: 0 0 6px #331b07 inset;
+						box-shadow: 0 0 10px #5c4100 inset;
 					}
 					&.disabled {
 						pointer-events: none;
@@ -158,14 +158,6 @@ Extra large	≥1200px	Large Desktop
 		}
 	}
 
-	.gallery-overlay {
-		& .frame {
-			width: 90%;
-			& .close-overlay-btn {
-				transform: translateY(-80px);
-			}
-		}
-	}
 	.gallery-overlay {
 		& .frame {
 			width: 90%;
