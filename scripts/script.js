@@ -1,6 +1,4 @@
 (function () {
-	$('#navbars').load('../includes/navs.html');
-	$('#secondary-nav').load('../includes/secondary-nav.html');
 	console.log("Page loaded");
 
 
