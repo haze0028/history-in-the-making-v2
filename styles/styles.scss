@@ -29,15 +29,15 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .reproductions-content {
-	&>h2{
-		margin-top:0px; 
+	& > h2 {
+		margin-top: 0px;
 	}
 	& .mini-nav {
 		width: 35%;
 	}
 	& #catalogue {
-		& h2{
-			margin-top:50px;
+		& h2 {
+			margin-top: 50px;
 		}
 		& .clothing-items {
 			position: relative;
@@ -59,8 +59,9 @@ $header-bg: #432d10; //alt
 				margin: 0;
 				& img {
 					display: block;
+					padding: 6px;
 					width: auto;
-					height:100%;
+					height: auto;
 					max-width: 100%;
 					max-height: 100%;
 					margin: auto auto;
@@ -114,13 +115,11 @@ $header-bg: #432d10; //alt
 	}
 }
 
-
 /********************************************
     PERIOD WEDDINGS
 *********************************************/
 
-.period-weddings-content {
-}
+.period-weddings-content {}
 
 
 /********************************************
@@ -184,8 +183,9 @@ $header-bg: #432d10; //alt
 
 
 /****************************************
-            Testimonials 
+            Gallery 
 *****************************************/
+@import 'gallery';
 
 /********************************************
     Media Queries 
@@ -205,10 +205,17 @@ Extra large	≥1200px	Large Desktop
 		float: left;
 		width: 100%;
 	}
-	.reproductions-content {
-	& .mini-nav {
-		width: 100%;
+	.civilian-content {
+		& .frame {
+			width: 90%;
+			margin: auto;
+			float: none;
+		}
 	}
+	.reproductions-content {
+		& .mini-nav {
+			width: 100%;
+		}
 		& #catalogue {
 			& .clothing-items {
 				& .h5 {
@@ -224,17 +231,19 @@ Extra large	≥1200px	Large Desktop
 				& .item-description {
 					padding-bottom: 170px;
 				}
-				& .item-price{					
-					& .col-sm-8, & .col-sm-6, & .col-sm-4, & p{
-						padding-left:5px;
+				& .item-price {
+					& .col-sm-8,
+					& .col-sm-6,
+					& .col-sm-4,
+					& p {
+						padding-left: 5px;
 						padding-right: 5px;
 					}
 				}
 			}
 		}
 	}
-}
-
+} 
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
