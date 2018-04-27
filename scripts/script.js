@@ -2,7 +2,7 @@
 	$('#navbars').load('../includes/navs.html');
 	$('#secondary-nav').load('../includes/secondary-nav.html');
 	console.log("Page loaded");
-	
+
 
 	/////////////
 	//"To top" Button
@@ -38,36 +38,88 @@
 	/////////////
 	//Gallery images
 	////////////
-	
-	function galleryOverlay(){
-		var overlay, img, closeBtn, closeBg, overlayImg , src, altText;
+
+	function galleryOverlay() {
+		var overlay, img, closeBtn, closeBg, overlayImg, src, altText;
 		overlay = $('.gallery-overlay');
 		img = $('.gallery-item');
 		closeBg = $('.close-overlay-bg');
 		closeBtn = $('.close-overlay-btn');
 		overlayImg = $('.gallery-overlay img');
-		
-		img.click(function(){
+
+		img.click(function () {
 			overlay.fadeIn('fast');
 			src = $(this).find('img').attr('src');
-			alt= $(this).find('img').attr('alt');
+			alt = $(this).find('img').attr('alt');
 			console.log(src);
 			overlayImg.attr('src', src);
 			overlayImg.attr('alt', alt);
 		})
-				
+
 		closeBg.click(closeOverlay);
 		closeBtn.click(closeOverlay);
-		
-		function closeOverlay(){
-			overlay.fadeOut();			
+
+		function closeOverlay() {
+			overlay.fadeOut();
 		}
 	};
-	
+
 	galleryOverlay();
-	
-	
-	
+
+
+	/////////////
+	//Contact form
+	////////////
+	function after_form_submitted(data) {
+		if (data.result == 'success') {
+			$('form#reused_form').hide();
+			$('#success_message').show();
+			$('#error_message').hide();
+		} else {
+			$('#error_message').append('<ul></ul>');
+
+			jQuery.each(data.errors, function (key, val) {
+				$('#error_message ul').append('<li>' + key + ':' + val + '</li>');
+			});
+			$('#success_message').hide();
+			$('#error_message').show();
+
+			//reverse the response on the button
+			$('button[type="button"]', $form).each(function () {
+				$btn = $(this);
+				label = $btn.prop('orig_label');
+				if (label) {
+					$btn.prop('type', 'submit');
+					$btn.text(label);
+					$btn.prop('orig_label', '');
+				}
+			});
+
+		} //else
+	}
+
+	$('#reused_form').submit(function (e) {
+		e.preventDefault();
+
+		$form = $(this);
+		//show some response on the button
+		$('button[type="submit"]', $form).each(function () {
+			$btn = $(this);
+			$btn.prop('type', 'button');
+			$btn.prop('orig_label', $btn.text());
+			$btn.text('Sending ...');
+		});
+
+
+		$.ajax({
+			type: "POST",
+			url: 'handler.php',
+			data: $form.serialize(),
+			success: after_form_submitted,
+			dataType: 'json'
+		});
+
+	});
 	/////////////
 	//Jquey media queries
 	////////////
