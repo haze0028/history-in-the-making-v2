@@ -51,7 +51,6 @@
 			overlay.fadeIn('fast');
 			src = $(this).find('img').attr('src');
 			alt = $(this).find('img').attr('alt');
-			console.log(src);
 			overlayImg.attr('src', src);
 			overlayImg.attr('alt', alt);
 		})
