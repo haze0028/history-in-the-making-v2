@@ -1,8 +1,4 @@
 <?php 
-
-$test = "testicle";	
-echo "<h1>".$test."</h1>";
-	
 	if(isset($_POST['submit'])){
 			$name=$_POST['yourname'];
 			$email=$_POST['email'];
