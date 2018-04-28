@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="images/favicon.png" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>CONTACT INFORMATION: reproduction clothing living history re-enactments film</title>
@@ -48,20 +48,32 @@
 					<div class="contact-map">
 						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.439930800506!2d-75.73803688397057!3d45.40046757910025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0417a875b73d%3A0x5dea456d5dca593f!2s97+Smirle+Ave%2C+Ottawa%2C+ON!5e0!3m2!1sen!2sca!4v1523922376896"></iframe>
 					</div>
-					<div class="clearfix"></div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
-			<form name="contactform" action="scripts/contact-form.php" method="post">
-				<label for="">Your Name</label>
-				<input name="yourname" type="text">
-				<label for="">Your E-mail</label>
-				<input name="email" type="text">
-				<label for="">Subject</label>
-				<input name="subject" type="text">
-				<label for="">Message</label>
-				<textarea type="text" name="message"></textarea>
-				<input type="submit" name="submit" value="Send">
-			</form>
+
+			<h2 class="form-header">Send us a quick message</h2>
+			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+				<form name="contactform" action="scripts/contact-form.php" method="post">
+					<div class="form-group">
+						<label for="">Your Name</label>
+						<input name="yourname" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="">Your E-mail</label>
+						<input name="email" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="">Subject</label>
+						<input name="subject" type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="">Message</label>
+						<textarea type="text" name="message" class="form-control"></textarea>
+					</div>
+					<button type="submit" class="btn btn-success">Send</button>
+				</form>
+			</div>
 		</div>
 	</div>
 	<!--Bootstrap CDN-->

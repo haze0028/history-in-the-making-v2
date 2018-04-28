@@ -57,6 +57,7 @@ header {
   height: 200px;
   overflow: hidden; }
   header #header-bg img {
+    width: auto;
     min-width: 100%;
     height: 100%; }
 
@@ -88,15 +89,13 @@ body {
   body #wrapper {
     min-height: 100%;
     font-size: 16px;
-    box-shadow: 0 0 20px 10px black;
+    box-shadow: 0 0 50px 10px black;
     padding: 0;
     position: relative;
     background: #fffbd1; }
 
 #content {
   padding: 40px 50px 60px; }
-  #content h2:nth-child(1) {
-    margin-top: 0; }
 
 h1,
 h2,
@@ -137,7 +136,10 @@ h1,
   h1 a,
   .h1 a {
     color: white;
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 24px;
+    padding-top: 4px;
+    float: right; }
     h1 a:hover,
     .h1 a:hover {
       text-decoration: none;
@@ -173,7 +175,8 @@ blockquote.blockquote,
 p {
   font-size: 18px;
   line-height: 1.4;
-  padding: 0 10px 12px; }
+  padding: 0 10px 12px;
+  border-left-color: #e6e6e6; }
 
 small {
   font-size: .8em; }
@@ -350,6 +353,12 @@ Extra large	≥1200px	Large Desktop	- Default
   header {
     height: 150px; }
 
+  h1 a,
+  .h1 a {
+    font-size: 26px;
+    padding-top: 6px;
+    line-height: 1; }
+
   blockquote.blockquote,
   p {
     font-size: 16px; } }
@@ -357,6 +366,11 @@ Extra large	≥1200px	Large Desktop	- Default
   h1,
   .h1 {
     font-size: 24px; }
+    h1 a,
+    .h1 a {
+      font-size: 20px;
+      padding-top: 2px;
+      line-height: 1; }
 
   header {
     height: 100px; }
@@ -371,6 +385,19 @@ Extra large	≥1200px	Large Desktop	- Default
 
   .img-10, .img-20, .img-30, .img-40 {
     width: 40%; } }
+@media screen and (max-width: 576px) {
+  h1,
+  .h1 {
+    font-size: 20px;
+    height: auto; }
+    h1 a,
+    .h1 a {
+      display: block;
+      padding-top: 2px;
+      font-size: 16px;
+      line-height: 1;
+      width: 100%;
+      float: none; } }
 /********************************************
     NAV BARS
 *********************************************/
@@ -518,11 +545,12 @@ Extra large	≥1200px	Large Desktop	- Default
           padding: 0;
           margin: 0;
           line-height: 1;
-          cursor: pointer; }
+          cursor: pointer;
+          transform: translateY(8px) rotate(180deg); }
           #side-nav nav ul li .toggle-menu:hover {
             color: #fff07d; }
         #side-nav nav ul li .flipped-down {
-          transform: translateY(3px); }
+          transform: translateY(2px); }
 
 .nav-open {
   right: 0;
@@ -750,7 +778,7 @@ Extra large	≥1200px	Large Desktop
   padding: 0;
   z-index: 5; }
   .reproductions-content #catalogue .clothing-items .h5 {
-    height: 60px;
+    height: 50px;
     background: #ffdc67;
     font-size: 16px;
     text-align: center;
@@ -809,6 +837,8 @@ Extra large	≥1200px	Large Desktop
     ORDERING INFO
 *********************************************/
 .ordering-content #a1 {
+  margin-top: 0; }
+.ordering-content #a1 {
   float: left; }
 .ordering-content ul {
   clear: left; }
@@ -834,8 +864,9 @@ Extra large	≥1200px	Large Desktop
 /*****************************************
      Contact Page
 ******************************************/
-.contact-content ul li {
-  list-style: none; }
+.contact-content .contact-header {
+  padding-bottom: 0;
+  border: none; }
 .contact-content .contact-info {
   padding-top: 10px;
   margin-left: 5%;
@@ -850,13 +881,32 @@ Extra large	≥1200px	Large Desktop
   line-height: 1.8; }
 .contact-content .contact-address {
   float: left; }
-.contact-content .map {
-  margin-left: 20px;
+.contact-content .contact-map .map {
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  margin-left: 40px; }
 .contact-content .contact-header {
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
+.contact-content .form-header {
+  font-family: 'Cinzel'; }
+.contact-content form {
+  width: 100%;
+  background: #f0f0f0;
+  border: 3px solid rgba(255, 211, 151, 0.56);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 40px -14px black; }
+  .contact-content form label {
+    display: flex;
+    padding: 4px; }
+  .contact-content form input {
+    margin-bottom: 10px; }
+  .contact-content form textarea {
+    height: 100px; }
+  .contact-content form .btn {
+    margin: auto;
+    width: 100%; }
 
 /********************************************
     Media Queries 
@@ -866,12 +916,19 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 992px) {
+  .contact-content .contact-map .map {
+    margin-left: 0; } }
 @media screen and (max-width: 768px) {
   .contact-content .contact-map {
-    float: none; }
-  .contact-content .map {
-    width: 250px;
-    height: 250px; }
+    margin: none;
+    float: none;
+    width: 100%;
+    height: auto; }
+    .contact-content .contact-map iframe.map {
+      margin: none;
+      width: 100%;
+      height: 300px; }
   .contact-content .contact-address {
     float: none; } }
 /****************************************
@@ -953,7 +1010,7 @@ Extra large	≥1200px	Large Desktop
         .gallery-content #gallery-pagination ul li a.active {
           background: #ac7a00;
           color: white;
-          box-shadow: 0 0 6px #331b07 inset; }
+          box-shadow: 0 0 10px #5c4100 inset; }
         .gallery-content #gallery-pagination ul li a.disabled {
           pointer-events: none;
           cursor: default;
@@ -979,12 +1036,14 @@ Extra large	≥1200px	Large Desktop
     margin: auto;
     margin-top: calc(50vh - 250px); }
     .gallery-overlay .frame .close-overlay-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
       font-size: 50px;
       background: transparent;
       color: white;
       border: none;
-      cursor: pointer;
-      transform: translateY(-80px); }
+      cursor: pointer; }
       .gallery-overlay .frame .close-overlay-btn:hover {
         color: #ffdc67;
         transition: 300ms; }
@@ -1016,11 +1075,6 @@ Extra large	≥1200px	Large Desktop
   .gallery-overlay .frame {
     width: 90%; }
     .gallery-overlay .frame .close-overlay-btn {
-      transform: translateY(-80px); }
-
-  .gallery-overlay .frame {
-    width: 90%; }
-    .gallery-overlay .frame .close-overlay-btn {
       transform: translateY(-80px); } }
 /********************************************
     Media Queries 
@@ -1030,6 +1084,9 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 992px) {
+  .reproductions-content #catalogue .clothing-items .h5 {
+    height: 68px; } }
 @media screen and (max-width: 768px) {
   #a1 {
     float: left;
@@ -1061,8 +1118,10 @@ Extra large	≥1200px	Large Desktop
     margin-left: auto;
     margin-right: auto; }
 
+  .reproductions-content #catalogue .clothing-items .frame {
+    height: 200px; }
   .reproductions-content #catalogue .clothing-items .h5 {
-    font-size: 24px; }
+    font-size: 18px; }
   .reproductions-content #catalogue .clothing-items .item-description {
     padding-bottom: 50px; }
   .reproductions-content #catalogue .clothing-items .item-price {
