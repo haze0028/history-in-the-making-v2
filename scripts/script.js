@@ -38,7 +38,6 @@
 	/////////////
 	//Gallery images
 	////////////
-
 	function galleryOverlay() {
 		var overlay, img, closeBtn, closeBg, overlayImg, src, altText;
 		overlay = $('.gallery-overlay');
