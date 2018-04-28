@@ -1,101 +1,7 @@
 (function () {
+	$('#navbars').load('includes/navs.html');
+	$('#secondary-nav').load('includes/secondary-nav.html');
 	console.log("Page loaded");
-	var wrapper, toggle, nav, overlay, keys;
-
-	//	//Load the navs into the page
-	//	$('#test').load('../includes/navs.html');
-
-	//side menu slide in effect
-	toggle = $(".nav-toggle");
-	nav = $("#side-nav nav");
-	overlay = $('.overlay');
-
-	$('.toggle-menu').on('click', function () {
-		$(this).toggleClass('flipped-down').toggleClass('flipped');
-		$(this).parent().find('ul').slideToggle();
-	})
-	
-	$('.toggle-menu').on('blur', function(){
-		$(this).toggleClass('flipped').toggleClass('flipped-down');
-		$(this).parent().find('ul').slideUp();		
-	})
-
-	// trigger nav menu dropdown effects
-	$('#desktop-nav li').hover(function () {
-		$(this).find('ul').slideToggle('fast');
-	});
-
-	//Open the side-nav
-	toggle.on("click", function () {
-		disable_scroll();
-		overlay.css('display', 'block');
-		nav.animate({
-			right: '0px'
-		});
-	});
-
-	//Close the side-nav
-	$('.toggle-close').on('click', closeOverlay);
-	$('.close-overlay').on('click', closeOverlay);
-
-	function closeOverlay() {
-		enable_scroll()
-		nav.animate({
-			right: '-300px'
-		});
-		$(this).removeClass('nav-open');
-		overlay.delay('500ms').fadeToggle();
-	}
-
-	//Disable Scrolling when in Side-nav
-	keys = [32, 33, 34, 35, 36, 37, 38, 39, 40];
-
-	function preventDefault(e) {
-		e = e || window.event;
-		if (e.preventDefault)
-			e.preventDefault();
-		e.returnValue = false;
-	}
-
-	function keydown(e) {
-		for (var i = keys.length; i--;) {
-			if (e.keyCode === keys[i]) {
-				preventDefault(e);
-				return;
-			}
-		}
-	}
-
-	function wheel(e) {
-		preventDefault(e);
-	}
-
-	function disable_scroll() {
-		if (window.addEventListener) {
-			window.addEventListener('DOMMouseScroll', wheel, false);
-		}
-		window.onmousewheel = document.onmousewheel = wheel;
-		document.onkeydown = keydown;
-		disable_scroll_mobile();
-	}
-
-	function enable_scroll() {
-		if (window.removeEventListener) {
-			window.removeEventListener('DOMMouseScroll', wheel, false);
-		}
-		window.onmousewheel = document.onmousewheel = document.onkeydown = null;
-		enable_scroll_mobile();
-	}
-
-	// My improvement
-	// MOBILE
-	function disable_scroll_mobile() {
-		document.addEventListener('touchmove', preventDefault, false);
-	}
-
-	function enable_scroll_mobile() {
-		document.removeEventListener('touchmove', preventDefault, false);
-	}
 
 
 	/////////////
@@ -117,53 +23,147 @@
 		}, 800);
 	});
 
+	/////////////
+	//Flip images
+	////////////
+	$('.clothing-items .main-img').on('click', function () {
+		$(this).toggleClass('show-img').toggleClass('hide-img');
+		$(this).parent().find($('.alt-img')).toggleClass('hide-img').toggleClass('show-img');
+	})
+	$('.clothing-items .alt-img').on('click', function () {
+		$(this).toggleClass('show-img').toggleClass('hide-img');
+		$(this).parent().find($('.main-img')).toggleClass('hide-img').toggleClass('show-img');
+	})
+
+	/////////////
+	//Gallery images
+	////////////
+
+	function galleryOverlay() {
+		var overlay, img, closeBtn, closeBg, overlayImg, src, altText;
+		overlay = $('.gallery-overlay');
+		img = $('.gallery-item');
+		closeBg = $('.close-overlay-bg');
+		closeBtn = $('.close-overlay-btn');
+		overlayImg = $('.gallery-overlay img');
+
+		img.click(function () {
+			overlay.fadeIn('fast');
+			src = $(this).find('img').attr('src');
+			alt = $(this).find('img').attr('alt');
+			overlayImg.attr('src', src);
+			overlayImg.attr('alt', alt);
+		})
+
+		closeBg.click(closeOverlay);
+		closeBtn.click(closeOverlay);
+
+		function closeOverlay() {
+			overlay.fadeOut();
+		}
+	};
+
+	galleryOverlay();
 
 
 	/////////////
+	//Contact form
+	////////////
+	function after_form_submitted(data) {
+		if (data.result == 'success') {
+			$('form#reused_form').hide();
+			$('#success_message').show();
+			$('#error_message').hide();
+		} else {
+			$('#error_message').append('<ul></ul>');
+
+			jQuery.each(data.errors, function (key, val) {
+				$('#error_message ul').append('<li>' + key + ':' + val + '</li>');
+			});
+			$('#success_message').hide();
+			$('#error_message').show();
+
+			//reverse the response on the button
+			$('button[type="button"]', $form).each(function () {
+				$btn = $(this);
+				label = $btn.prop('orig_label');
+				if (label) {
+					$btn.prop('type', 'submit');
+					$btn.text(label);
+					$btn.prop('orig_label', '');
+				}
+			});
+
+		} //else
+	}
+
+	$('#reused_form').submit(function (e) {
+		e.preventDefault();
+
+		$form = $(this);
+		//show some response on the button
+		$('button[type="submit"]', $form).each(function () {
+			$btn = $(this);
+			$btn.prop('type', 'button');
+			$btn.prop('orig_label', $btn.text());
+			$btn.text('Sending ...');
+		});
+
+
+		$.ajax({
+			type: "POST",
+			url: 'handler.php',
+			data: $form.serialize(),
+			success: after_form_submitted,
+			dataType: 'json'
+		});
+
+	});
+	/////////////
 	//Jquey media queries
 	////////////
-	
-//	$(window).resize(function(){
-//		//Below 1200 VW
-//	if ($(window).width() <= 1200){	
-//		console.log('changing');
-//		$('.top-btn').find('i').removeClass('fa-arrow-circle-up').addClass('fas fa-arrow-up');
-//	}	else{ //Above 1200
-//		$('.top-btn').find('i').removeClass('fas fa-arrow-up').addClass('fa-arrow-circle-up');
-//		
-//	}
-//});
-	
-//	// run test on initial page load
-//	checkSize();
-//	var responsiveValue = $('#responsive').css("top");
-//	// run test on resize of the window
-//	$(window).resize(checkSize);
-//
-//	//Function to the css rule
-//	function checkSize() {
-//		console.log((responsiveValue));
-//		switch (responsiveValue) {
-//			case 5:
-//				console.log("lg desktop");
-//				break;
-//			case 4:
-//				console.log("md desktop");
-//				break;
-//			case 3:
-//				console.log("tablet");
-//				break;
-//			case 2:
-//				console.log("lg phone");
-//				break;
-//			case 1:
-//				console.log("sm phone");
-//				break;
-//			default:
-//				console.log("woops");
-//				break;
-//		}
-//	}
+
+	//	$(window).resize(function(){
+	//		//Below 1200 VW
+	//	if ($(window).width() <= 1200){	
+	//		console.log('changing');
+	//		$('.top-btn').find('i').removeClass('fa-arrow-circle-up').addClass('fas fa-arrow-up');
+	//	}	else{ //Above 1200
+	//		$('.top-btn').find('i').removeClass('fas fa-arrow-up').addClass('fa-arrow-circle-up');
+	//		
+	//	}
+	//});
+
+	//	// run test on initial page load
+	//	checkSize();
+	//	var responsiveValue = $('#responsive').css("top");
+	//	// run test on resize of the window
+	//	$(window).resize(checkSize);
+	//
+	//	//Function to the css rule
+	//	function checkSize() {
+	//		console.log((responsiveValue));
+	//		switch (responsiveValue) {
+	//			case 5:
+	//				console.log("lg desktop");
+	//				break;
+	//			case 4:
+	//				console.log("md desktop");
+	//				break;
+	//			case 3:
+	//				console.log("tablet");
+	//				break;
+	//			case 2:
+	//				console.log("lg phone");
+	//				break;
+	//			case 1:
+	//				console.log("sm phone");
+	//				break;
+	//			default:
+	//				console.log("woops");
+	//				break;
+	//		}
+	//	}
 
 
 })();
