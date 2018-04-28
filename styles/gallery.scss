@@ -114,12 +114,14 @@
 		margin: auto;
 		margin-top: calc(50vh - 250px);
 		& .close-overlay-btn {
+			position: fixed;
+			top:20px;
+			left:20px;
 			font-size: 50px;
 			background: transparent;
 			color: white;
 			border: none;
 			cursor: pointer;
-			transform: translateY(-80px);
 			&:hover {
 				color: $nav;
 				transition: 300ms;
