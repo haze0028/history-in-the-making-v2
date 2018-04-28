@@ -1,4 +1,7 @@
 .gallery-content {
+	& .h6{
+		margin-bottom: 0;
+	}
 	& .gallery {
 		& .col-md-2,
 		& .col-sm-3,
@@ -12,7 +15,7 @@
 				background: rgba(255, 255, 255, 0.46);
 				padding: 4px;
 				margin: 0;
-				height: 260px;
+				height: 240px;
 				& img {
 					display: block;
 					box-shadow: none;
@@ -21,6 +24,9 @@
 					max-width: 100%;
 					max-height: 100%;
 					margin: 0 auto;
+					&.alt-img {
+						display: none;
+					}
 				}
 			}
 			& .img-footer {
@@ -55,13 +61,13 @@
 				&:last-child {
 					border-right: none;
 				}
-				&:first-child a{
-						border-top-left-radius: 4px;
-						border-bottom-left-radius: 4px;
-					}
-				&:last-child a{
-						border-top-right-radius: 4px;
-						border-bottom-right-radius: 4px;
+				&:first-child a {
+					border-top-left-radius: 4px;
+					border-bottom-left-radius: 4px;
+				}
+				&:last-child a {
+					border-top-right-radius: 4px;
+					border-bottom-right-radius: 4px;
 				}
 				& a {
 					display: block;
@@ -83,7 +89,7 @@
 					&.disabled {
 						pointer-events: none;
 						cursor: default;
-						color:#afafaf;
+						color: #afafaf;
 					}
 
 				}
@@ -115,8 +121,9 @@
 		margin-top: calc(50vh - 250px);
 		& .close-overlay-btn {
 			position: fixed;
-			top:20px;
-			left:20px;
+			top: 20px;
+			left: 20px;
+			padding: 0;
 			font-size: 50px;
 			background: transparent;
 			color: white;
@@ -152,11 +159,30 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 
+@media screen and (max-width:576px) {
+	.gallery-content {
+		& .gallery {
+			& .gallery-item {
+				& .frame {
+					height: 220px;
+				}
+			}
+		}
+	}
+}
+
 // Smaller than small phone
 @media screen and (max-width:576px) {
 	.gallery-content {
 		#gallery-pagination {
 			margin: 20px auto;
+		}
+		& .gallery {
+			& .gallery-item {
+				& .frame {
+					height: 180px;
+				}
+			}
 		}
 	}
 
@@ -164,7 +190,8 @@ Extra large	≥1200px	Large Desktop
 		& .frame {
 			width: 90%;
 			& .close-overlay-btn {
-				transform: translateY(-80px);
+				top: 5px;
+				left: 5px;
 			}
 		}
 	}

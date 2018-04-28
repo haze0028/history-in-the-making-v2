@@ -48,8 +48,12 @@
 
 		img.click(function () {
 			overlay.fadeIn('fast');
-			src = $(this).find('img').attr('src');
 			alt = $(this).find('img').attr('alt');
+			if ($(this).find('img').hasClass('alt-img')) {
+				src = $(this).find('.alt-img').attr('src');
+			} else {
+				src = $(this).find('img').attr('src');
+			}
 			overlayImg.attr('src', src);
 			overlayImg.attr('alt', alt);
 		})
