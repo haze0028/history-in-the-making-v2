@@ -127,6 +127,9 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .ordering-content {
+	& #a1{
+		margin-top:0;
+	}
 	& #a1 {
 		float: left;
 	}

@@ -89,7 +89,7 @@ body {
   body #wrapper {
     min-height: 100%;
     font-size: 16px;
-    box-shadow: 0 0 20px 10px black;
+    box-shadow: 0 0 50px 10px black;
     padding: 0;
     position: relative;
     background: #fffbd1; }
@@ -175,7 +175,8 @@ blockquote.blockquote,
 p {
   font-size: 18px;
   line-height: 1.4;
-  padding: 0 10px 12px; }
+  padding: 0 10px 12px;
+  border-left-color: #e6e6e6; }
 
 small {
   font-size: .8em; }
@@ -544,11 +545,12 @@ Extra large	≥1200px	Large Desktop	- Default
           padding: 0;
           margin: 0;
           line-height: 1;
-          cursor: pointer; }
+          cursor: pointer;
+          transform: translateY(8px) rotate(180deg); }
           #side-nav nav ul li .toggle-menu:hover {
             color: #fff07d; }
         #side-nav nav ul li .flipped-down {
-          transform: translateY(3px); }
+          transform: translateY(2px); }
 
 .nav-open {
   right: 0;
@@ -835,6 +837,8 @@ Extra large	≥1200px	Large Desktop
     ORDERING INFO
 *********************************************/
 .ordering-content #a1 {
+  margin-top: 0; }
+.ordering-content #a1 {
   float: left; }
 .ordering-content ul {
   clear: left; }
@@ -877,9 +881,10 @@ Extra large	≥1200px	Large Desktop
   line-height: 1.8; }
 .contact-content .contact-address {
   float: left; }
-.contact-content .map {
+.contact-content .contact-map .map {
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  margin-left: 40px; }
 .contact-content .contact-header {
   margin: 15px 5px 0px 15px;
   font-size: 1.7em; }
@@ -911,6 +916,9 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 992px) {
+  .contact-content .contact-map .map {
+    margin-left: 0; } }
 @media screen and (max-width: 768px) {
   .contact-content .contact-map {
     margin: none;

@@ -46,7 +46,7 @@ body {
 	& #wrapper {
 		min-height: 100%;
 		font-size: 16px;
-		box-shadow: 0 0 20px 10px black;
+		box-shadow: 0 0 50px 10px black;
 		padding: 0;
 		position: relative;
 		background: #fffbd1;
@@ -144,6 +144,7 @@ p {
 	font-size: 18px;
 	line-height: 1.4;
 	padding: 0 10px 12px;
+	border-left-color: #e6e6e6;
 }
 
 small {
