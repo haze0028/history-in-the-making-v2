@@ -768,7 +768,7 @@ Extra large	≥1200px	Large Desktop
   padding: 0;
   z-index: 5; }
   .reproductions-content #catalogue .clothing-items .h5 {
-    height: 60px;
+    height: 50px;
     background: #ffdc67;
     font-size: 16px;
     text-align: center;
@@ -1043,6 +1043,9 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 992px) {
+  .reproductions-content #catalogue .clothing-items .h5 {
+    height: 68px; } }
 @media screen and (max-width: 768px) {
   #a1 {
     float: left;
@@ -1074,8 +1077,10 @@ Extra large	≥1200px	Large Desktop
     margin-left: auto;
     margin-right: auto; }
 
+  .reproductions-content #catalogue .clothing-items .frame {
+    height: 200px; }
   .reproductions-content #catalogue .clothing-items .h5 {
-    font-size: 24px; }
+    font-size: 18px; }
   .reproductions-content #catalogue .clothing-items .item-description {
     padding-bottom: 50px; }
   .reproductions-content #catalogue .clothing-items .item-price {

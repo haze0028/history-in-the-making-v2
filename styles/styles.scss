@@ -45,7 +45,7 @@ $header-bg: #432d10; //alt
 			padding: 0;
 			z-index: 5;
 			& .h5 {
-				height: 60px;
+				height: 50px;
 				background: $nav;
 				font-size: 16px;
 				text-align: center;
@@ -185,6 +185,7 @@ $header-bg: #432d10; //alt
 /****************************************
             Gallery 
 *****************************************/
+
 @import 'gallery';
 
 /********************************************
@@ -197,7 +198,18 @@ Extra large	≥1200px	Large Desktop
 *********************************************/
 
 // Smaller medium desktop
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+	.reproductions-content {
+		#catalogue {
+			& .clothing-items {
+				& .h5 {
+					height: 68px;
+				}
+			}
+		}
+	}
+}
+
 
 // Smaller than tablet
 @media screen and (max-width:768px) {
@@ -243,7 +255,7 @@ Extra large	≥1200px	Large Desktop
 			}
 		}
 	}
-} 
+}
 
 // Smaller than small phone
 @media screen and (max-width:576px) {
@@ -258,8 +270,11 @@ Extra large	≥1200px	Large Desktop
 	.reproductions-content {
 		& #catalogue {
 			& .clothing-items {
+				& .frame {
+					height: 200px;
+				}
 				& .h5 {
-					font-size: 24px;
+					font-size: 18px;
 				}
 				& .item-description {
 					padding-bottom: 50px;
