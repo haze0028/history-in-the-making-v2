@@ -699,7 +699,7 @@ Extra large	≥1200px	Large Desktop	- Default
     position: absolute;
     display: none;
     width: 100%;
-    z-index: 20; }
+    z-index: 9; }
     #mini-rep-nav nav .rep-nav-toggle {
       background: #ffdc67;
       text-align: center;
