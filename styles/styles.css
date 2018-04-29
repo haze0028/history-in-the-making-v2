@@ -546,7 +546,7 @@ Extra large	≥1200px	Large Desktop	- Default
           margin: 0;
           line-height: 1;
           cursor: pointer;
-          transform: translateY(8px) rotate(180deg); }
+          transform: translateY(12px) rotate(180deg); }
           #side-nav nav ul li .toggle-menu:hover {
             color: #fff07d; }
         #side-nav nav ul li .flipped-down {
@@ -945,6 +945,8 @@ Extra large	≥1200px	Large Desktop
 /****************************************
             Gallery 
 *****************************************/
+.gallery-content .h6 {
+  margin-bottom: 0; }
 .gallery-content .gallery .col-md-2, .gallery-content .gallery .col-sm-3, .gallery-content .gallery .col-6 {
   padding: 0; }
 .gallery-content .gallery .gallery-item {
@@ -954,7 +956,7 @@ Extra large	≥1200px	Large Desktop
     background: rgba(255, 255, 255, 0.46);
     padding: 4px;
     margin: 0;
-    height: 260px; }
+    height: 240px; }
     .gallery-content .gallery .gallery-item .frame img {
       display: block;
       box-shadow: none;
@@ -963,6 +965,8 @@ Extra large	≥1200px	Large Desktop
       max-width: 100%;
       max-height: 100%;
       margin: 0 auto; }
+      .gallery-content .gallery .gallery-item .frame img.alt-img {
+        display: none; }
   .gallery-content .gallery .gallery-item .img-footer {
     margin: 0;
     padding: 4px;
@@ -1039,6 +1043,7 @@ Extra large	≥1200px	Large Desktop
       position: fixed;
       top: 20px;
       left: 20px;
+      padding: 0;
       font-size: 50px;
       background: transparent;
       color: white;
@@ -1069,13 +1074,19 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 @media screen and (max-width: 576px) {
+  .gallery-content .gallery .gallery-item .frame {
+    height: 220px; } }
+@media screen and (max-width: 576px) {
   .gallery-content #gallery-pagination {
     margin: 20px auto; }
+  .gallery-content .gallery .gallery-item .frame {
+    height: 180px; }
 
   .gallery-overlay .frame {
     width: 90%; }
     .gallery-overlay .frame .close-overlay-btn {
-      transform: translateY(-80px); } }
+      top: 5px;
+      left: 5px; } }
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
