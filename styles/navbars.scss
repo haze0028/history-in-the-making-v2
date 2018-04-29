@@ -183,6 +183,9 @@
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
+					&:active, &:focus{
+						border:none;
+					}
 				}
 				& .flipped-down {
 					transform: translateY(2px);
