@@ -265,6 +265,10 @@ ul {
     color: #7c4800;
     border: none; }
 
+button:focus, button:active {
+  outline: none;
+  border: none; }
+
 .slide-in {
   opacity: 1;
   margin: 0; }
@@ -549,6 +553,8 @@ Extra large	≥1200px	Large Desktop	- Default
           transform: translateY(12px) rotate(180deg); }
           #side-nav nav ul li .toggle-menu:hover {
             color: #fff07d; }
+          #side-nav nav ul li .toggle-menu:active, #side-nav nav ul li .toggle-menu:focus {
+            border: none; }
         #side-nav nav ul li .flipped-down {
           transform: translateY(2px); }
 

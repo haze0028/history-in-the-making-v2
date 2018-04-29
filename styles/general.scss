@@ -256,6 +256,12 @@ ul {
 	}
 }
 
+button{
+	&:focus, &:active{
+		outline: none;
+		border:none;
+	}	
+}
 
 .slide-in {
 	opacity: 1;
