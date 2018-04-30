@@ -89,7 +89,7 @@ body {
   body #wrapper {
     min-height: 100%;
     font-size: 16px;
-    box-shadow: 0 0 50px 10px black;
+    box-shadow: 0 0 50px 4px black;
     padding: 0;
     position: relative;
     background: #fffbd1; }
@@ -268,6 +268,14 @@ ul {
 button:focus, button:active {
   outline: none;
   border: none; }
+
+.call-to-action {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: auto;
+  display: block; }
 
 .slide-in {
   opacity: 1;
@@ -602,7 +610,7 @@ Extra large	≥1200px	Large Desktop	- Default
 
 #reproductions-nav {
   height: 40px;
-  background-color: #ffdc67;
+  background: linear-gradient(to bottom, #ffdc67, #ffcb1e);
   position: relative;
   z-index: 5; }
   #reproductions-nav nav {
