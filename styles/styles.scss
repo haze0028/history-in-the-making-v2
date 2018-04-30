@@ -29,13 +29,8 @@ $header-bg: #432d10; //alt
 *********************************************/
 
 .reproductions-content {
-	& > h2 {
-		margin-top: 0px;
-	}
-	& .mini-nav {
-		width: 35%;
-	}
 	& #catalogue {
+		padding-bottom:50px;
 		& h2 {
 			margin-top: 50px;
 		}
@@ -200,6 +195,18 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 
+@media screen and (max-width:1200px) {
+	.reproductions-content {
+		#catalogue {
+			& .clothing-items {				
+				& .item-description {
+					padding-bottom: 230px;	
+				}
+			}
+		}
+	}
+}
+
 // Smaller medium desktop
 @media screen and (max-width:992px) {
 	.reproductions-content {
@@ -207,6 +214,9 @@ Extra large	≥1200px	Large Desktop
 			& .clothing-items {
 				& .h5 {
 					height: 68px;
+				}				
+				& .item-description {
+					padding-bottom: 200px;	
 				}
 			}
 		}
@@ -242,9 +252,6 @@ Extra large	≥1200px	Large Desktop
 					& img {
 						max-height: 100%;
 					}
-				}
-				& .item-description {
-					padding-bottom: 170px;
 				}
 				& .item-price {
 					& .col-sm-8,
