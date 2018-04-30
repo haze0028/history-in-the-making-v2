@@ -463,7 +463,7 @@ Extra large	≥1200px	Large Desktop	- Default
         color: black;
         font-size: 16px;
         font-weight: 100; }
-        #desktop-nav .sub-header nav > ul > li > a:hover {
+        #desktop-nav .sub-header nav > ul > li > a:hover, #desktop-nav .sub-header nav > ul > li > a:focus, #desktop-nav .sub-header nav > ul > li > a:active {
           text-decoration: none;
           background: #ac7a00;
           color: white;
@@ -503,7 +503,7 @@ Extra large	≥1200px	Large Desktop	- Default
             padding: 18px 38px 18px 10px;
             color: black;
             font-weight: 100; }
-            #desktop-nav .sub-header nav > ul > li ul li a:hover {
+            #desktop-nav .sub-header nav > ul > li ul li a:hover, #desktop-nav .sub-header nav > ul > li ul li a:focus, #desktop-nav .sub-header nav > ul > li ul li a:active {
               text-decoration: none;
               background: #ac7a00;
               color: white;
@@ -557,7 +557,7 @@ Extra large	≥1200px	Large Desktop	- Default
           float: left;
           padding: 10px 10px 10px 20px;
           color: white; }
-          #side-nav nav ul li > a:hover {
+          #side-nav nav ul li > a:hover, #side-nav nav ul li > a:focus, #side-nav nav ul li > a:active {
             color: #fff07d;
             text-decoration: none; }
         #side-nav nav ul li .toggle-menu {
@@ -676,7 +676,7 @@ Extra large	≥1200px	Large Desktop	- Default
               padding: 8px;
               color: black;
               font-weight: 100; }
-              #reproductions-nav nav > ul > li ul li a:hover {
+              #reproductions-nav nav > ul > li ul li a:hover, #reproductions-nav nav > ul > li ul li a:focus, #reproductions-nav nav > ul > li ul li a:active {
                 text-decoration: none;
                 background: #ac7a00;
                 color: white;
@@ -694,7 +694,7 @@ Extra large	≥1200px	Large Desktop	- Default
     padding: 10px;
     font-weight: bold;
     cursor: pointer; }
-    #mini-rep-nav .rep-nav-toggle:hover {
+    #mini-rep-nav .rep-nav-toggle:hover, #mini-rep-nav .rep-nav-toggle:focus, #mini-rep-nav .rep-nav-toggle:active {
       text-decoration: none;
       background: #ac7a00;
       color: white;
@@ -749,7 +749,7 @@ Extra large	≥1200px	Large Desktop	- Default
           padding: 6px;
           color: black;
           font-weight: 100; }
-          #mini-rep-nav nav ul li a:hover {
+          #mini-rep-nav nav ul li a:hover, #mini-rep-nav nav ul li a:focus, #mini-rep-nav nav ul li a:active {
             text-decoration: none;
             background: #ac7a00;
             color: white;
@@ -850,7 +850,7 @@ Extra large	≥1200px	Large Desktop
 *********************************************/
 .military-content #naval-hat {
   margin-top: 20px;
-  width: 20%; }
+  width: 30%; }
   .military-content #naval-hat p {
     padding: 0; }
 
@@ -1151,10 +1151,8 @@ Extra large	≥1200px	Large Desktop
     padding-right: 5px; } }
 @media screen and (max-width: 576px) {
   .military-content #naval-hat {
-    width: 90%;
-    float: none;
-    margin-left: auto;
-    margin-right: auto; }
+    width: 70%;
+    margin: 50px auto 0; }
 
   .reproductions-content #catalogue .clothing-items .frame {
     height: 200px; }

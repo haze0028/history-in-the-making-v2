@@ -41,7 +41,9 @@
 						color: black;
 						font-size: 16px;
 						font-weight: 100;
-						&:hover {
+						&:hover,
+						&:focus,
+						&:active {
 							text-decoration: none;
 							background: rgb(172, 122, 0);
 							color: white;
@@ -93,7 +95,9 @@
 								padding: 18px 38px 18px 10px;
 								color: black;
 								font-weight: 100;
-								&:hover {
+								&:hover,
+								&:focus,
+								&:active {
 									text-decoration: none;
 									background: rgb(172, 122, 0);
 									color: white;
@@ -164,7 +168,9 @@
 					float: left;
 					padding: 10px 10px 10px 20px;
 					color: white;
-					&:hover {
+					&:hover,
+					&:focus,
+					&:active {
 						color: rgb(255, 240, 125);
 						text-decoration: none;
 					}
@@ -183,8 +189,9 @@
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
-					&:active, &:focus{
-						border:none;
+					&:active,
+					&:focus {
+						border: none;
 					}
 				}
 				& .flipped-down {
@@ -283,8 +290,8 @@
 				& ul {
 					//					background-color: #fffb9c;
 					background-color: $nav;
-					display: none; 
-//					display: block;
+					display: none;
+					//					display: block;
 					position: absolute;
 					top: 40px; // height of main nav
 					box-shadow: 0px 6px 30px -10px black;
@@ -307,7 +314,9 @@
 							padding: 8px;
 							color: black;
 							font-weight: 100;
-							&:hover {
+							&:hover,
+							&:focus,
+							&:active {
 								text-decoration: none;
 								background: rgb(172, 122, 0);
 								color: white;
@@ -333,7 +342,9 @@
 		padding: 10px;
 		font-weight: bold;
 		cursor: pointer;
-		&:hover {
+		&:hover,
+		&:focus,
+		&:active {
 			text-decoration: none;
 			background: rgb(172, 122, 0);
 			color: white;
@@ -364,15 +375,15 @@
 	& nav {
 		position: absolute;
 		display: none;
-//		display: block;
+		//		display: block;
 		width: 100%;
 		z-index: 9;
-		& .rep-nav-toggle{
+		& .rep-nav-toggle {
 			background: $nav;
 			text-align: center;
 			font-size: 26px;
 			transform: rotate(180deg);
-			padding-top:4px;
+			padding-top: 4px;
 		}
 		& h2 {
 			margin: 0;
@@ -380,7 +391,7 @@
 			font-size: 24px;
 			background: #fff9b4;
 			border-bottom: none;
-			
+
 		}
 		& h3 {
 			margin: 0;
@@ -401,7 +412,9 @@
 					padding: 6px;
 					color: black;
 					font-weight: 100;
-					&:hover {
+					&:hover,
+					&:focus,
+					&:active {
 						text-decoration: none;
 						background: rgb(172, 122, 0);
 						color: white;
