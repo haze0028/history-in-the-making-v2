@@ -84,7 +84,7 @@
 	var miniNav = $('#mini-rep-nav');
 	// trigger reproductions nav menu dropdown effects
 	$('#reproductions-nav li').hover(function() {
-		$(this).find('ul').slideToggle();
+		$(this).find('ul').stop().slideToggle();
 	});
 
 	// trigger the tablet sized menu dropdown
