@@ -151,6 +151,9 @@ h2,
   margin-bottom: 22px;
   border-bottom: 1px solid rgba(108, 99, 0, 0.33); }
 
+.top-h2 {
+  margin-top: 0; }
+
 h3,
 .h3 {
   font-size: 24px;
@@ -171,8 +174,7 @@ h6,
   font-size: 18px;
   border-bottom: none; }
 
-blockquote.blockquote,
-p {
+blockquote.blockquote, blockquote > p {
   font-size: 18px;
   line-height: 1.4;
   padding: 0 10px 12px;
@@ -189,6 +191,10 @@ sup {
 
 .blockquote {
   border-left-color: #d3d3d3; }
+
+p {
+  font-size: 18px;
+  line-height: 1.4; }
 
 a {
   font-weight: bold;
@@ -277,7 +283,7 @@ button:focus, button:active {
   background: transparent;
   border: none;
   outline: none;
-  margin: 20px auto; }
+  margin: 0 auto; }
   #call-to-action img {
     max-width: 100%; }
 
@@ -375,8 +381,7 @@ Extra large	≥1200px	Large Desktop	- Default
     padding-top: 6px;
     line-height: 1; }
 
-  blockquote.blockquote,
-  p {
+  blockquote.blockquote, blockquote > p, p {
     font-size: 16px; } }
 @media screen and (max-width: 768px) {
   h1,
@@ -787,60 +792,58 @@ Extra large	≥1200px	Large Desktop
 /********************************************
     REPRODUCTIONS - CIVILIAN
 *********************************************/
-.reproductions-content > h2 {
-  margin-top: 0px; }
-.reproductions-content .mini-nav {
-  width: 35%; }
-.reproductions-content #catalogue h2 {
-  margin-top: 50px; }
-.reproductions-content #catalogue .clothing-items {
-  position: relative;
-  border: 1px solid rgba(128, 128, 128, 0.19);
-  padding: 0;
-  z-index: 5; }
-  .reproductions-content #catalogue .clothing-items .h5 {
-    height: 50px;
-    background: #ffdc67;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 5px; }
-  .reproductions-content #catalogue .clothing-items .frame {
-    height: 320px;
-    background: white;
-    margin: 0; }
-    .reproductions-content #catalogue .clothing-items .frame img {
-      display: block;
-      padding: 6px;
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      max-height: 100%;
-      margin: auto auto;
-      box-shadow: none;
-      cursor: pointer;
-      transition: 300ms; }
-      .reproductions-content #catalogue .clothing-items .frame img.hide-img {
-        display: none;
-        transition: 300ms; }
-      .reproductions-content #catalogue .clothing-items .frame img.show-img {
+.reproductions-content #catalogue {
+  padding-bottom: 50px; }
+  .reproductions-content #catalogue h2 {
+    margin-top: 50px; }
+  .reproductions-content #catalogue .clothing-items {
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.19);
+    padding: 0;
+    z-index: 5; }
+    .reproductions-content #catalogue .clothing-items .h5 {
+      height: 50px;
+      background: #ffdc67;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 5px; }
+    .reproductions-content #catalogue .clothing-items .frame {
+      height: 320px;
+      background: white;
+      margin: 0; }
+      .reproductions-content #catalogue .clothing-items .frame img {
         display: block;
+        padding: 6px;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto auto;
+        box-shadow: none;
+        cursor: pointer;
         transition: 300ms; }
-  .reproductions-content #catalogue .clothing-items .item-description {
-    padding: 6px 10px 150px; }
-  .reproductions-content #catalogue .clothing-items .item-price {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    font-weight: bold; }
-    .reproductions-content #catalogue .clothing-items .item-price.row {
-      margin-left: 0;
-      margin-right: 0; }
-    .reproductions-content #catalogue .clothing-items .item-price p {
-      padding-bottom: 5px;
-      position: relative;
-      line-height: 1.2; }
+        .reproductions-content #catalogue .clothing-items .frame img.hide-img {
+          display: none;
+          transition: 300ms; }
+        .reproductions-content #catalogue .clothing-items .frame img.show-img {
+          display: block;
+          transition: 300ms; }
+    .reproductions-content #catalogue .clothing-items .item-description {
+      padding: 6px 10px 150px; }
+    .reproductions-content #catalogue .clothing-items .item-price {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-weight: bold; }
+      .reproductions-content #catalogue .clothing-items .item-price.row {
+        margin-left: 0;
+        margin-right: 0; }
+      .reproductions-content #catalogue .clothing-items .item-price p {
+        padding-bottom: 5px;
+        position: relative;
+        line-height: 1.2; }
 
 /********************************************
     REPRODUCTIONS - MILITARY
@@ -1116,9 +1119,14 @@ Medium		≥768px	Tablet
 Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
+@media screen and (max-width: 1200px) {
+  .reproductions-content #catalogue .clothing-items .item-description {
+    padding-bottom: 230px; } }
 @media screen and (max-width: 992px) {
   .reproductions-content #catalogue .clothing-items .h5 {
-    height: 68px; } }
+    height: 68px; }
+  .reproductions-content #catalogue .clothing-items .item-description {
+    padding-bottom: 200px; } }
 @media screen and (max-width: 768px) {
   #a1 {
     float: left;
@@ -1138,8 +1146,6 @@ Extra large	≥1200px	Large Desktop
     height: 250px; }
     .reproductions-content #catalogue .clothing-items .frame img {
       max-height: 100%; }
-  .reproductions-content #catalogue .clothing-items .item-description {
-    padding-bottom: 170px; }
   .reproductions-content #catalogue .clothing-items .item-price .col-sm-8, .reproductions-content #catalogue .clothing-items .item-price .col-sm-6, .reproductions-content #catalogue .clothing-items .item-price .col-sm-4, .reproductions-content #catalogue .clothing-items .item-price p {
     padding-left: 5px;
     padding-right: 5px; } }
