@@ -111,26 +111,28 @@
 	nav = $("#side-nav nav");
 	overlay = $('.overlay');
 
-	$('.toggle-menu').on('click', function () {
+	//Side nav sub-menu toggles
+	$('.toggle-menu').on('click', function() {
 		$(this).toggleClass('flipped-down').toggleClass('flipped');
 		$(this).parent().find('ul').slideToggle();
 	})
 
-	$('.toggle-menu').on('blur', function () {
-		if ($(this).hasClass('flipped')){
+	//Side nav sub-menu toggles on blur
+	$('.toggle-menu').on('blur', function() {
+		if ($(this).hasClass('flipped')) {
 			$(this).toggleClass('flipped').toggleClass('flipped-down');
 			$(this).parent().find('ul').slideUp();
 		}
 	})
 
 	// trigger nav menu dropdown effects
-	$('#desktop-nav li').hover(function () {
-		$(this).find('ul').slideToggle('fast');
-	});	
-	
+	$('#desktop-nav li').hover(function() {
+		$(this).find('ul').stop().slideToggle('fast');
+	});
+
 
 	//Open the side-nav
-	toggle.on("click", function () {
+	toggle.on("click", function() {
 		disable_scroll();
 		overlay.css('display', 'block');
 		nav.animate({
