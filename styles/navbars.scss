@@ -183,6 +183,9 @@
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
+					&:active, &:focus{
+						border:none;
+					}
 				}
 				& .flipped-down {
 					transform: translateY(2px);
@@ -363,7 +366,7 @@
 		display: none;
 //		display: block;
 		width: 100%;
-		z-index: 20;
+		z-index: 9;
 		& .rep-nav-toggle{
 			background: $nav;
 			text-align: center;
