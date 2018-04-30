@@ -248,7 +248,7 @@
 
 #reproductions-nav {
 	height: 40px; //	background-color: #fffb9c;
-	background-color: $nav;
+	background: linear-gradient(to bottom, #ffdc67, #ffcb1e);
 	position: relative;
 	z-index: 5;
 	& nav {
