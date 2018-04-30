@@ -92,7 +92,7 @@ body {
     box-shadow: 0 0 50px 4px black;
     padding: 0;
     position: relative;
-    background: #fffbd1; }
+    background: #fffde7; }
 
 #content {
   padding: 40px 50px 60px; }
@@ -269,13 +269,17 @@ button:focus, button:active {
   outline: none;
   border: none; }
 
-.call-to-action {
+#call-to-action {
+  display: block;
+  width: 160px;
+  height: auto;
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
-  margin: auto;
-  display: block; }
+  margin: 20px auto; }
+  #call-to-action img {
+    max-width: 100%; }
 
 .slide-in {
   opacity: 1;
@@ -395,12 +399,15 @@ Extra large	≥1200px	Large Desktop	- Default
   a {
     line-height: 1.5em; }
 
-  .img-10, .img-20, .img-30, .img-40 {
+  .img-10,
+  .img-20,
+  .img-30,
+  .img-40 {
     width: 40%; } }
 @media screen and (max-width: 576px) {
   h1,
   .h1 {
-    font-size: 20px;
+    font-size: 24px;
     height: auto; }
     h1 a,
     .h1 a {
