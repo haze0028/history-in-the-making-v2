@@ -24,19 +24,7 @@ html {
 }
 
 body {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+52,000000+100 */
-	background: #000000;
-	/* Old browsers */
-	background: -moz-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 80%, #000000 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000000 0%, #1d0f02 20%, #1d0f02 70%, #000000 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
-	/* IE6-9 fallback on horizontal gradient */
-	//	background-image: url(../images/fabric-2446476_1920.jpg);
+	background: #ffe9ac;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed; //   background-color: rgb(46, 23, 0);
@@ -47,7 +35,7 @@ body {
 	& #wrapper {
 		min-height: 100%;
 		font-size: 16px;
-		box-shadow: 0 0 50px 4px black;
+		box-shadow: 0 0 30px -4px black;
 		padding: 0;
 		position: relative;
 		background: #fffde7;
@@ -84,8 +72,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-	margin: 30px 0 14px;
-	padding-bottom: 10px;
+	margin: 30px 0 10px;
+	padding-bottom: 6px;
 }
 
 h1,
@@ -112,7 +100,6 @@ h1,
 h2,
 .h2 {
 	font-size: 30px;
-	margin-bottom: 22px;
 	border-bottom: 1px solid rgba(108, 99, 0, 0.33);
 }
 
@@ -151,6 +138,16 @@ blockquote.blockquote, blockquote>p {
 	border-left-color: #e6e6e6;
 }
 
+.blockquote {
+	border-left-color: #d3d3d3;
+}
+
+p{
+	font-size: 18px;
+	line-height: 1.4;	
+	padding-bottom: 16px;
+}
+
 small {
 	font-size: .8em;
 }
@@ -163,14 +160,6 @@ sup {
 	font-size: 0.7em;
 }
 
-.blockquote {
-	border-left-color: #d3d3d3;
-}
-
-p{
-	font-size: 18px;
-	line-height: 1.4;	
-}
 
 a {
 	font-weight: bold;
@@ -410,7 +399,10 @@ Extra large	≥1200px	Large Desktop	- Default
 	blockquote.blockquote, blockquote>p, p{
 		font-size: 16px;
 	}
-
+	
+	.img-10{
+		width:15%;
+	}
 }
 
 

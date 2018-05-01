@@ -255,7 +255,7 @@
 
 #reproductions-nav {
 	height: 40px; //	background-color: #fffb9c;
-	background: linear-gradient(to bottom, #ffdc67, #ffcb1e);
+	background: $nav;
 	position: relative;
 	z-index: 5;
 	& nav {
@@ -268,7 +268,7 @@
 			list-style: none;
 			padding-left: 0px;
 			height: 100%;
-			border-bottom: 1px solid rgb(172, 122, 0);
+//			border-bottom: 1px solid rgb(172, 122, 0);
 			text-align: center;
 			& > li {
 				position: relative;
@@ -333,15 +333,16 @@
 #mini-rep-nav {
 	position: relative;
 	display: none;
+	background: $nav;
 	& .rep-nav-toggle {
 		height: 40px;
 		width: 100%;
 		border: none;
 		text-align: left;
-		background: linear-gradient(to bottom, #ffdc67, #ffcb1e);
 		padding: 10px;
 		font-weight: bold;
 		cursor: pointer;
+		background: $nav;
 		&:hover,
 		&:focus,
 		&:active {
