@@ -138,6 +138,16 @@ blockquote.blockquote, blockquote>p {
 	border-left-color: #e6e6e6;
 }
 
+.blockquote {
+	border-left-color: #d3d3d3;
+}
+
+p{
+	font-size: 18px;
+	line-height: 1.4;	
+	padding-bottom: 16px;
+}
+
 small {
 	font-size: .8em;
 }
@@ -150,14 +160,6 @@ sup {
 	font-size: 0.7em;
 }
 
-.blockquote {
-	border-left-color: #d3d3d3;
-}
-
-p{
-	font-size: 18px;
-	line-height: 1.4;	
-}
 
 a {
 	font-weight: bold;
