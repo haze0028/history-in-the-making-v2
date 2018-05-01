@@ -54,7 +54,7 @@
 
 			<h2 class="form-header">Send us a quick message</h2>
 			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-				<form name="contactform" method="post">
+				<form name="contactform" action="scripts/contact-form.php" method="post">
 					<div class="form-group">
 						<label for="">Your Name</label>
 						<input name="yourname" type="text" class="form-control">
@@ -72,20 +72,6 @@
 						<textarea type="text" name="message" class="form-control"></textarea>
 					</div>
 					<button type="submit" class="btn btn-success">Send</button>
-					
-					<?php 	
-						if(isset($_POST['submit'])){
-								$name=$_POST['yourname'];
-								$email=$_POST['email'];
-								$subject=$_POST['subject'];
-								$message="Name: ".$name. "\r\n".$_POST['message'];
-								$adminSite="haze9greg@gmail.com";
-								$headers="Reply-to: $email";
-								mail($adminSite, $subject, $message, "From: ". $email);
-								echo "<p>Your message has been sent!</p>"
-							};
-						?>
-
 				</form>
 			</div>
 			<hr>
