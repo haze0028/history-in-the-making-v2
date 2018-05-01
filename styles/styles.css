@@ -383,7 +383,10 @@ Extra large	≥1200px	Large Desktop	- Default
     line-height: 1; }
 
   blockquote.blockquote, blockquote > p, p {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .img-10 {
+    width: 15%; } }
 @media screen and (max-width: 768px) {
   h1,
   .h1 {
