@@ -20,10 +20,10 @@
 					<li>
 						<h2>Accessories</h2>
 					</li>
-					<li><a href="mens-neckwear.html">Neckwear</a></li>
-					<li><a href="mens-collars.html">Collars</a></li>
-					<li><a href="mens-spats.html">Spats</a></li>
-					<li><a href="mens-suspenders.html">Suspenders</a></li>
+					<li><a href="mens-accessories.html#neckwear">Neckwear</a></li>
+					<li><a href="mens-accessories.html#collars">Collars</a></li>
+					<li><a href="mens-accessories.html#spats">Spats</a></li>
+					<li><a href="mens-accessories.html#suspenders">Suspenders</a></li>
 				</ul>
 			</li>
 			<li>Women
@@ -84,7 +84,7 @@
 	var miniNav = $('#mini-rep-nav');
 	// trigger reproductions nav menu dropdown effects
 	$('#reproductions-nav li').hover(function() {
-		$(this).find('ul').slideToggle();
+		$(this).find('ul').stop().slideToggle();
 	});
 
 	// trigger the tablet sized menu dropdown

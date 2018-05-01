@@ -1,8 +1,19 @@
 (function () {
+	/////////////
+	//Load navbars onto each page
+	////////////
 	$('#navbars').load('includes/navs.html');
 	$('#secondary-nav').load('includes/secondary-nav.html');
 	console.log("Page loaded");
 
+	/////////////
+	//display page once everything loads
+	////////////
+	$('#content').css('display','none');
+	$(window).ready(function() {
+	  $('#content').delay(100).fadeIn();
+	});
+	
 
 	/////////////
 	//"To top" Button
