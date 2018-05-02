@@ -1,7 +1,18 @@
 (function () {
+	/////////////
+	//Load navbars onto each page
+	////////////
 	$('#navbars').load('includes/navs.html');
 	$('#secondary-nav').load('includes/secondary-nav.html');
 	console.log("Page loaded");
+
+	/////////////
+	//display page once everything loads
+	////////////
+	$('#content').css('display', 'none');
+	$(window).ready(function () {
+		$('#content').delay(100).fadeIn();
+	});
 
 
 	/////////////
@@ -39,7 +50,7 @@
 	//Gallery images
 	////////////
 	function galleryOverlay() {
-		var overlay, img, closeBtn, closeBg, overlayImg, src, altText;
+		var overlay, img, closeBtn, closeBg, overlayImg, src, altText, caption;
 		overlay = $('.gallery-overlay');
 		img = $('.gallery-item');
 		closeBg = $('.close-overlay-bg');
@@ -49,6 +60,7 @@
 		img.click(function () {
 			overlay.fadeIn('fast');
 			alt = $(this).find('img').attr('alt');
+			caption = $(this).find('.img-footer').text();
 			if ($(this).find('img').hasClass('alt-img')) {
 				src = $(this).find('.alt-img').attr('src');
 			} else {
@@ -56,6 +68,7 @@
 			}
 			overlayImg.attr('src', src);
 			overlayImg.attr('alt', alt);
+			overlay.find('#caption').text(caption);
 		})
 
 		closeBg.click(closeOverlay);
