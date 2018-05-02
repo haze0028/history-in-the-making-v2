@@ -987,7 +987,7 @@ Extra large	≥1200px	Large Desktop
         display: none; }
   .gallery-content .gallery .gallery-item .img-footer {
     margin: 0;
-    padding: 4px;
+    padding: 2px;
     height: 50px;
     background: #ffdc67;
     text-align: center;
@@ -1048,7 +1048,7 @@ Extra large	≥1200px	Large Desktop
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.81);
+    background: rgba(0, 0, 0, 0.9);
     z-index: 15; }
   .gallery-overlay .frame {
     position: relative;
@@ -1086,7 +1086,7 @@ Extra large	≥1200px	Large Desktop
       color: white;
       font-size: 30px;
       position: absolute;
-      bottom: -24px;
+      bottom: -50px;
       width: 100%;
       text-align: center; }
 
@@ -1112,7 +1112,9 @@ Extra large	≥1200px	Large Desktop
       top: 5px;
       left: 5px; }
     .gallery-overlay .frame #caption {
-      font-size: 20px; } }
+      font-size: 24px;
+      position: fixed;
+      bottom: 5px; } }
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
