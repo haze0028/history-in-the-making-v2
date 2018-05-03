@@ -9,7 +9,7 @@
 	/////////////
 	//display page once everything loads
 	////////////
-	$('.gallery-content').css('display', 'none');
+	$('#content').not('.library-content, .mens-accessories').css('display', 'none');
 	$(window).ready(function () {
 		$('#content').delay(100).fadeIn();
 	});
