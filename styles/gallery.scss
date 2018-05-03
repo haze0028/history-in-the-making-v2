@@ -41,7 +41,7 @@
 			}
 		}
 	}
-	#gallery-pagination {
+	.gallery-pagination {
 		&:first-child {
 			margin-top: 20px;
 		}
@@ -177,7 +177,7 @@ Extra large	≥1200px	Large Desktop
 				}
 			}
 		}
-		#gallery-pagination {
+		.gallery-pagination {
 			margin: 20px auto;
 		}
 		& .gallery {
