@@ -41,7 +41,9 @@
 						color: black;
 						font-size: 16px;
 						font-weight: 100;
-						&:hover {
+						&:hover,
+						&:focus,
+						&:active {
 							text-decoration: none;
 							background: rgb(172, 122, 0);
 							color: white;
@@ -93,7 +95,9 @@
 								padding: 18px 38px 18px 10px;
 								color: black;
 								font-weight: 100;
-								&:hover {
+								&:hover,
+								&:focus,
+								&:active {
 									text-decoration: none;
 									background: rgb(172, 122, 0);
 									color: white;
@@ -164,7 +168,9 @@
 					float: left;
 					padding: 10px 10px 10px 20px;
 					color: white;
-					&:hover {
+					&:hover,
+					&:focus,
+					&:active {
 						color: rgb(255, 240, 125);
 						text-decoration: none;
 					}
@@ -183,8 +189,9 @@
 					&:hover {
 						color: rgb(255, 240, 125);
 					}
-					&:active, &:focus{
-						border:none;
+					&:active,
+					&:focus {
+						border: none;
 					}
 				}
 				& .flipped-down {
@@ -248,7 +255,7 @@
 
 #reproductions-nav {
 	height: 40px; //	background-color: #fffb9c;
-	background-color: $nav;
+	background: $nav;
 	position: relative;
 	z-index: 5;
 	& nav {
@@ -261,7 +268,7 @@
 			list-style: none;
 			padding-left: 0px;
 			height: 100%;
-			border-bottom: 1px solid rgb(172, 122, 0);
+//			border-bottom: 1px solid rgb(172, 122, 0);
 			text-align: center;
 			& > li {
 				position: relative;
@@ -283,8 +290,8 @@
 				& ul {
 					//					background-color: #fffb9c;
 					background-color: $nav;
-					display: none; 
-//					display: block;
+					display: none;
+					//					display: block;
 					position: absolute;
 					top: 40px; // height of main nav
 					box-shadow: 0px 6px 30px -10px black;
@@ -307,7 +314,9 @@
 							padding: 8px;
 							color: black;
 							font-weight: 100;
-							&:hover {
+							&:hover,
+							&:focus,
+							&:active {
 								text-decoration: none;
 								background: rgb(172, 122, 0);
 								color: white;
@@ -324,16 +333,19 @@
 #mini-rep-nav {
 	position: relative;
 	display: none;
+	background: $nav;
 	& .rep-nav-toggle {
 		height: 40px;
 		width: 100%;
 		border: none;
 		text-align: left;
-		background: linear-gradient(to bottom, #ffdc67, #ffcb1e);
 		padding: 10px;
 		font-weight: bold;
 		cursor: pointer;
-		&:hover {
+		background: $nav;
+		&:hover,
+		&:focus,
+		&:active {
 			text-decoration: none;
 			background: rgb(172, 122, 0);
 			color: white;
@@ -364,15 +376,15 @@
 	& nav {
 		position: absolute;
 		display: none;
-//		display: block;
+		//		display: block;
 		width: 100%;
 		z-index: 9;
-		& .rep-nav-toggle{
+		& .rep-nav-toggle {
 			background: $nav;
 			text-align: center;
 			font-size: 26px;
 			transform: rotate(180deg);
-			padding-top:4px;
+			padding-top: 4px;
 		}
 		& h2 {
 			margin: 0;
@@ -380,7 +392,7 @@
 			font-size: 24px;
 			background: #fff9b4;
 			border-bottom: none;
-			
+
 		}
 		& h3 {
 			margin: 0;
@@ -401,7 +413,9 @@
 					padding: 6px;
 					color: black;
 					font-weight: 100;
-					&:hover {
+					&:hover,
+					&:focus,
+					&:active {
 						text-decoration: none;
 						background: rgb(172, 122, 0);
 						color: white;

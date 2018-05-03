@@ -1,5 +1,5 @@
 .gallery-content {
-	& .h6{
+	& .h6 {
 		margin-bottom: 0;
 	}
 	& .gallery {
@@ -31,7 +31,7 @@
 			}
 			& .img-footer {
 				margin: 0;
-				padding: 4px;
+				padding: 2px;
 				height: 50px;
 				background: $nav;
 				text-align: center;
@@ -109,7 +109,7 @@
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: rgba(0, 0, 0, 0.81);
+		background: rgba(0, 0, 0, 0.9);
 		z-index: 15;
 	}
 	& .frame {
@@ -147,6 +147,14 @@
 			right: 0;
 			margin: auto;
 		}
+		& #caption {
+			color: white;
+			font-size: 30px;
+			position: absolute;
+			bottom: -50px;
+			width:100%;
+			text-align: center;
+		}
 	}
 }
 
@@ -159,6 +167,7 @@ Large			≥992px	Medium Desktop
 Extra large	≥1200px	Large Desktop
 *********************************************/
 
+// Smaller than small phone
 @media screen and (max-width:576px) {
 	.gallery-content {
 		& .gallery {
@@ -168,12 +177,6 @@ Extra large	≥1200px	Large Desktop
 				}
 			}
 		}
-	}
-}
-
-// Smaller than small phone
-@media screen and (max-width:576px) {
-	.gallery-content {
 		#gallery-pagination {
 			margin: 20px auto;
 		}
@@ -185,13 +188,18 @@ Extra large	≥1200px	Large Desktop
 			}
 		}
 	}
-
 	.gallery-overlay {
 		& .frame {
 			width: 90%;
 			& .close-overlay-btn {
 				top: 5px;
 				left: 5px;
+			}
+			& #caption {
+				font-size: 24px;
+				position: fixed;
+				bottom:5px;
+			
 			}
 		}
 	}
