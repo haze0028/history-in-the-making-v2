@@ -9,7 +9,7 @@
 	/////////////
 	//display page once everything loads
 	////////////
-	$('#content').css('display', 'none');
+	$('.gallery-content').css('display', 'none');
 	$(window).ready(function () {
 		$('#content').delay(100).fadeIn();
 	});
