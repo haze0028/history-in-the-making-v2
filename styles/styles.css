@@ -994,46 +994,46 @@ Extra large	≥1200px	Large Desktop
     font-size: 16px;
     font-weight: bold;
     line-height: 1.3; }
-.gallery-content #gallery-pagination {
+.gallery-content .gallery-pagination {
   display: block;
   width: 200px;
   margin: 50px auto; }
-  .gallery-content #gallery-pagination:first-child {
+  .gallery-content .gallery-pagination:first-child {
     margin-top: 20px; }
-  .gallery-content #gallery-pagination ul {
+  .gallery-content .gallery-pagination ul {
     display: flex;
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 0; }
-    .gallery-content #gallery-pagination ul li {
+    .gallery-content .gallery-pagination ul li {
       width: 25%;
       margin: 0;
       border-right: 1px solid rgba(0, 0, 0, 0.2); }
-      .gallery-content #gallery-pagination ul li:last-child {
+      .gallery-content .gallery-pagination ul li:last-child {
         border-right: none; }
-      .gallery-content #gallery-pagination ul li:first-child a {
+      .gallery-content .gallery-pagination ul li:first-child a {
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px; }
-      .gallery-content #gallery-pagination ul li:last-child a {
+      .gallery-content .gallery-pagination ul li:last-child a {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px; }
-      .gallery-content #gallery-pagination ul li a {
+      .gallery-content .gallery-pagination ul li a {
         display: block;
         width: 100%;
         height: 100%;
         text-align: center;
         padding: 5px; }
-        .gallery-content #gallery-pagination ul li a:hover {
+        .gallery-content .gallery-pagination ul li a:hover {
           background: #ffe65a;
           color: black;
           text-decoration: none;
           transition: 300ms; }
-        .gallery-content #gallery-pagination ul li a.active {
+        .gallery-content .gallery-pagination ul li a.active {
           background: #ac7a00;
           color: white;
           box-shadow: 0 0 10px #5c4100 inset; }
-        .gallery-content #gallery-pagination ul li a.disabled {
+        .gallery-content .gallery-pagination ul li a.disabled {
           pointer-events: none;
           cursor: default;
           color: #afafaf; }
@@ -1101,7 +1101,7 @@ Extra large	≥1200px	Large Desktop
 @media screen and (max-width: 576px) {
   .gallery-content .gallery .gallery-item .frame {
     height: 220px; }
-  .gallery-content #gallery-pagination {
+  .gallery-content .gallery-pagination {
     margin: 20px auto; }
   .gallery-content .gallery .gallery-item .frame {
     height: 180px; }
