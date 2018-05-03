@@ -69,9 +69,7 @@ html {
 
 body {
   background: #ffe9ac;
- /**** background:#FFDC8A;*****/
-    /***background:#E8C572;***/
-    background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
