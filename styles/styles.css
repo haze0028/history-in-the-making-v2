@@ -192,8 +192,7 @@ a {
   text-decoration: none;
   font-family: 'Lato', Helvetica, Arial, sans-serif; }
   a:hover, a:active, a:focus {
-    color: #B56900;
-    text-decoration: none; }
+    color: #B56900; }
 
 .frame {
   width: 100%;
