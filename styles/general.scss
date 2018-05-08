@@ -166,8 +166,9 @@ a {
 	color: #7c4800;
 	text-decoration: none;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	&:hover {
-		color: #B56900
+	&:hover, &:active, &:focus {
+		color: #B56900;
+		text-decoration: none;
 	}
 }
 
