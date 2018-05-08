@@ -1110,11 +1110,14 @@ Extra large	≥1200px	Large Desktop
     width: 90%; }
     .gallery-overlay .frame .close-overlay-btn {
       top: 5px;
-      left: 5px; }
+      left: 5px;
+      z-index: 5; }
     .gallery-overlay .frame #caption {
       font-size: 24px;
       position: fixed;
-      bottom: 5px; } }
+      bottom: 0;
+      left: 0;
+      padding: 0; } }
 /********************************************
     Media Queries 
 Extra small <576px	Small Phone
