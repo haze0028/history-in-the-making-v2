@@ -192,6 +192,7 @@ Extra large	≥1200px	Large Desktop
 		& .frame {
 			width: 90%;
 			& .close-overlay-btn {
+				font-size: 40px;
 				top: 5px;
 				left: 5px;
 				z-index: 5;
@@ -199,7 +200,7 @@ Extra large	≥1200px	Large Desktop
 			& #caption {
 				font-size: 24px;
 				position: fixed;
-				bottom:0;
+				bottom:5px;
 				left:0;
 				padding:0;
 			}
